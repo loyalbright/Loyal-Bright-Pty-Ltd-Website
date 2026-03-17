@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="/wp-content/plugins/beaver-builder-lite-version/fonts/fontawesome/5.15.4/css/all.min.css">
 
 	<style type="text/css">
-        /* --- HEADER STYLES --- */
+        /* --- HEADER STYLES (MATCHES HOMEPAGE) --- */
 		.site-title, .site-description { position: absolute; clip: rect(1px, 1px, 1px, 1px); }
         .site-header { background: #fff; padding: 20px 0; border-bottom: 1px solid #eee; }
         .nav-container { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; flex-direction: row; justify-content: space-between; align-items: center; }
@@ -29,49 +29,68 @@
             .custom-nav li:last-child { border-bottom: none; padding-bottom: 0; }
         }
 
-        /* --- PAGE SPECIFIC STYLES --- */
+        /* --- VISUAL-MATCHED HERO SECTION (NEW!) --- */
         .hero { 
-            background-color: #03263B;
-            padding: 60px 20px; text-align: center; color: #fff;
+            /* Gradient overlay + image from homepage */
+            background-image: linear-gradient(rgba(3, 38, 59, 0.75), rgba(3, 38, 59, 0.75)), url(/wp-content/uploads/2019/07/cropped-Home-Page-Hero-2400x1160.jpeg);
+            background-size: cover; background-position: center; 
+            padding: 80px 20px; text-align: center; color: #fff;
         }
-        .hero h1 { font-size: 36px; color: #fff; margin-bottom: 10px; font-weight: 700; }
-        .hero p { font-size: 18px; color: #bddae6; }
+        .hero h1 { font-size: 36px; color: #fff; margin-bottom: 10px; font-weight: 700; font-family: "Open Sans", sans-serif;}
+        .hero p { font-size: 18px; color: #bddae6; font-family: "Open Sans", sans-serif; }
         
+        /* --- PAGE CONTENT LAYOUT --- */
         .content-container { max-width: 1000px; margin: 60px auto; padding: 0 20px; display: flex; flex-wrap: wrap; gap: 50px; }
-        .main-text { flex: 2; min-width: 300px; line-height: 1.8; color: #353535; }
-        .main-text h2 { color: #03263B; margin-top: 0; margin-bottom: 20px; font-size: 28px; }
-        .main-text p { margin-bottom: 20px; }
+        .main-text { flex: 2; min-width: 300px; line-height: 1.8; color: #353535; font-family: "Open Sans", sans-serif;}
+        .main-text h2 { color: #03263B; margin-top: 0; margin-bottom: 20px; font-size: 28px; font-family: "Open Sans", sans-serif; font-weight: 700; }
+        .main-text p { margin-bottom: 20px; font-family: "Open Sans", sans-serif; }
         
+        /* --- SIDEBAR CREDENTIALS --- */
         .sidebar { flex: 1; min-width: 280px; }
-        .credential-box { background: #f9f9f9; padding: 30px; border-radius: 8px; border-top: 4px solid #5d5179; }
-        .credential-box h3 { color: #03263B; margin-top: 0; margin-bottom: 20px; font-size: 20px; }
+        .credential-box { background: #f9f9f9; padding: 30px; border-radius: 8px; border-top: 4px solid #5d5179; font-family: "Open Sans", sans-serif; }
+        .credential-box h3 { color: #03263B; margin-top: 0; margin-bottom: 20px; font-size: 20px; font-weight: 700; font-family: "Open Sans", sans-serif;}
         .credential-list { list-style: none; padding: 0; margin: 0; }
-        .credential-list li { margin-bottom: 15px; display: flex; align-items: center; font-weight: bold; color: #353535;}
+        .credential-list li { margin-bottom: 15px; display: flex; align-items: center; font-weight: bold; color: #353535; font-family: "Open Sans", sans-serif;}
         .credential-list i { color: #96349b; font-size: 20px; margin-right: 15px; width: 25px; text-align: center; }
 
-        .cta-box { text-align: center; background: #eef4f7; padding: 40px 20px; border-radius: 8px; margin-top: 40px; }
-        .cta-button { background-color: #5d5179; color: white !important; padding: 15px 35px; border-radius: 5px; text-decoration: none; font-weight: bold; font-size: 18px; display: inline-block; margin-top: 15px; transition: background 0.3s;}
-        .cta-button:hover { background-color: #4a4162; }
+        /* --- CTA BOX --- */
+        .cta-box { text-align: center; background: #eef4f7; padding: 40px 20px; border-radius: 8px; margin-top: 40px; font-family: "Open Sans", sans-serif; }
+        .cta-button { background-color: #5d5179; color: white !important; padding: 15px 35px; border-radius: 5px; text-decoration: none; font-weight: bold; font-size: 18px; display: inline-block; margin-top: 15px; transition: background 0.3s; font-family: "Open Sans", sans-serif;}
+        .cta-button:hover { background-color: #4a4162; color: #fff !important; }
 	</style>
+
+    <script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+    <script type="text/javascript" src="/wp-content/themes/primer/assets/js/navigation.min.js?ver=1.8.7"></script>
 </head>
 
 <body class="page layout-one-column-wide">
 
 	<div id="page" class="hfeed site">
         
-		<header class="site-header">
-			<div class="nav-container">
-				<a href="/en/home/"><img src="/wp-content/uploads/2018/11/cropped-1_Primary_logo_on_transparent_512-1.png" class="custom-logo" alt="Loyal Bright Accountants"></a>
-				<nav>
-					<ul class="custom-nav">
-						<li><a href="/en/home/">Home</a></li>
-						<li><a href="/en/about/">About Us</a></li>
-						<li><a href="/en/services/">Services</a></li>
-						<li><a href="/en/faq/">FAQ</a></li>
-						<li><a href="/en/contact/">Contact Us</a></li>
-						<li><a href="/zh/about-zh/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAXVBMVEXUAADlQgDLAADBAADtgXn63Xjypnf1wHHpcG/oZmbmXVzlU1PjS0q1AAD981775VvwnVD2zkvhPz/fNzfdMjHcKyvaJyfsi0baISHYGhqqAADWExPTDQ2jAACfAAApGpDBAAAAWklEQVR4ATXIhQHDQBTDUMll2n/RMiU5/vQsAE4EsPbaKVOU+pXNwc/WKQXeDZMKu+psCXw/Z7efarmENd6GIwGpXhUvM4spxoiEbouRNT7Fmtaq+RG4wAqZZvceD8DeIelqAAAAAElFTkSuQmCC" alt="" width="16" height="11" style="vertical-align: middle; margin-right: 5px;">中文</a></li>
-					</ul>
-				</nav>
+        <header id="masthead" class="site-header" role="banner">
+			<div class="site-header-wrapper">
+				<div class="site-title-wrapper">
+					<a href="/en/home/" class="custom-logo-link" rel="home"><img width="511" height="134" src="/wp-content/uploads/2018/11/cropped-1_Primary_logo_on_transparent_512-1.png" class="custom-logo" alt="Loyal Bright Accountants"></a>
+                    <h1 class="site-title"><a href="/en/home/" rel="home">Loyal Bright Accountants</a></h1>
+	                <div class="site-description">CPA Public Practice | Tax, Accounting & Advisory</div>
+				</div>
+				<div class="main-navigation-container">
+                    <div class="menu-toggle" id="menu-toggle" role="button" tabindex="0">
+                        <div></div><div></div><div></div>
+                    </div>
+					<nav id="site-navigation" class="main-navigation">
+                        <div class="menu-primary-menu-container">
+                            <ul id="menu-primary-menu" class="menu">
+                                <li class="menu-item"><a href="/en/home/">Home</a></li>
+                                <li class="menu-item"><a href="/en/about/">About Us</a></li>
+                                <li class="menu-item"><a href="/en/services/">Services</a></li>
+                                <li class="menu-item"><a href="/en/faq/">FAQ</a></li>
+                                <li class="menu-item"><a href="/en/contact/">Contact Us</a></li>
+                                <li class="menu-item"><a href="/zh/about-zh/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAXVBMVEXUAADlQgDLAADBAADtgXn63Xjypnf1wHHpcG/oZmbmXVzlU1PjS0q1AAD981775VvwnVD2zkvhPz/fNzfdMjHcKyvaJyfsi0baISHYGhqqAADWExPTDQ2jAACfAAApGpDBAAAAWklEQVR4ATXIhQHDQBTDUMll2n/RMiU5/vQsAE4EsPbaKVOU+pXNwc/WKQXeDZMKu+psCXw/Z7efarmENd6GIwGpXhUvM4spxoiEbouRNT7Fmtaq+RG4wAqZZvceD8DeIelqAAAAAElFTkSuQmCC" alt="" width="16" height="11" style="vertical-align: middle; margin-right: 5px;">中文</a></li>
+                            </ul>
+                        </div>
+					</nav>
+				</div>
 			</div>
 		</header>
 
