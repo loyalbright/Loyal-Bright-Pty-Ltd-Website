@@ -11,21 +11,23 @@
     <link rel="stylesheet" href="/wp-content/plugins/beaver-builder-lite-version/fonts/fontawesome/5.15.4/css/all.min.css">
 
 	<style type="text/css">
-		/* Header & Nav Fixes */
+		/* General Layout & Center Styling */
         .site-title,.site-description{position:absolute;clip:rect(1px, 1px, 1px, 1px);}
         .site-header { background: #fff; padding: 20px 0; border-bottom: 1px solid #eee; }
-        .nav-container { max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; }
+        .nav-container { max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; text-align: center; }
         .custom-logo { max-width: 250px; height: auto; margin-bottom: 20px; }
         
-        /* Modern Simple Menu */
+        /* Centered Menu Styling */
         .custom-nav { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; justify-content: center; }
-        .custom-nav li { margin: 0 15px; }
-        .custom-nav a { text-decoration: none; color: #5d5179; font-weight: 700; font-size: 15px; text-transform: uppercase; }
+        .custom-nav li { margin: 10px 0; width: 100%; text-align: center; } /* Key: Makes each item its own centered line */
+        .custom-nav a { text-decoration: none; color: #5d5179; font-weight: 700; font-size: 15px; text-transform: uppercase; display: block; }
         
-        /* Mobile Specific Adjustment */
+        /* Ensure the Chinese link is also centered */
+        .custom-nav li:last-child { margin-top: 15px; } 
+
+        /* Mobile Specific Overrides */
         @media (max-width: 768px) {
             .custom-nav { flex-direction: column; align-items: center; width: 100%; }
-            .custom-nav li { margin: 8px 0; border-bottom: 1px solid #f9f9f9; width: 100%; text-align: center; padding-bottom: 8px; }
             .custom-logo { max-width: 180px; }
         }
 
@@ -38,7 +40,7 @@
         .hero p { font-size: 18px; margin-bottom: 30px; line-height: 1.4; }
         .cta-button { background-color: #5d5179; color: white !important; padding: 15px 35px; border-radius: 5px; text-decoration: none; font-weight: bold; font-size: 18px; display: inline-block; }
         
-        /* Layout Blocks */
+        /* Service Cards & Grid */
         .trust-bar { background: #f9f9f9; padding: 15px; text-align: center; border-bottom: 1px solid #eee; }
         .trust-bar span { margin: 5px 15px; font-weight: bold; color: #03263B; font-size: 12px; letter-spacing: 1px; display: inline-block; }
         .insight-card { border: 1px solid #eee; padding: 25px; border-radius: 8px; transition: 0.3s; background: #fff; }
@@ -63,82 +65,8 @@
 						<li><a href="/en/services/">Services</a></li>
 						<li><a href="/en/faq/">FAQ</a></li>
 						<li><a href="/en/contact/">Contact Us</a></li>
-						<li><a href="/zh/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAXVBMVEXUAADlQgDLAADBAADtgXn63Xjypnf1wHHpcG/oZmbmXVzlU1PjS0q1AAD981775VvwnVD2zkvhPz/fNzfdMjHcKyvaJyfsi0baISHYGhqqAADWExPTDQ2jAACfAAApGpDBAAAAWklEQVR4ATXIhQHDQBTDUMll2n/RMiU5/vQsAE4EsPbaKVOU+pXNwc/WKQXeDZMKu+psCXw/Z7efarmENd6GIwGpXhUvM4spxoiEbouRNT7Fmtaq+RG4wAqZZvceD8DeIelqAAAAAElFTkSuQmCC" alt="" width="16" height="11" style="vertical-align: middle; margin-right: 5px;">中文</a></li>
+						<li><a href="/zh/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAXVBMVEXUAADlQgDLAADBAADtgXn63Xjypnf1wHHpcG/oZmbmXVzlU1PjS0q1AAD981775VvwnVD2zkvhPz/fNzfdMjHcKyvaJyfsi0baISHYGhqqAADWExPTDQ2jAACfAAApGpDBAAAAWklEQVR4ATXIhQHDQBTDUMll2n/RMiU5/vQsAE4EsPbaKVOU+pXNwc/WKQXeDZMKu+psCXw/Z7efarmENd6GIwEpXhUvM4spxoiEbouRNT7Fmtaq+RG4wAqZZvceD8DeIelqAAAAAElFTkSuQmCC" alt="" width="16" height="11" style="vertical-align: middle; margin-right: 5px;">中文</a></li>
 					</ul>
 				</nav>
 			</div>
 		</header>
-
-		<section class="hero">
-			<h2>Melbourne Small Business Tax Experts</h2>
-			<p>Minimizing tax and ensuring compliance for Pty Ltd Companies, Trusts, and Property Investors.</p>
-			<a href="/en/contact/" class="cta-button">Book Free Consultation</a>
-		</section>
-
-		<div class="trust-bar">
-			<span><i class="fas fa-check-circle"></i> CPA PUBLIC PRACTICE</span>
-			<span><i class="fas fa-check-circle"></i> REGISTERED TAX AGENTS</span>
-			<span><i class="fas fa-check-circle"></i> ASIC REGISTERED AGENT</span>
-		</div>
-
-		<div id="content" class="site-content">
-			
-            <h2 class="section-title">Specialized Accounting Solutions</h2>
-			<div class="grid-3" style="margin-bottom: 60px;">
-                <div class="insight-card">
-                    <i class="fas fa-chart-line" style="font-size: 30px; color: #5d5179;"></i>
-                    <h4>Business Advisory</h4>
-                    <p>Expert Pty Ltd Company setup, Division 7A management, and Xero cloud accounting support for growing businesses.</p>
-                </div>
-                <div class="insight-card">
-                    <i class="fas fa-home" style="font-size: 30px; color: #5d5179;"></i>
-                    <h4>Property Investment</h4>
-                    <p>Capital Gains Tax (CGT) planning, negative gearing advice, and Main Residence Exemptions for Melbourne investors.</p>
-                </div>
-                <div class="insight-card">
-                    <i class="fas fa-piggy-bank" style="font-size: 30px; color: #5d5179;"></i>
-                    <h4>SMSF Tax & Compliance</h4>
-                    <p>Preparation of financial statements and annual tax returns for Self-Managed Super Funds to ensure you are audit-ready.</p>
-                </div>
-            </div>
-
-            <hr style="margin: 60px 0; border: 0; border-top: 1px solid #eee;">
-
-            <h2 class="section-title">Latest Australian Tax Updates</h2>
-            <div class="grid-3">
-                <div class="insight-card">
-                    <span style="color: #999; font-size: 11px; font-weight: bold; letter-spacing: 1px;">2025 COMPLIANCE</span>
-                    <h4><a href="/en/faq/ato-clearance-certificate/" style="text-decoration: none; color: #5d5179;">New 15% Withholding Rule</a></h4>
-                    <p style="font-size: 14px;">All property sellers now need an ATO Clearance Certificate or risk losing 15% of the sale price at settlement.</p>
-                </div>
-                <div class="insight-card">
-                    <span style="color: #999; font-size: 11px; font-weight: bold; letter-spacing: 1px;">TAX CONCESSIONS</span>
-                    <h4><a href="/en/faq/instant-asset-write-off/" style="text-decoration: none; color: #5d5179;">$20,000 Instant Write-Off</a></h4>
-                    <p style="font-size: 14px;">Claim immediate tax deductions for business assets and equipment purchased and ready for use before June 30.</p>
-                </div>
-                <div class="insight-card">
-                    <span style="color: #999; font-size: 11px; font-weight: bold; letter-spacing: 1px;">DIRECTOR LOANS</span>
-                    <h4><a href="/en/faq/division-7a-loans/" style="text-decoration: none; color: #5d5179;">Division 7A Warning</a></h4>
-                    <p style="font-size: 14px;">Why company money is not your personal money, and how to avoid having your drawings taxed as dividends.</p>
-                </div>
-            </div>
-            
-            <p style="text-align: center; margin-top: 40px;">
-                <a href="/en/faq/" style="color: #5d5179; font-weight: bold; text-decoration: none;">View All FAQ & Insights &rarr;</a>
-            </p>
-
-		</div>
-
-		<footer class="site-footer" style="background: #f5f5f5; border-top: 1px solid #eee; padding: 40px 20px;">
-			<div class="site-info-inner" style="text-align: center;">
-				<a class="privacy-policy-link" href="/en/privacy-policy/" style="display:block; margin-bottom:10px; color: #686868;">Privacy Policy</a>	
-				<div class="site-info-text" style="color: #686868; font-size: 13px;">
-					Copyright &copy; 2019 - 2026 Loyal Bright Accountants. All Rights Reserved. <br>
-                    <small>Liability limited by a scheme approved under Professional Standards Legislation.</small>
-				</div>
-			</div>
-		</footer>
-	</div>
-
-</body>
-</html>
