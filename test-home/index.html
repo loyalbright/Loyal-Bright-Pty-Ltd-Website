@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="/wp-content/plugins/beaver-builder-lite-version/fonts/fontawesome/5.15.4/css/all.min.css">
 
 	<style type="text/css">
-        /* --- HEADER STYLES (MATCHES HOMEPAGE) --- */
+        /* --- HEADER STYLES --- */
 		.site-title, .site-description { position: absolute; clip: rect(1px, 1px, 1px, 1px); }
         .site-header { background: #fff; padding: 20px 0; border-bottom: 1px solid #eee; }
         .nav-container { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; flex-direction: row; justify-content: space-between; align-items: center; }
@@ -29,17 +29,13 @@
             .custom-nav li:last-child { border-bottom: none; padding-bottom: 0; }
         }
 
-        /* --- VISUAL-MATCHED HERO SECTION (Adjusted for Skyline) --- */
+        /* --- HERO SECTION (Exactly matched to Homepage) --- */
         .hero { 
-            /* Gradient overlay + image from homepage */
             background-image: linear-gradient(rgba(3, 38, 59, 0.75), rgba(3, 38, 59, 0.75)), url(/wp-content/uploads/2019/07/cropped-Home-Page-Hero-2400x1160.jpeg);
-            background-size: cover; 
-            /* NEW ADJUSTMENT: Move picture "up" to see more skyline */
-            background-position: center top; 
-            padding: 80px 20px; text-align: center; color: #fff;
+            background-size: cover; background-position: center; padding: 80px 20px; text-align: center; color: #fff;
         }
-        .hero h1 { font-size: 36px; color: #fff; margin-bottom: 10px; font-weight: 700; font-family: "Open Sans", sans-serif;}
-        .hero p { font-size: 18px; color: #bddae6; font-family: "Open Sans", sans-serif; }
+        .hero h1 { font-size: 36px; color: #fff; margin-bottom: 15px; font-weight: 700; font-family: "Open Sans", sans-serif; }
+        .hero p { font-size: 18px; margin-bottom: 30px; line-height: 1.4; color: #fff; font-family: "Open Sans", sans-serif; }
         
         /* --- PAGE CONTENT LAYOUT --- */
         .content-container { max-width: 1000px; margin: 60px auto; padding: 0 20px; display: flex; flex-wrap: wrap; gap: 50px; }
@@ -69,7 +65,7 @@
 
 	<div id="page" class="hfeed site">
         
-        <header id="masthead" class="site-header" role="banner">
+		<header id="masthead" class="site-header" role="banner">
 			<div class="site-header-wrapper">
 				<div class="site-title-wrapper">
 					<a href="/en/home/" class="custom-logo-link" rel="home"><img width="511" height="134" src="/wp-content/uploads/2018/11/cropped-1_Primary_logo_on_transparent_512-1.png" class="custom-logo" alt="Loyal Bright Accountants"></a>
