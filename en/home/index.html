@@ -11,8 +11,11 @@
     <link rel="stylesheet" href="/wp-content/plugins/beaver-builder-lite-version/fonts/fontawesome/5.15.4/css/all.min.css">
 
 	<style type="text/css">
-        /* Hide old text titles to show just the logo */
+        /* --- ORIGINAL THEME HEADER RESTORES --- */
 		.site-title, .site-description { position: absolute; clip: rect(1px, 1px, 1px, 1px); }
+        .menu-toggle div { background-color: #96349b; } /* Restores the Purple Hamburger Menu */
+        .main-navigation ul li a, .main-navigation ul li a:visited { color: #96349b; } /* Restores Menu Text Color */
+        .main-navigation ul li a:hover, .main-navigation ul li a:focus { color: rgba(150, 52, 155, 0.8); }
         
         /* --- NEW HOMEPAGE SECTION STYLES --- */
         .hero { 
@@ -20,17 +23,18 @@
             background-size: cover; background-position: center; padding: 80px 20px; text-align: center; color: #fff;
         }
         .hero h2 { font-size: 36px; color: #fff; margin-bottom: 15px; font-weight: 700; }
-        .hero p { font-size: 18px; margin-bottom: 30px; line-height: 1.4; }
+        .hero p { font-size: 18px; margin-bottom: 30px; line-height: 1.4; color: #fff; }
         .cta-button { background-color: #5d5179; color: white !important; padding: 15px 35px; border-radius: 5px; text-decoration: none; font-weight: bold; font-size: 18px; display: inline-block; transition: background 0.3s;}
-        .cta-button:hover { background-color: #4a4162; }
+        .cta-button:hover { background-color: #4a4162; color: #fff !important; }
         
         .trust-bar { background: #f9f9f9; padding: 15px; text-align: center; border-bottom: 1px solid #eee; }
         .trust-bar span { margin: 5px 15px; font-weight: bold; color: #03263B; font-size: 12px; letter-spacing: 1px; display: inline-block; }
         
         .insight-card { border: 1px solid #eee; padding: 25px; border-radius: 8px; transition: 0.3s; background: #fff; display: flex; flex-direction: column;}
         .insight-card:hover { box-shadow: 0 8px 20px rgba(0,0,0,0.08); border-color: #5d5179; }
-        .insight-card h4 { margin-top: 15px; color: #03263B; font-weight: 700; }
-        .section-title { text-align: center; margin-bottom: 40px; font-weight: 700; color: #03263B; font-size: 28px; }
+        .insight-card h4 { margin-top: 15px; color: #03263B; font-weight: 700; font-family: "Open Sans", sans-serif; }
+        .insight-card p { color: #252525; font-family: "Open Sans", sans-serif; }
+        .section-title { text-align: center; margin-bottom: 40px; font-weight: 700; color: #03263B; font-size: 28px; font-family: "Open Sans", sans-serif; }
         .site-content { max-width: 1100px; margin: 0 auto; padding: 60px 20px; }
         .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
 	</style>
@@ -64,7 +68,7 @@
                                 <li class="menu-item"><a href="/en/services/">Services</a></li>
                                 <li class="menu-item"><a href="/en/faq/">FAQ</a></li>
                                 <li class="menu-item"><a href="/en/contact/">Contact Us</a></li>
-                                <li class="menu-item"><a href="/zh/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAXVBMVEXUAADlQgDLAADBAADtgXn63Xjypnf1wHHpcG/oZmbmXVzlU1PjS0q1AAD981775VvwnVD2zkvhPz/fNzfdMjHcKyvaJyfsi0baISHYGhqqAADWExPTDQ2jAACfAAApGpDBAAAAWklEQVR4ATXIhQHDQBTDUMll2n/RMiU5/vQsAE4EsPbaKVOU+pXNwc/WKQXeDZMKu+psCXw/Z7efarmENd6GIwGpXhUvM4spxoiEbouRNT7Fmtaq+RG4wAqZZvceD8DeIelqAAAAAElFTkSuQmCC" alt="" width="16" height="11" style="margin-right:0.3em;">中文</a></li>
+                                <li class="menu-item"><a href="/zh/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAXVBMVEXUAADlQgDLAADBAADtgXn63Xjypnf1wHHpcG/oZmbmXVzlU1PjS0q1AAD981775VvwnVD2zkvhPz/fNzfdMjHcKyvaJyfsi0baISHYGhqqAADWExPTDQ2jAACfAAApGpDBAAAAWklEQVR4ATXIhQHDQBTDUMll2n/RMiU5/vQsAE4EsPbaKVOU+pXNwc/WKQXeDZMKu+psCXw/Z7efarmENd6GIwGpXhUvM4spxoiEbouRNT7Fmtaq+RG4wAqZZvceD8DeIelqAAAAAElFTkSuQmCC" alt="" width="16" height="11" style="margin-right:0.3em; vertical-align: middle;">中文</a></li>
                             </ul>
                         </div>
 					</nav>
@@ -96,7 +100,7 @@
                 <div class="insight-card">
                     <i class="fas fa-home" style="font-size: 30px; color: #5d5179;"></i>
                     <h4>Property Investment</h4>
-                    <p>Capital Gains Tax (CGT) planning, negative gearing advice, and Main Residence Exemptions for Melbourne investors.</p>
+                    <p>Capital্বা Gains Tax (CGT) planning, negative gearing advice, and Main Residence Exemptions for Melbourne investors.</p>
                 </div>
                 <div class="insight-card">
                     <i class="fas fa-piggy-bank" style="font-size: 30px; color: #5d5179;"></i>
@@ -111,37 +115,3 @@
             <div class="grid-3">
                 <div class="insight-card">
                     <span style="color: #999; font-size: 11px; font-weight: bold; letter-spacing: 1px;">2025 COMPLIANCE</span>
-                    <h4><a href="/en/faq/ato-clearance-certificate/" style="text-decoration: none; color: #5d5179;">New 15% Withholding Rule</a></h4>
-                    <p style="font-size: 14px;">All property sellers now need an ATO Clearance Certificate or risk losing 15% of the sale price at settlement.</p>
-                </div>
-                <div class="insight-card">
-                    <span style="color: #999; font-size: 11px; font-weight: bold; letter-spacing: 1px;">TAX CONCESSIONS</span>
-                    <h4><a href="/en/faq/instant-asset-write-off/" style="text-decoration: none; color: #5d5179;">$20,000 Instant Write-Off</a></h4>
-                    <p style="font-size: 14px;">Claim immediate tax deductions for business assets and equipment purchased and ready for use before June 30.</p>
-                </div>
-                <div class="insight-card">
-                    <span style="color: #999; font-size: 11px; font-weight: bold; letter-spacing: 1px;">DIRECTOR LOANS</span>
-                    <h4><a href="/en/faq/division-7a-loans/" style="text-decoration: none; color: #5d5179;">Division 7A Warning</a></h4>
-                    <p style="font-size: 14px;">Why company money is not your personal money, and how to avoid having your drawings taxed as dividends.</p>
-                </div>
-            </div>
-            
-            <p style="text-align: center; margin-top: 40px;">
-                <a href="/en/faq/" style="color: #5d5179; font-weight: bold; text-decoration: none;">View All FAQ & Insights &rarr;</a>
-            </p>
-
-		</div>
-
-		<footer class="site-footer" style="background: #f5f5f5; border-top: 1px solid #eee; padding: 40px 20px;">
-			<div class="site-info-inner" style="text-align: center;">
-				<a class="privacy-policy-link" href="/en/privacy-policy/" style="display:block; margin-bottom:10px; color: #686868;">Privacy Policy</a>	
-				<div class="site-info-text" style="color: #686868; font-size: 13px;">
-					Copyright &copy; 2019 - 2026 Loyal Bright Accountants. All Rights Reserved. <br>
-                    <small>Liability limited by a scheme approved under Professional Standards Legislation.</small>
-				</div>
-			</div>
-		</footer>
-	</div>
-
-</body>
-</html>
