@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Loyal Bright Accountants | CPA Tax & Business Experts Melbourne</title>
-	<meta name="description" content="Expert CPA tax and accounting services for Melbourne small businesses. Specialized in Company Tax, Property CGT, and SMSF. Book a free initial consultation.">
+	<meta name="description" content="Expert CPA tax and accounting services for Melbourne small businesses. Specialized in Company Tax, Property CGT, and SMSF Compliance. Book a free initial consultation.">
 	
     <link rel="stylesheet" id="ascension-css" href="/wp-content/themes/ascension/style.css?ver=1.1.5" type="text/css" media="all">
 	<link rel="stylesheet" id="ascension-fonts-css" href="https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C700&amp;subset=latin&amp;ver=1.8.7" type="text/css" media="all">
@@ -12,23 +12,31 @@
 
 	<style type="text/css">
 		.site-title,.site-description{position:absolute;clip:rect(1px, 1px, 1px, 1px);}
-        /* Custom Optimizations */
+        
+        /* Mobile Menu Visibility Fix */
+        @media only screen and (max-width: 960px) {
+            .main-navigation ul { display: block !important; background: #fff; padding: 10px 0; }
+            .main-navigation li { display: block; border-bottom: 1px solid #eee; text-align: center; }
+            .menu-toggle { display: none !important; } /* Hide the broken WP toggle */
+        }
+
+        /* Hero Styling */
         .hero { 
             background-image: linear-gradient(rgba(3, 38, 59, 0.7), rgba(3, 38, 59, 0.7)), url(/wp-content/uploads/2019/07/cropped-Home-Page-Hero-2400x1160.jpeg);
-            background-size: cover; padding: 100px 20px; text-align: center; color: #fff;
+            background-size: cover; padding: 80px 20px; text-align: center; color: #fff;
         }
-        .hero h2 { font-size: 42px; color: #fff; margin-bottom: 10px; font-weight: 700; }
-        .hero p { font-size: 20px; margin-bottom: 30px; }
-        .cta-button { background-color: #5d5179; color: white; padding: 15px 35px; border-radius: 5px; text-decoration: none; font-weight: bold; font-size: 18px; }
-        .cta-button:hover { background-color: #4a4162; color: #fff; }
+        .hero h2 { font-size: 38px; color: #fff; margin-bottom: 10px; font-weight: 700; }
+        .hero p { font-size: 18px; margin-bottom: 30px; }
+        .cta-button { background-color: #5d5179; color: white !important; padding: 15px 35px; border-radius: 5px; text-decoration: none; font-weight: bold; font-size: 18px; display: inline-block; }
+        .cta-button:hover { background-color: #4a4162; }
         
         .trust-bar { background: #f9f9f9; padding: 20px; text-align: center; border-bottom: 1px solid #eee; }
-        .trust-bar span { margin: 0 20px; font-weight: bold; color: #03263B; text-transform: uppercase; font-size: 14px; letter-spacing: 1px; }
+        .trust-bar span { margin: 0 15px; font-weight: bold; color: #03263B; text-transform: uppercase; font-size: 13px; letter-spacing: 1px; display: inline-block; }
 
-        .insight-card { border: 1px solid #eee; padding: 20px; border-radius: 8px; transition: 0.3s; height: 100%; }
+        .insight-card { border: 1px solid #eee; padding: 25px; border-radius: 8px; transition: 0.3s; height: 100%; display: flex; flex-direction: column; }
         .insight-card:hover { box-shadow: 0 10px 20px rgba(0,0,0,0.05); border-color: #5d5179; }
-        .insight-card h4 { margin-top: 0; color: #03263B; }
-        .section-title { text-align: center; margin-bottom: 40px; font-weight: 700; color: #03263B; }
+        .insight-card h4 { margin-top: 15px; color: #03263B; }
+        .section-title { text-align: center; margin-bottom: 40px; font-weight: 700; color: #03263B; font-size: 28px; }
 	</style>
 </head>
 
@@ -56,8 +64,8 @@
 		</header>
 
 		<section class="hero">
-			<h2>Small Business Tax & Growth Experts</h2>
-			<p>Helping Melbourne business owners minimize tax and maximize wealth with personalized CPA expertise.</p>
+			<h2>Melbourne Small Business Tax Experts</h2>
+			<p>Helping business owners minimize tax and stay compliant with personalized CPA expertise.</p>
 			<a href="/en/contact/" class="cta-button">Book Free Consultation</a>
 		</section>
 
@@ -69,48 +77,48 @@
 
 		<div id="content" class="site-content" style="padding: 60px 20px; max-width: 1200px; margin: 0 auto;">
 			
-            <h2 class="section-title">Core Specialized Services</h2>
+            <h2 class="section-title">Specialized Accounting Solutions</h2>
 			<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 60px;">
                 <div class="insight-card">
-                    <i class="fas fa-chart-line" style="font-size: 30px; color: #5d5179; margin-bottom: 15px;"></i>
-                    <h4>Business Accounting</h4>
-                    <p>From Pty Ltd Company setup to complex Division 7A management. We handle your bookkeeping and Xero integration.</p>
+                    <i class="fas fa-chart-line" style="font-size: 30px; color: #5d5179;"></i>
+                    <h4>Business Advisory</h4>
+                    <p>From Pty Ltd Company setup to complex Division 7A management. We ensure your business is structured for growth and compliance.</p>
                 </div>
                 <div class="insight-card">
-                    <i class="fas fa-home" style="font-size: 30px; color: #5d5179; margin-bottom: 15px;"></i>
+                    <i class="fas fa-home" style="font-size: 30px; color: #5d5179;"></i>
                     <h4>Property Investment</h4>
-                    <p>Capital Gains Tax (CGT) planning, negative gearing advice, and main residence exemptions for investors.</p>
+                    <p>Strategic Capital Gains Tax (CGT) planning and negative gearing advice to help Melbourne investors maximize their returns.</p>
                 </div>
                 <div class="insight-card">
-                    <i class="fas fa-piggy-bank" style="font-size: 30px; color: #5d5179; margin-bottom: 15px;"></i>
-                    <h4>SMSF & Retirement</h4>
-                    <p>Secure your future with professional SMSF tax returns, independent audits, and compliance management.</p>
+                    <i class="fas fa-piggy-bank" style="font-size: 30px; color: #5d5179;"></i>
+                    <h4>SMSF Tax & Compliance</h4>
+                    <p>Professional preparation of SMSF financial statements and tax returns. We help you stay compliant and ready for your annual audit.</p>
                 </div>
             </div>
 
             <hr style="margin: 60px 0; border: 0; border-top: 1px solid #eee;">
 
-            <h2 class="section-title">Latest Australian Tax Insights</h2>
+            <h2 class="section-title">Latest Australian Tax Updates</h2>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
                 <div class="insight-card">
-                    <span style="color: #999; font-size: 12px; font-weight: bold;">MUST READ FOR SELLERS</span>
-                    <h4 style="margin-top: 10px;"><a href="/en/faq/ato-clearance-certificate/" style="text-decoration: none;">New 15% Property Withholding Rule</a></h4>
-                    <p style="font-size: 14px;">Selling for any price? You now need an ATO Clearance Certificate or risk losing 15% at settlement.</p>
+                    <span style="color: #999; font-size: 12px; font-weight: bold;">SELLING PROPERTY?</span>
+                    <h4 style="margin-top: 10px;"><a href="/en/faq/ato-clearance-certificate/" style="text-decoration: none;">New 15% Withholding Rule</a></h4>
+                    <p style="font-size: 14px;">Effective 2025: All sellers now need an ATO Clearance Certificate or risk losing 15% at settlement.</p>
                 </div>
                 <div class="insight-card">
-                    <span style="color: #999; font-size: 12px; font-weight: bold;">SMALL BUSINESS ALERT</span>
-                    <h4 style="margin-top: 10px;"><a href="/en/faq/instant-asset-write-off/" style="text-decoration: none;">$20,000 Instant Asset Write-Off</a></h4>
-                    <p style="font-size: 14px;">How to claim immediate tax deductions for tools and equipment before June 30.</p>
+                    <span style="color: #999; font-size: 12px; font-weight: bold;">SMALL BUSINESS ASSETS</span>
+                    <h4 style="margin-top: 10px;"><a href="/en/faq/instant-asset-write-off/" style="text-decoration: none;">$20,000 Instant Write-Off</a></h4>
+                    <p style="font-size: 14px;">Claim immediate tax deductions for business tools and equipment purchased before June 30.</p>
                 </div>
                 <div class="insight-card">
-                    <span style="color: #999; font-size: 12px; font-weight: bold;">COMPLIANCE NEWS</span>
-                    <h4 style="margin-top: 10px;"><a href="/en/faq/right-to-disconnect-laws/" style="text-decoration: none;">Small Business "Right to Disconnect"</a></h4>
-                    <p style="font-size: 14px;">What the new 2025/2026 workplace laws mean for contacting your staff after hours.</p>
+                    <span style="color: #999; font-size: 12px; font-weight: bold;">DIRECTOR ALERT</span>
+                    <h4 style="margin-top: 10px;"><a href="/en/faq/division-7a-loans/" style="text-decoration: none;">Division 7A Compliance</a></h4>
+                    <p style="font-size: 14px;">Why company money is not your personal money, and how to avoid the "Unfranked Dividend" trap.</p>
                 </div>
             </div>
             
             <p style="text-align: center; margin-top: 40px;">
-                <a href="/en/faq/" style="color: #5d5179; font-weight: bold;">View All Tax & Accounting FAQs &rarr;</a>
+                <a href="/en/faq/" style="color: #5d5179; font-weight: bold;">Explore More Accounting Insights &rarr;</a>
             </p>
 
 		</div>
