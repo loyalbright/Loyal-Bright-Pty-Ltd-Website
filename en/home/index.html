@@ -11,62 +11,47 @@
     <link rel="stylesheet" href="/wp-content/plugins/beaver-builder-lite-version/fonts/fontawesome/5.15.4/css/all.min.css">
 
 	<style type="text/css">
-		/* General Layout & Center Styling */
-        .site-title,.site-description{position:absolute;clip:rect(1px, 1px, 1px, 1px);}
+        /* Hide old theme title */
+		.site-title, .site-description { position: absolute; clip: rect(1px, 1px, 1px, 1px); }
+        
+        /* --- DESKTOP HEADER & MENU (Default) --- */
         .site-header { background: #fff; padding: 20px 0; border-bottom: 1px solid #eee; }
-        .nav-container { max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; text-align: center; }
-        .custom-logo { max-width: 250px; height: auto; margin-bottom: 20px; }
+        .nav-container { 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            padding: 0 20px;
+            display: flex; 
+            flex-direction: row; /* Side-by-side on desktop */
+            justify-content: space-between; 
+            align-items: center; 
+        }
+        .custom-logo { max-width: 250px; height: auto; display: block; }
         
-        /* Centered Menu Styling */
-        .custom-nav { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; justify-content: center; }
-        .custom-nav li { margin: 10px 0; width: 100%; text-align: center; } /* Key: Makes each item its own centered line */
-        .custom-nav a { text-decoration: none; color: #5d5179; font-weight: 700; font-size: 15px; text-transform: uppercase; display: block; }
-        
-        /* Ensure the Chinese link is also centered */
-        .custom-nav li:last-child { margin-top: 15px; } 
+        .custom-nav { 
+            list-style: none; 
+            padding: 0; 
+            margin: 0; 
+            display: flex; 
+            flex-direction: row; /* Horizontal on desktop */
+            align-items: center; 
+        }
+        .custom-nav li { margin: 0 15px; }
+        .custom-nav a { text-decoration: none; color: #5d5179; font-weight: 700; font-size: 15px; text-transform: uppercase; transition: color 0.3s; }
+        .custom-nav a:hover { color: #96349b; }
 
-        /* Mobile Specific Overrides */
+        /* --- MOBILE HEADER & MENU (Screens under 768px) --- */
         @media (max-width: 768px) {
-            .custom-nav { flex-direction: column; align-items: center; width: 100%; }
-            .custom-logo { max-width: 180px; }
-        }
-
-        /* Hero Styling */
-        .hero { 
-            background-image: linear-gradient(rgba(3, 38, 59, 0.75), rgba(3, 38, 59, 0.75)), url(/wp-content/uploads/2019/07/cropped-Home-Page-Hero-2400x1160.jpeg);
-            background-size: cover; background-position: center; padding: 80px 20px; text-align: center; color: #fff;
-        }
-        .hero h2 { font-size: 36px; color: #fff; margin-bottom: 15px; font-weight: 700; }
-        .hero p { font-size: 18px; margin-bottom: 30px; line-height: 1.4; }
-        .cta-button { background-color: #5d5179; color: white !important; padding: 15px 35px; border-radius: 5px; text-decoration: none; font-weight: bold; font-size: 18px; display: inline-block; }
-        
-        /* Service Cards & Grid */
-        .trust-bar { background: #f9f9f9; padding: 15px; text-align: center; border-bottom: 1px solid #eee; }
-        .trust-bar span { margin: 5px 15px; font-weight: bold; color: #03263B; font-size: 12px; letter-spacing: 1px; display: inline-block; }
-        .insight-card { border: 1px solid #eee; padding: 25px; border-radius: 8px; transition: 0.3s; background: #fff; }
-        .insight-card:hover { box-shadow: 0 8px 20px rgba(0,0,0,0.08); border-color: #5d5179; }
-        .insight-card h4 { margin-top: 15px; color: #03263B; font-weight: 700; }
-        .section-title { text-align: center; margin-bottom: 40px; font-weight: 700; color: #03263B; font-size: 28px; }
-        .site-content { max-width: 1100px; margin: 0 auto; padding: 60px 20px; }
-        .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
-	</style>
-</head>
-
-<body class="home">
-
-	<div id="page" class="hfeed site">
-		<header class="site-header">
-			<div class="nav-container">
-				<a href="/en/home/"><img src="/wp-content/uploads/2018/11/cropped-1_Primary_logo_on_transparent_512-1.png" class="custom-logo" alt="Loyal Bright Accountants"></a>
-				<nav>
-					<ul class="custom-nav">
-						<li><a href="/en/home/">Home</a></li>
-						<li><a href="/en/about/">About Us</a></li>
-						<li><a href="/en/services/">Services</a></li>
-						<li><a href="/en/faq/">FAQ</a></li>
-						<li><a href="/en/contact/">Contact Us</a></li>
-						<li><a href="/zh/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAXVBMVEXUAADlQgDLAADBAADtgXn63Xjypnf1wHHpcG/oZmbmXVzlU1PjS0q1AAD981775VvwnVD2zkvhPz/fNzfdMjHcKyvaJyfsi0baISHYGhqqAADWExPTDQ2jAACfAAApGpDBAAAAWklEQVR4ATXIhQHDQBTDUMll2n/RMiU5/vQsAE4EsPbaKVOU+pXNwc/WKQXeDZMKu+psCXw/Z7efarmENd6GIwEpXhUvM4spxoiEbouRNT7Fmtaq+RG4wAqZZvceD8DeIelqAAAAAElFTkSuQmCC" alt="" width="16" height="11" style="vertical-align: middle; margin-right: 5px;">中文</a></li>
-					</ul>
-				</nav>
-			</div>
-		</header>
+            .nav-container { 
+                flex-direction: column; /* Stack vertically on mobile */
+                justify-content: center;
+            }
+            .custom-logo { margin-bottom: 20px; max-width: 200px; }
+            .custom-nav { flex-direction: column; width: 100%; }
+            .custom-nav li { 
+                margin: 0; 
+                width: 100%; 
+                text-align: center; /* Center the text */
+                border-bottom: 1px solid #f9f9f9; 
+                padding: 12px 0; 
+            }
+            .custom-nav li:last-child { border-bottom: none
