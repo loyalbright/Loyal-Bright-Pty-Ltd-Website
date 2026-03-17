@@ -35,4 +35,122 @@
         .insight-card h4 { margin-top: 15px; color: #03263B; font-weight: 700; font-family: "Open Sans", sans-serif; }
         .insight-card p { color: #252525; font-family: "Open Sans", sans-serif; }
         .section-title { text-align: center; margin-bottom: 40px; font-weight: 700; color: #03263B; font-size: 28px; font-family: "Open Sans", sans-serif; }
-        .site-content {
+        .site-content { max-width: 1150px; margin: 0 auto; padding: 60px 20px; }
+        
+        /* Updated Grid for 4 Cards */
+        .grid-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 30px; }
+	</style>
+
+    <script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+    <script type="text/javascript" src="/wp-content/themes/primer/assets/js/navigation.min.js?ver=1.8.7"></script>
+</head>
+
+<body class="home layout-one-column-wide">
+
+	<div id="page" class="hfeed site">
+        
+		<header id="masthead" class="site-header" role="banner">
+			<div class="site-header-wrapper">
+				<div class="site-title-wrapper">
+					<a href="/en/home/" class="custom-logo-link" rel="home"><img width="511" height="134" src="/wp-content/uploads/2018/11/cropped-1_Primary_logo_on_transparent_512-1.png" class="custom-logo" alt="Loyal Bright Accountants"></a>
+                    <h1 class="site-title"><a href="/en/home/" rel="home">Loyal Bright Accountants</a></h1>
+	                <div class="site-description">CPA Public Practice | Tax, Accounting & Advisory</div>
+				</div>
+				<div class="main-navigation-container">
+                    <div class="menu-toggle" id="menu-toggle" role="button" tabindex="0">
+                        <div></div><div></div><div></div>
+                    </div>
+					<nav id="site-navigation" class="main-navigation">
+                        <div class="menu-primary-menu-container">
+                            <ul id="menu-primary-menu" class="menu">
+                                <li class="menu-item"><a href="/en/home/">Home</a></li>
+                                <li class="menu-item"><a href="/en/about/">About Us</a></li>
+                                <li class="menu-item"><a href="/en/services/">Services</a></li>
+                                <li class="menu-item"><a href="/en/faq/">FAQ</a></li>
+                                <li class="menu-item"><a href="/en/contact/">Contact Us</a></li>
+                                <li class="menu-item"><a href="/zh/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAXVBMVEXUAADlQgDLAADBAADtgXn63Xjypnf1wHHpcG/oZmbmXVzlU1PjS0q1AAD981775VvwnVD2zkvhPz/fNzfdMjHcKyvaJyfsi0baISHYGhqqAADWExPTDQ2jAACfAAApGpDBAAAAWklEQVR4ATXIhQHDQBTDUMll2n/RMiU5/vQsAE4EsPbaKVOU+pXNwc/WKQXeDZMKu+psCXw/Z7efarmENd6GIwGpXhUvM4spxoiEbouRNT7Fmtaq+RG4wAqZZvceD8DeIelqAAAAAElFTkSuQmCC" alt="" width="16" height="11" style="margin-right:0.3em; vertical-align: middle;">中文</a></li>
+                            </ul>
+                        </div>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<section class="hero">
+			<h2>Melbourne Small Business Tax Experts</h2>
+			<p>Optimizing your tax position and ensuring compliance for Individuals, Pty Ltd Companies, and Property Investors.</p>
+			<a href="/en/contact/" class="cta-button">Book Free Consultation</a>
+		</section>
+
+		<div class="trust-bar">
+			<span><i class="fas fa-check-circle"></i> CPA PUBLIC PRACTICE</span>
+			<span><i class="fas fa-check-circle"></i> REGISTERED TAX AGENTS</span>
+			<span><i class="fas fa-check-circle"></i> ASIC REGISTERED AGENT</span>
+		</div>
+
+		<div id="content" class="site-content">
+			
+            <h2 class="section-title">Specialized Accounting Solutions</h2>
+			<div class="grid-cards" style="margin-bottom: 60px;">
+                <div class="insight-card">
+                    <i class="fas fa-user-tie" style="font-size: 30px; color: #5d5179;"></i>
+                    <h4>Individual Tax Returns</h4>
+                    <p>Ensuring you receive your maximum entitled refund with expert deduction claims for employees, contractors, and freelancers.</p>
+                </div>
+                <div class="insight-card">
+                    <i class="fas fa-chart-line" style="font-size: 30px; color: #5d5179;"></i>
+                    <h4>Business Advisory</h4>
+                    <p>Expert Pty Ltd Company setup, Division 7A management, and Xero cloud accounting support.</p>
+                </div>
+                <div class="insight-card">
+                    <i class="fas fa-home" style="font-size: 30px; color: #5d5179;"></i>
+                    <h4>Property Investment</h4>
+                    <p>Capital Gains Tax (CGT) planning, negative gearing advice, and Main Residence Exemptions.</p>
+                </div>
+                <div class="insight-card">
+                    <i class="fas fa-piggy-bank" style="font-size: 30px; color: #5d5179;"></i>
+                    <h4>SMSF Tax & Compliance</h4>
+                    <p>Preparation of financial statements and annual tax returns to ensure your fund is audit-ready.</p>
+                </div>
+            </div>
+
+            <hr style="margin: 60px 0; border: 0; border-top: 1px solid #eee;">
+
+            <h2 class="section-title">Latest Australian Tax Updates</h2>
+            <div class="grid-cards">
+                <div class="insight-card">
+                    <span style="color: #999; font-size: 11px; font-weight: bold; letter-spacing: 1px;">2025 COMPLIANCE</span>
+                    <h4><a href="/en/faq/ato-clearance-certificate/" style="text-decoration: none; color: #5d5179;">New 15% Withholding Rule</a></h4>
+                    <p style="font-size: 14px;">All property sellers now need an ATO Clearance Certificate or risk losing 15% of the sale price at settlement.</p>
+                </div>
+                <div class="insight-card">
+                    <span style="color: #999; font-size: 11px; font-weight: bold; letter-spacing: 1px;">TAX CONCESSIONS</span>
+                    <h4><a href="/en/faq/instant-asset-write-off/" style="text-decoration: none; color: #5d5179;">$20,000 Instant Write-Off</a></h4>
+                    <p style="font-size: 14px;">Claim immediate tax deductions for business assets and equipment purchased and ready for use before June 30.</p>
+                </div>
+                <div class="insight-card">
+                    <span style="color: #999; font-size: 11px; font-weight: bold; letter-spacing: 1px;">DIRECTOR LOANS</span>
+                    <h4><a href="/en/faq/division-7a-loans/" style="text-decoration: none; color: #5d5179;">Division 7A Warning</a></h4>
+                    <p style="font-size: 14px;">Why company money is not your personal money, and how to avoid having your drawings taxed as dividends.</p>
+                </div>
+            </div>
+            
+            <p style="text-align: center; margin-top: 40px;">
+                <a href="/en/faq/" style="color: #5d5179; font-weight: bold; text-decoration: none;">View All FAQ & Insights &rarr;</a>
+            </p>
+
+		</div>
+
+		<footer class="site-footer" style="background: #f5f5f5; border-top: 1px solid #eee; padding: 40px 20px;">
+			<div class="site-info-inner" style="text-align: center;">
+				<a class="privacy-policy-link" href="/en/privacy-policy/" style="display:block; margin-bottom:10px; color: #686868;">Privacy Policy</a>	
+				<div class="site-info-text" style="color: #686868; font-size: 13px;">
+					Copyright &copy; 2019 - 2026 Loyal Bright Accountants. All Rights Reserved. <br>
+                    <small>Liability limited by a scheme approved under Professional Standards Legislation.</small>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+</body>
+</html>
