@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>墨尔本诚明会计师事务所 | 澳洲注册会计师 (CPA) 税务与商业专家</title>
-	<meta name="description" content="为墨尔本中小型企业提供专业的 CPA 税务与会计服务。专长于公司税务、房产资本利得税 (CGT) 及自管养老金 (SMSF) 合规。欢迎预约免费初次咨询。">
+	<meta name="description" content="为墨尔本提供专业的 CPA 税务与会计服务。专长于个人退税、公司税务、房产资本利得税 (CGT) 及自管养老金 (SMSF) 合规。欢迎预约免费初次咨询。">
 	
     <link rel="stylesheet" id="ascension-css" href="/wp-content/themes/ascension/style.css?ver=1.1.5" type="text/css" media="all">
 	<link rel="stylesheet" id="ascension-fonts-css" href="https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C700&amp;subset=latin&amp;ver=1.8.7" type="text/css" media="all">
@@ -13,8 +13,8 @@
 	<style type="text/css">
         /* Hide old text titles to show just the logo */
 		.site-title, .site-description { position: absolute; clip: rect(1px, 1px, 1px, 1px); }
-        .menu-toggle div { background-color: #96349b; } /* Restores the Purple Hamburger Menu */
-        .main-navigation ul li a, .main-navigation ul li a:visited { color: #96349b; } /* Restores Menu Text Color */
+        .menu-toggle div { background-color: #96349b; } 
+        .main-navigation ul li a, .main-navigation ul li a:visited { color: #96349b; } 
         .main-navigation ul li a:hover, .main-navigation ul li a:focus { color: rgba(150, 52, 155, 0.8); }
         
         /* --- NEW HOMEPAGE SECTION STYLES --- */
@@ -35,8 +35,10 @@
         .insight-card h4 { margin-top: 15px; color: #03263B; font-weight: 700; font-family: "Open Sans", sans-serif; }
         .insight-card p { color: #252525; font-family: "Open Sans", sans-serif; }
         .section-title { text-align: center; margin-bottom: 40px; font-weight: 700; color: #03263B; font-size: 28px; font-family: "Open Sans", sans-serif; }
-        .site-content { max-width: 1100px; margin: 0 auto; padding: 60px 20px; }
-        .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        .site-content { max-width: 1150px; margin: 0 auto; padding: 60px 20px; }
+        
+        /* Updated Grid for 4 Cards */
+        .grid-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 30px; }
 	</style>
 
     <script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
@@ -47,7 +49,7 @@
 
 	<div id="page" class="hfeed site">
         
-        <header id="masthead" class="site-header" role="banner">
+		<header id="masthead" class="site-header" role="banner">
 			<div class="site-header-wrapper">
 				<div class="site-title-wrapper">
 					<a href="/zh/" class="custom-logo-link" rel="home"><img width="511" height="134" src="/wp-content/uploads/2018/11/cropped-1_Primary_logo_on_transparent_512-1.png" class="custom-logo" alt="墨尔本诚明会计师事务所"></a>
@@ -56,9 +58,7 @@
 				</div>
 				<div class="main-navigation-container">
                     <div class="menu-toggle" id="menu-toggle" role="button" tabindex="0">
-                        <div></div>
-                        <div></div>
-                        <div></div>
+                        <div></div><div></div><div></div>
                     </div>
 					<nav id="site-navigation" class="main-navigation">
                         <div class="menu-primary-menu-container">
@@ -76,9 +76,9 @@
 			</div>
 		</header>
 
-        <section class="hero">
-			<h2>墨尔本中小型企业税务专家</h2>
-			<p>为私人有限公司 (Pty Ltd)、家庭信托 (Trusts) 及房产投资者提供专业的税务筹划与合规服务。</p>
+		<section class="hero">
+			<h2>墨尔本税务与商业咨询专家</h2>
+			<p>为个人、私人有限公司 (Pty Ltd) 及房产投资者提供专业的税务筹划与合规服务。</p>
 			<a href="/zh/contact-zh/" class="cta-button">预约免费初次咨询</a>
 		</section>
 
@@ -91,7 +91,12 @@
 		<div id="content" class="site-content">
 			
             <h2 class="section-title">专业会计与税务服务</h2>
-			<div class="grid-3" style="margin-bottom: 60px;">
+			<div class="grid-cards" style="margin-bottom: 60px;">
+                <div class="insight-card">
+                    <i class="fas fa-user-tie" style="font-size: 30px; color: #5d5179;"></i>
+                    <h4>个人税务申报</h4>
+                    <p>为雇员、承包商 (Contractors) 及自由职业者提供专业的税务抵扣建议，合法最大化您的年度退税。</p>
+                </div>
                 <div class="insight-card">
                     <i class="fas fa-chart-line" style="font-size: 30px; color: #5d5179;"></i>
                     <h4>商业咨询与合规</h4>
@@ -112,7 +117,7 @@
             <hr style="margin: 60px 0; border: 0; border-top: 1px solid #eee;">
 
             <h2 class="section-title">最新澳洲税务资讯</h2>
-            <div class="grid-3">
+            <div class="grid-cards">
                 <div class="insight-card">
                     <span style="color: #999; font-size: 11px; font-weight: bold; letter-spacing: 1px;">2025 合规要求</span>
                     <h4><a href="/zh/faq-zh/ato-clearance-certificate/" style="text-decoration: none; color: #5d5179;">新的 15% 房产预扣税规则</a></h4>
