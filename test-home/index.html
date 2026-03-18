@@ -3,83 +3,53 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Contact Us | Loyal Bright Accountants Melbourne</title>
-	<meta name="description" content="Contact Loyal Bright Accountants in Balwyn, Melbourne. Book your free, no-obligation initial consultation for expert CPA tax and business advisory services.">
+	<title>Loyal Bright Accountants | CPA Tax & Business Experts Melbourne</title>
+	<meta name="description" content="Expert CPA tax and accounting services in Melbourne. Specialized in Individual Tax Returns, Company Tax, Property CGT, and SMSF Compliance.">
 	
     <link rel="stylesheet" id="ascension-css" href="/wp-content/themes/ascension/style.css?ver=1.1.5" type="text/css" media="all">
 	<link rel="stylesheet" id="ascension-fonts-css" href="https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C700&amp;subset=latin&amp;ver=1.8.7" type="text/css" media="all">
     <link rel="stylesheet" href="/wp-content/plugins/beaver-builder-lite-version/fonts/fontawesome/5.15.4/css/all.min.css">
 
 	<style type="text/css">
-        /* --- HEADER STYLES --- */
+        /* Hide old text titles to show just the logo */
 		.site-title, .site-description { position: absolute; clip: rect(1px, 1px, 1px, 1px); }
-        .site-header { background: #fff; padding: 20px 0; border-bottom: 1px solid #eee; }
-        .nav-container { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; flex-direction: row; justify-content: space-between; align-items: center; }
-        .custom-logo { max-width: 250px; height: auto; display: block; }
-        .custom-nav { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: row; align-items: center; }
-        .custom-nav li { margin: 0 15px; }
-        .custom-nav a { text-decoration: none; color: #5d5179; font-weight: 700; font-size: 15px; text-transform: uppercase; transition: color 0.3s; }
-        .custom-nav a:hover { color: #96349b; }
-
-        /* Restores the Purple Hamburger Menu */
-        .menu-toggle div { background-color: #96349b; }
-
-        @media (max-width: 768px) {
-            .nav-container { flex-direction: column; justify-content: center; }
-            .custom-logo { margin-bottom: 20px; max-width: 200px; }
-            .custom-nav { flex-direction: column; width: 100%; }
-            .custom-nav li { margin: 0; width: 100%; text-align: center; border-bottom: 1px solid #f9f9f9; padding: 12px 0; }
-            .custom-nav li:last-child { border-bottom: none; padding-bottom: 0; }
-        }
-
-        /* --- HERO SECTION --- */
+        .menu-toggle div { background-color: #96349b; } 
+        .main-navigation ul li a, .main-navigation ul li a:visited { color: #96349b; } 
+        .main-navigation ul li a:hover, .main-navigation ul li a:focus { color: rgba(150, 52, 155, 0.8); }
+        
+        /* --- NEW HOMEPAGE SECTION STYLES --- */
         .hero { 
             background-image: linear-gradient(rgba(3, 38, 59, 0.75), rgba(3, 38, 59, 0.75)), url(/wp-content/uploads/2019/07/cropped-Home-Page-Hero-2400x1160.jpeg);
             background-size: cover; background-position: center; padding: 80px 20px; text-align: center; color: #fff;
         }
-        .hero h1 { font-size: 36px; color: #fff; margin-bottom: 10px; font-weight: 700; font-family: "Open Sans", sans-serif;}
-        .hero p { font-size: 18px; color: #bddae6; font-family: "Open Sans", sans-serif; max-width: 700px; margin: 0 auto; line-height: 1.5;}
+        .hero h2 { font-size: 36px; color: #fff; margin-bottom: 15px; font-weight: 700; font-family: "Open Sans", sans-serif; }
+        .hero p { font-size: 18px; margin-bottom: 30px; line-height: 1.4; color: #fff; font-family: "Open Sans", sans-serif; }
+        .cta-button { background-color: #5d5179; color: white !important; padding: 15px 35px; border-radius: 5px; text-decoration: none; font-weight: bold; font-size: 18px; display: inline-block; transition: background 0.3s; font-family: "Open Sans", sans-serif; }
+        .cta-button:hover { background-color: #4a4162; color: #fff !important; }
         
-        /* --- CONTACT LAYOUT --- */
-        .contact-wrapper { max-width: 1100px; margin: 60px auto; padding: 0 20px; display: flex; flex-wrap: wrap; gap: 50px; }
+        .trust-bar { background: #f9f9f9; padding: 15px; text-align: center; border-bottom: 1px solid #eee; }
+        .trust-bar span { margin: 5px 15px; font-weight: bold; color: #03263B; font-size: 12px; letter-spacing: 1px; display: inline-block; font-family: "Open Sans", sans-serif; }
         
-        /* --- CONTACT INFO (LEFT) --- */
-        .contact-info { flex: 1; min-width: 300px; }
-        .contact-info h2 { color: #03263B; margin-top: 0; margin-bottom: 25px; font-size: 28px; font-weight: 700; font-family: "Open Sans", sans-serif; }
-        .contact-info p { color: #353535; font-size: 16px; line-height: 1.6; margin-bottom: 30px; font-family: "Open Sans", sans-serif; }
+        .insight-card { border: 1px solid #eee; padding: 25px; border-radius: 8px; transition: 0.3s; background: #fff; display: flex; flex-direction: column;}
+        .insight-card:hover { box-shadow: 0 8px 20px rgba(0,0,0,0.08); border-color: #5d5179; }
+        .insight-card h4 { margin-top: 15px; color: #03263B; font-weight: 700; font-family: "Open Sans", sans-serif; }
+        .insight-card p { color: #252525; font-family: "Open Sans", sans-serif; }
+        .section-title { text-align: center; margin-bottom: 40px; font-weight: 700; color: #03263B; font-size: 28px; font-family: "Open Sans", sans-serif; }
+        .site-content { max-width: 1150px; margin: 0 auto; padding: 60px 20px; }
         
-        .info-block { display: flex; align-items: flex-start; margin-bottom: 30px; }
-        .info-block i { color: #96349b; font-size: 24px; margin-right: 15px; margin-top: 3px; width: 30px; text-align: center; }
-        .info-block h4 { margin: 0 0 5px 0; color: #03263B; font-size: 18px; font-family: "Open Sans", sans-serif; }
-        .info-block p { margin: 0; color: #686868; font-size: 15px; }
-        
-        /* WeChat QR Styling */
-        .wechat-qr { max-width: 160px; height: auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); border: 1px solid #eee; margin-top: 12px; }
-
-        /* --- CONTACT FORM (RIGHT) --- */
-        .contact-form-container { flex: 1.5; min-width: 300px; background: #fff; padding: 40px; border-radius: 8px; border-top: 4px solid #5d5179; box-shadow: 0 5px 20px rgba(0,0,0,0.05); }
-        .contact-form-container h3 { color: #03263B; margin-top: 0; margin-bottom: 20px; font-size: 22px; font-family: "Open Sans", sans-serif; }
-        
-        .form-group { margin-bottom: 20px; }
-        .form-group label { display: block; margin-bottom: 8px; color: #353535; font-weight: bold; font-family: "Open Sans", sans-serif; font-size: 14px; }
-        .form-control { width: 100%; padding: 12px 15px; border: 1px solid #ddd; border-radius: 4px; font-family: "Open Sans", sans-serif; font-size: 15px; color: #353535; box-sizing: border-box; transition: border-color 0.3s; background-color: #fcfcfc;}
-        .form-control:focus { border-color: #96349b; outline: none; background-color: #fff;}
-        textarea.form-control { resize: vertical; min-height: 120px; }
-        
-        .submit-btn { background-color: #5d5179; color: white !important; padding: 15px 35px; border-radius: 5px; border: none; font-weight: bold; font-size: 16px; cursor: pointer; transition: background 0.3s; font-family: "Open Sans", sans-serif; width: 100%; }
-        .submit-btn:hover { background-color: #4a4162; }
-
+        /* Updated Grid for 4 Cards */
+        .grid-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 30px; }
 	</style>
 
     <script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
     <script type="text/javascript" src="/wp-content/themes/primer/assets/js/navigation.min.js?ver=1.8.7"></script>
 </head>
 
-<body class="page layout-one-column-wide">
+<body class="home layout-one-column-wide">
 
 	<div id="page" class="hfeed site">
         
-        <header id="masthead" class="site-header" role="banner">
+		<header id="masthead" class="site-header" role="banner">
 			<div class="site-header-wrapper">
 				<div class="site-title-wrapper">
 					<a href="/en/home/" class="custom-logo-link" rel="home"><img width="511" height="134" src="/wp-content/uploads/2018/11/cropped-1_Primary_logo_on_transparent_512-1.png" class="custom-logo" alt="Loyal Bright Accountants"></a>
@@ -98,7 +68,7 @@
                                 <li class="menu-item"><a href="/en/services/">Services</a></li>
                                 <li class="menu-item"><a href="/en/faq/">FAQ</a></li>
                                 <li class="menu-item"><a href="/en/contact/">Contact Us</a></li>
-                                <li class="menu-item"><a href="/zh/contact-zh/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAXVBMVEXUAADlQgDLAADBAADtgXn63Xjypnf1wHHpcG/oZmbmXVzlU1PjS0q1AAD981775VvwnVD2zkvhPz/fNzfdMjHcKyvaJyfsi0baISHYGhqqAADWExPTDQ2jAACfAAApGpDBAAAAWklEQVR4ATXIhQHDQBTDUMll2n/RMiU5/vQsAE4EsPbaKVOU+pXNwc/WKQXeDZMKu+psCXw/Z7efarmENd6GIwGpXhUvM4spxoiEbouRNT7Fmtaq+RG4wAqZZvceD8DeIelqAAAAAElFTkSuQmCC" alt="" width="16" height="11" style="vertical-align: middle; margin-right: 5px;">中文</a></li>
+                                <li class="menu-item"><a href="/zh/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAXVBMVEXUAADlQgDLAADBAADtgXn63Xjypnf1wHHpcG/oZmbmXVzlU1PjS0q1AAD981775VvwnVD2zkvhPz/fNzfdMjHcKyvaJyfsi0baISHYGhqqAADWExPTDQ2jAACfAAApGpDBAAAAWklEQVR4ATXIhQHDQBTDUMll2n/RMiU5/vQsAE4EsPbaKVOU+pXNwc/WKQXeDZMKu+psCXw/Z7efarmENd6GIwGpXhUvM4spxoiEbouRNT7Fmtaq+RG4wAqZZvceD8DeIelqAAAAAElFTkSuQmCC" alt="" width="16" height="11" style="margin-right:0.3em; vertical-align: middle;">中文</a></li>
                             </ul>
                         </div>
 					</nav>
@@ -107,93 +77,67 @@
 		</header>
 
 		<section class="hero">
-			<h1>Let's Talk About Your Financial Future</h1>
-			<p>Book your free, no-obligation initial consultation with our CPA-certified team today.</p>
+			<h2>Melbourne Small Business Tax Experts</h2>
+			<p>Optimizing your tax position and ensuring compliance for Individuals, Pty Ltd Companies, and Property Investors.</p>
+			<a href="/en/contact/" class="cta-button">Book Free Consultation</a>
 		</section>
 
-		<div class="contact-wrapper">
+		<div class="trust-bar">
+			<span><i class="fas fa-check-circle"></i> CPA PUBLIC PRACTICE</span>
+			<span><i class="fas fa-check-circle"></i> REGISTERED TAX AGENTS</span>
+			<span><i class="fas fa-check-circle"></i> ASIC REGISTERED AGENT</span>
+		</div>
+
+		<div id="content" class="site-content">
+			
+            <h2 class="section-title">Specialized Accounting Solutions</h2>
+			<div class="grid-cards" style="margin-bottom: 60px;">
+                <div class="insight-card">
+                    <i class="fas fa-user-tie" style="font-size: 30px; color: #5d5179;"></i>
+                    <h4>Individual Tax Returns</h4>
+                    <p>Ensuring you receive your maximum entitled refund with expert deduction claims for employees, contractors, and freelancers.</p>
+                </div>
+                <div class="insight-card">
+                    <i class="fas fa-chart-line" style="font-size: 30px; color: #5d5179;"></i>
+                    <h4>Business Advisory</h4>
+                    <p>Expert Pty Ltd Company setup, Division 7A management, and Xero cloud accounting support.</p>
+                </div>
+                <div class="insight-card">
+                    <i class="fas fa-home" style="font-size: 30px; color: #5d5179;"></i>
+                    <h4>Property Investment</h4>
+                    <p>Capital Gains Tax (CGT) planning, negative gearing advice, and Main Residence Exemptions.</p>
+                </div>
+                <div class="insight-card">
+                    <i class="fas fa-piggy-bank" style="font-size: 30px; color: #5d5179;"></i>
+                    <h4>SMSF Tax & Compliance</h4>
+                    <p>Preparation of financial statements and annual tax returns to ensure your fund is audit-ready.</p>
+                </div>
+            </div>
+
+            <hr style="margin: 60px 0; border: 0; border-top: 1px solid #eee;">
+
+            <h2 class="section-title">Latest Australian Tax Updates</h2>
+            <div class="grid-cards">
+                <div class="insight-card">
+                    <span style="color: #999; font-size: 11px; font-weight: bold; letter-spacing: 1px;">2025 COMPLIANCE</span>
+                    <h4><a href="/en/faq/ato-clearance-certificate/" style="text-decoration: none; color: #5d5179;">New 15% Withholding Rule</a></h4>
+                    <p style="font-size: 14px;">All property sellers now need an ATO Clearance Certificate or risk losing 15% of the sale price at settlement.</p>
+                </div>
+                <div class="insight-card">
+                    <span style="color: #999; font-size: 11px; font-weight: bold; letter-spacing: 1px;">TAX CONCESSIONS</span>
+                    <h4><a href="/en/faq/instant-asset-write-off/" style="text-decoration: none; color: #5d5179;">$20,000 Instant Write-Off</a></h4>
+                    <p style="font-size: 14px;">Claim immediate tax deductions for business assets and equipment purchased and ready for use before June 30.</p>
+                </div>
+                <div class="insight-card">
+                    <span style="color: #999; font-size: 11px; font-weight: bold; letter-spacing: 1px;">DIRECTOR LOANS</span>
+                    <h4><a href="/en/faq/division-7a-loans/" style="text-decoration: none; color: #5d5179;">Division 7A Warning</a></h4>
+                    <p style="font-size: 14px;">Why company money is not your personal money, and how to avoid having your drawings taxed as dividends.</p>
+                </div>
+            </div>
             
-            <div class="contact-info">
-                <h2>Get in Touch</h2>
-                <p>Whether you need proactive business structuring, SMSF compliance, or expert tax advice, Loyal Bright Accountants is here to help you optimize your financial position.</p>
-                
-                <div class="info-block">
-                    <i class="fas fa-mobile-alt"></i>
-                    <div>
-                        <h4>Call Us</h4>
-                        <p><a href="tel:+61401456769" style="color: #686868; text-decoration: none;">(+61) 401 456 769</a></p>
-                    </div>
-                </div>
-
-                <div class="info-block">
-                    <i class="fas fa-envelope-open-text"></i>
-                    <div>
-                        <h4>Mailing Address</h4>
-                        <p>PO Box 629<br>Balwyn, VIC 3103, Australia</p>
-                    </div>
-                </div>
-
-                <div class="info-block">
-                    <i class="fas fa-envelope"></i>
-                    <div>
-                        <h4>Email Us</h4>
-                        <p><a href="mailto:info@loyalbright.com.au" style="color: #686868; text-decoration: none;">info@loyalbright.com.au</a></p>
-                    </div>
-                </div>
-
-                <div class="info-block">
-                    <i class="fab fa-weixin"></i>
-                    <div>
-                        <h4>WeChat</h4>
-                        <p style="margin-bottom: 5px;">Scan the QR code below to connect with us directly for seamless communication.</p>
-                        <img src="/wp-content/uploads/2024/01/wechat-qr.jpg" alt="Loyal Bright WeChat QR Code" class="wechat-qr">
-                    </div>
-                </div>
-            </div>
-
-            <div class="contact-form-container">
-                <h3>Send us a message</h3>
-                <form action="https://formspree.io/f/mvzwagjv" method="POST">
-                    
-                    <div class="form-group">
-                        <label for="name">Name *</label>
-                        <input type="text" id="name" name="name" class="form-control" required>
-                    </div>
-                    
-                    <div style="display: flex; gap: 20px; flex-wrap: wrap;">
-                        <div class="form-group" style="flex: 1; min-width: 120px;">
-                            <label for="email">Email Address *</label>
-                            <input type="email" id="email" name="email" class="form-control" required>
-                        </div>
-                        <div class="form-group" style="flex: 1; min-width: 120px;">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone" class="form-control">
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="service">How can we help you? *</label>
-                        <select id="service" name="service" class="form-control" required>
-                            <option value="" disabled selected>Select an option...</option>
-                            <option value="business">Business Advisory & Tax</option>
-                            <option value="property">Property & Investment Tax</option>
-                            <option value="smsf">SMSF Compliance</option>
-                            <option value="family-office">Family Office Structuring</option>
-                            <option value="individual">Individual Tax Return</option>
-                            <option value="other">Other Inquiry</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message">Your Message *</label>
-                        <textarea id="message" name="message" class="form-control" placeholder="Please provide a brief description of your inquiry..." required></textarea>
-                    </div>
-
-                    <input type="text" name="_gotcha" style="display:none" />
-
-                    <button type="submit" class="submit-btn">Send Message</button>
-                </form>
-            </div>
+            <p style="text-align: center; margin-top: 40px;">
+                <a href="/en/faq/" style="color: #5d5179; font-weight: bold; text-decoration: none;">View All FAQ & Insights &rarr;</a>
+            </p>
 
 		</div>
 
