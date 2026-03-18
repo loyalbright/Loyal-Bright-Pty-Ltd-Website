@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Contact Us | Loyal Bright Accountants Melbourne</title>
-	<meta name="description" content="Contact Loyal Bright Accountants in Balwyn, Melbourne. Book your free, no-obligation initial consultation for expert CPA tax and business advisory services.">
+	<meta name="description" content="Contact Loyal Bright Accountants in Melbourne. Book your free, no-obligation initial consultation for expert CPA tax and business advisory services.">
 	
     <link rel="stylesheet" id="ascension-css" href="/wp-content/themes/ascension/style.css?ver=1.1.5" type="text/css" media="all">
 	<link rel="stylesheet" id="ascension-fonts-css" href="https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C700&amp;subset=latin&amp;ver=1.8.7" type="text/css" media="all">
@@ -46,12 +46,16 @@
         /* --- CONTACT INFO (LEFT) --- */
         .contact-info { flex: 1; min-width: 300px; }
         .contact-info h2 { color: #03263B; margin-top: 0; margin-bottom: 25px; font-size: 28px; font-weight: 700; font-family: "Open Sans", sans-serif; }
-        .contact-info p { color: #353535; font-size: 16px; line-height: 1.6; margin-bottom: 30px; font-family: "Open Sans", sans-serif; }
+        .contact-info p.lead-text { color: #353535; font-size: 16px; line-height: 1.6; margin-bottom: 30px; font-family: "Open Sans", sans-serif; }
         
         .info-block { display: flex; align-items: flex-start; margin-bottom: 25px; }
         .info-block i { color: #96349b; font-size: 24px; margin-right: 15px; margin-top: 3px; width: 30px; text-align: center; }
         .info-block h4 { margin: 0 0 5px 0; color: #03263B; font-size: 18px; font-family: "Open Sans", sans-serif; }
-        .info-block p { margin: 0; color: #686868; font-size: 15px; }
+        .info-block p { margin: 0; color: #686868; font-size: 15px; line-height: 1.5; font-family: "Open Sans", sans-serif;}
+        .info-block a { color: #686868; text-decoration: none; transition: color 0.2s;}
+        .info-block a:hover { color: #96349b; }
+
+        .qr-code { max-width: 140px; margin-top: 15px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border: 1px solid #eee; }
 
         /* --- CONTACT FORM (RIGHT) --- */
         .contact-form-container { flex: 1.5; min-width: 300px; background: #fff; padding: 40px; border-radius: 8px; border-top: 4px solid #5d5179; box-shadow: 0 5px 20px rgba(0,0,0,0.05); }
@@ -105,20 +109,20 @@
 
 		<section class="hero">
 			<h1>Let's Talk About Your Financial Future</h1>
-			<p>Book your free, no-obligation initial consultation with our CPA-certified team in Balwyn today.</p>
+			<p>Book your free, no-obligation initial consultation with our CPA-certified team today.</p>
 		</section>
 
 		<div class="contact-wrapper">
             
             <div class="contact-info">
                 <h2>Get in Touch</h2>
-                <p>Whether you need proactive business structuring, SMSF compliance, or expert tax advice, Loyal Bright Accountants is here to help you optimize your financial position.</p>
+                <p class="lead-text">Whether you need proactive business structuring, SMSF compliance, or expert tax advice, Loyal Bright Accountants is here to help you optimize your financial position.</p>
                 
                 <div class="info-block">
-                    <i class="fas fa-map-marker-alt"></i>
+                    <i class="fas fa-mobile-alt"></i>
                     <div>
-                        <h4>Our Office</h4>
-                        <p>Balwyn, Victoria<br>Melbourne, Australia</p>
+                        <h4>Mobile</h4>
+                        <p><a href="tel:+61 401 456 769">[Insert Mobile]</a></p>
                     </div>
                 </div>
 
@@ -126,7 +130,15 @@
                     <i class="fas fa-envelope"></i>
                     <div>
                         <h4>Email Us</h4>
-                        <p>info@loyalbright.com.au</p>
+                        <p><a href="mailto:info@loyalbright.com.au">info@loyalbright.com.au</a></p>
+                    </div>
+                </div>
+
+                <div class="info-block">
+                    <i class="fas fa-inbox"></i>
+                    <div>
+                        <h4>Postal Address</h4>
+                        <p>PO Box 629<br>Balwyn VIC 3103<br>Melbourne, Australia</p>
                     </div>
                 </div>
 
@@ -134,7 +146,8 @@
                     <i class="fab fa-weixin"></i>
                     <div>
                         <h4>WeChat</h4>
-                        <p>Contact us via WeChat for seamless communication.</p>
+                        <p>Scan the QR code below to connect with us directly on WeChat.</p>
+                        <img src="/wp-content/uploads/2019/07/qrcode_for_gh_f2ceb85901cc_258.jpg" alt="Loyal Bright WeChat QR Code" class="qr-code">
                     </div>
                 </div>
 
