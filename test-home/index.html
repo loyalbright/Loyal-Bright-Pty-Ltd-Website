@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Tax & Accounting FAQ | Loyal Bright Accountants Melbourne</title>
-	<meta name="description" content="Answers to your most common tax, accounting, and business questions. Read our latest insights on Australian tax laws, property CGT, and employer obligations.">
+	<meta name="description" content="Answers to your most common tax, accounting, and business questions. Access our tax return checklists and read the latest insights on Australian tax laws.">
 	
     <link rel="stylesheet" id="ascension-css" href="/wp-content/themes/ascension/style.css?ver=1.1.5" type="text/css" media="all">
 	<link rel="stylesheet" id="ascension-fonts-css" href="https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C700&amp;subset=latin&amp;ver=1.8.7" type="text/css" media="all">
@@ -43,7 +43,7 @@
         /* --- PAGE CONTENT LAYOUT --- */
         .site-content { max-width: 1000px; margin: 60px auto; padding: 0 20px; }
         
-        /* --- FAQ CATEGORY GRID --- */
+        /* --- FAQ CATEGORY GRID (2x2 Layout) --- */
         .faq-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 40px; margin-bottom: 60px; }
         .faq-category { background: #fff; border: 1px solid #eee; border-radius: 8px; padding: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.02); border-top: 4px solid #5d5179; }
         .faq-category h3 { color: #03263B; margin-top: 0; margin-bottom: 20px; font-size: 22px; font-weight: 700; font-family: "Open Sans", sans-serif; display: flex; align-items: center;}
@@ -55,6 +55,7 @@
         .faq-list a { color: #353535; text-decoration: none; font-weight: 600; font-family: "Open Sans", sans-serif; transition: color 0.2s; display: block; line-height: 1.4;}
         .faq-list a:hover { color: #96349b; }
         .faq-list .new-badge { background: #ff6663; color: #fff; font-size: 10px; padding: 2px 6px; border-radius: 3px; vertical-align: middle; margin-left: 8px; text-transform: uppercase; font-weight: bold;}
+        .faq-list .download-badge { background: #03263B; color: #fff; font-size: 10px; padding: 2px 6px; border-radius: 3px; vertical-align: middle; margin-left: 8px; text-transform: uppercase; font-weight: bold;}
 
         /* --- CTA BOX --- */
         .cta-box { text-align: center; background: #eef4f7; padding: 40px 20px; border-radius: 8px; margin-top: 40px; font-family: "Open Sans", sans-serif; }
@@ -100,7 +101,7 @@
 
 		<section class="hero">
 			<h1>Tax & Accounting Insights</h1>
-			<p>Answers to your most common financial questions and the latest updates on Australian tax legislation.</p>
+			<p>Answers to your most common financial questions, download our tax checklists, and read the latest updates on Australian tax legislation.</p>
 		</section>
 
 		<div class="site-content">
@@ -108,34 +109,46 @@
             <div class="faq-grid">
                 
                 <div class="faq-category">
-                    <h3><i class="fas fa-chart-line"></i> Starting & Running a Business</h3>
+                    <h3><i class="fas fa-clipboard-list"></i> Tax & Accounting Checklists</h3>
                     <ul class="faq-list">
-                        <li><a href="/en/faq/division-7a-loans/">Division 7A Loans: Why Company Money is NOT Your Personal Money <span class="new-badge">New</span></a></li>
-                        <li><a href="/en/faq/instant-asset-write-off/">The $20,000 Instant Asset Write-Off Explained</a></li>
-                        <li><a href="/en/faq/sole-trader-vs-company/">Sole Trader vs. Company: Which Structure is Right for You?</a></li>
-                        <li><a href="/en/faq/how-to-register-abn-tfn-gst/">How to Register for an ABN, TFN, and GST</a></li>
+                        <li><a href="/en/faq/individual-tax-checklist/">Individual Tax Return Checklist <span class="download-badge">Checklist</span></a></li>
+                        <li><a href="/en/faq/company-tax-checklist/">Company Tax Return Checklist <span class="download-badge">Checklist</span></a></li>
+                        <li><a href="/en/faq/trust-tax-checklist/">Trust Tax Return Checklist <span class="download-badge">Checklist</span></a></li>
+                        <li><a href="/en/faq/partnership-tax-checklist/">Partnership Tax Return Checklist <span class="download-badge">Checklist</span></a></li>
+                        <li><a href="/en/faq/smsf-tax-checklist/">SMSF Tax Return & Audit Checklist <span class="download-badge">Checklist</span></a></li>
+                        <li><a href="/en/faq/bas-preparation-checklist/">BAS Preparation Checklist <span class="download-badge">Checklist</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="faq-category">
+                    <h3><i class="fas fa-briefcase"></i> Starting a Business</h3>
+                    <ul class="faq-list">
+                        <li><a href="/en/faq/sole-trader-vs-company/">Sole Trader vs. Company: Which is Right for You?</a></li>
+                        <li><a href="/en/faq/how-to-register-abn-tfn-gst/">How to Register for an ABN, TFN, and GST?</a></li>
                         <li><a href="/en/faq/director-id-guide/">What is a Director ID and How Do I Get One?</a></li>
+                        <li><a href="/en/faq/instant-asset-write-off/">The $20,000 Instant Asset Write-Off Explained <span class="new-badge">Update</span></a></li>
+                        <li><a href="/en/faq/division-7a-loans/">Division 7A Loans: Why Company Money is NOT Your Personal Money <span class="new-badge">New</span></a></li>
                     </ul>
                 </div>
 
                 <div class="faq-category">
                     <h3><i class="fas fa-home"></i> Property & Investments</h3>
                     <ul class="faq-list">
-                        <li><a href="/en/faq/ato-clearance-certificate/">The New ATO Clearance Certificate Rules (15% Withholding) <span class="new-badge">Alert</span></a></li>
                         <li><a href="/en/faq/cgt-investment-property/">Capital Gains Tax (CGT) on Investment Properties</a></li>
                         <li><a href="/en/faq/negative-gearing/">What is Negative Gearing?</a></li>
                         <li><a href="/en/faq/main-residence-exemption/">The Main Residence Exemption Explained</a></li>
+                        <li><a href="/en/faq/ato-clearance-certificate/">The New ATO Clearance Certificate Rules (15% Withholding) <span class="new-badge">Alert</span></a></li>
                     </ul>
                 </div>
 
                 <div class="faq-category">
                     <h3><i class="fas fa-users"></i> Employer Obligations</h3>
                     <ul class="faq-list">
-                        <li><a href="/en/faq/right-to-disconnect-laws/">The "Right to Disconnect" Laws for Small Businesses</a></li>
-                        <li><a href="/en/faq/casual-worker-conversion/">Casual Worker Conversion: The New "Employee Choice" Rules</a></li>
-                        <li><a href="/en/faq/understanding-stp-phase-2/">Understanding Single Touch Payroll (STP) Phase 2</a></li>
                         <li><a href="/en/faq/employee-vs-contractor/">Employee vs. Contractor: What is the Difference?</a></li>
+                        <li><a href="/en/faq/understanding-stp-phase-2/">Understanding Single Touch Payroll (STP) Phase 2</a></li>
                         <li><a href="/en/faq/superannuation-guarantee-rates/">Superannuation Guarantee (SG) Rate Changes and Due Dates</a></li>
+                        <li><a href="/en/faq/right-to-disconnect-laws/">The "Right to Disconnect" Laws for Small Businesses <span class="new-badge">New</span></a></li>
+                        <li><a href="/en/faq/casual-worker-conversion/">Casual Worker Conversion: The New "Employee Choice" Rules <span class="new-badge">New</span></a></li>
                     </ul>
                 </div>
 
