@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Our Services | Loyal Bright Accountants Melbourne</title>
-	<meta name="description" content="Comprehensive CPA accounting, tax, and advisory services in Melbourne. We specialize in Business Advisory, Property CGT, SMSF compliance, and Family Office management.">
+	<meta name="description" content="Comprehensive CPA accounting, tax, and advisory services in Melbourne. We specialize in Business Advisory, Property & Share CGT, SMSF, and Cross-Border Tax.">
 	
     <link rel="stylesheet" id="ascension-css" href="/wp-content/themes/ascension/style.css?ver=1.1.5" type="text/css" media="all">
 	<link rel="stylesheet" id="ascension-fonts-css" href="https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C700&amp;subset=latin&amp;ver=1.8.7" type="text/css" media="all">
@@ -20,6 +20,9 @@
         .custom-nav li { margin: 0 15px; }
         .custom-nav a { text-decoration: none; color: #5d5179; font-weight: 700; font-size: 15px; text-transform: uppercase; transition: color 0.3s; }
         .custom-nav a:hover { color: #96349b; }
+
+        /* Restores the Purple Hamburger Menu */
+        .menu-toggle div { background-color: #96349b; } 
 
         @media (max-width: 768px) {
             .nav-container { flex-direction: column; justify-content: center; }
@@ -38,13 +41,13 @@
         .hero p { font-size: 18px; color: #bddae6; font-family: "Open Sans", sans-serif; max-width: 700px; margin: 0 auto 30px auto; line-height: 1.5;}
         
         /* --- PAGE CONTENT LAYOUT --- */
-        .site-content { max-width: 1100px; margin: 60px auto; padding: 0 20px; }
+        .site-content { max-width: 1150px; margin: 60px auto; padding: 0 20px; }
         .intro-text { text-align: center; margin-bottom: 50px; font-size: 18px; color: #353535; font-family: "Open Sans", sans-serif; }
         
-        /* --- SERVICES GRID --- */
+        /* --- SERVICES GRID (3-3-3 Format) --- */
         .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; margin-bottom: 60px; }
-        .service-card { background: #fff; border: 1px solid #eee; border-radius: 8px; padding: 35px; box-shadow: 0 4px 15px rgba(0,0,0,0.03); transition: transform 0.3s ease, box-shadow 0.3s ease; border-top: 4px solid #5d5179; }
-        .service-card:hover { transform: translateY(-5px); box-shadow: 0 12px 25px rgba(0,0,0,0.08); }
+        .service-card { background: #fff; border: 1px solid #eee; border-radius: 8px; padding: 35px; box-shadow: 0 4px 15px rgba(0,0,0,0.03); transition: transform 0.3s ease, box-shadow 0.3s ease; border-top: 4px solid #5d5179; display: flex; flex-direction: column;}
+        .service-card:hover { transform: translateY(-5px); box-shadow: 0 12px 25px rgba(0,0,0,0.08); border-color: #96349b;}
         .service-card i { font-size: 35px; color: #96349b; margin-bottom: 20px; }
         .service-card h3 { color: #03263B; margin-top: 0; margin-bottom: 15px; font-size: 22px; font-weight: 700; font-family: "Open Sans", sans-serif; }
         .service-card p { color: #686868; line-height: 1.6; margin-bottom: 15px; font-family: "Open Sans", sans-serif; }
@@ -112,31 +115,43 @@
                         <li>Pty Ltd, Trust, and Partnership setup</li>
                         <li>Division 7A loan compliance</li>
                         <li>Annual company tax returns</li>
-                        <li>Business diagnostics & cashflow forecasting</li>
+                        <li>Business diagnostics & forecasting</li>
                     </ul>
                 </div>
 
                 <div class="service-card">
                     <i class="fas fa-home"></i>
-                    <h3>Property Investment Tax</h3>
-                    <p>Real estate taxation is highly complex. We guide investors and developers through the nuances of Australian property tax law to optimize returns.</p>
+                    <h3>Property & Investment Tax</h3>
+                    <p>Real estate and share market taxation is complex. We guide investors through the nuances of Australian tax law to optimize portfolio returns.</p>
                     <ul>
-                        <li>Capital Gains Tax (CGT) planning</li>
+                        <li>CGT planning for property & shares</li>
                         <li>Negative gearing optimization</li>
+                        <li>Crypto & dividend tax reporting</li>
                         <li>Main Residence Exemption analysis</li>
-                        <li>Land tax & Stamp duty advice</li>
                     </ul>
                 </div>
 
                 <div class="service-card">
                     <i class="fas fa-landmark"></i>
                     <h3>Family Office & Wealth</h3>
-                    <p>Comprehensive wealth management structuring for high-net-worth families. We provide centralized financial oversight and intergenerational strategies.</p>
+                    <p>Comprehensive wealth management structuring for high-net-worth families. We provide centralized financial oversight and tax-effective strategies.</p>
                     <ul>
                         <li>Wealth preservation structuring</li>
                         <li>Intergenerational succession planning</li>
                         <li>Consolidated portfolio reporting</li>
                         <li>Philanthropic entity management</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <i class="fas fa-globe-asia"></i>
+                    <h3>Cross-Border Tax & Residency</h3>
+                    <p>Expert tax guidance for new migrants, expats, and high-net-worth individuals managing cross-border assets and business interests.</p>
+                    <ul>
+                        <li>Tax residency determination</li>
+                        <li>Foreign income & asset reporting</li>
+                        <li>Investor Visa (SIV) tax structuring</li>
+                        <li>Double Taxation Agreements (DTA)</li>
                     </ul>
                 </div>
 
@@ -155,12 +170,12 @@
                 <div class="service-card">
                     <i class="fas fa-user-tie"></i>
                     <h3>Individual Tax Returns</h3>
-                    <p>We ensure you receive your maximum entitled refund by identifying all legitimate deductions applicable to your specific industry and circumstances.</p>
+                    <p>We optimize your tax position by identifying all legitimate deductions applicable to your specific industry, investments, and personal circumstances.</p>
                     <ul>
                         <li>Complex individual tax returns</li>
                         <li>Contractor & Sole Trader taxation</li>
-                        <li>Share trading & crypto tax reporting</li>
-                        <li>Expat & foreign income advice</li>
+                        <li>Maximizing work-related deductions</li>
+                        <li>Medicare & HECS surcharge advice</li>
                     </ul>
                 </div>
 
@@ -169,22 +184,34 @@
                     <h3>Bookkeeping & Payroll</h3>
                     <p>Reclaim your time. We seamlessly integrate with your cloud accounting software to maintain accurate, real-time financial records.</p>
                     <ul>
-                        <li>Xero, MYOB, and QuickBooks management</li>
+                        <li>Xero, MYOB, and QuickBooks</li>
                         <li>Single Touch Payroll (STP Phase 2)</li>
-                        <li>Superannuation Guarantee (SG) processing</li>
-                        <li>BAS & IAS preparation and lodgement</li>
+                        <li>Superannuation (SG) processing</li>
+                        <li>BAS & IAS lodgement</li>
                     </ul>
                 </div>
 
                 <div class="service-card">
                     <i class="fas fa-building"></i>
                     <h3>Corporate Secretarial</h3>
-                    <p>Avoid late fees and penalties. We act as your registered agent to ensure your corporate governance remains up to date.</p>
+                    <p>Avoid late fees and penalties. We act as your registered agent to ensure your corporate governance remains up to date with ASIC.</p>
                     <ul>
                         <li>ASIC Registered Agent services</li>
                         <li>Annual company statement reviews</li>
                         <li>Director & Shareholder changes</li>
                         <li>Registered office facility</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Digital & Web Development</h3>
+                    <p>Need a professional digital presence? We provide cost-effective website development solutions to help your business establish a strong online footprint.</p>
+                    <ul>
+                        <li>Professional website design</li>
+                        <li>Domain & hosting setup assistance</li>
+                        <li>E-commerce functionality</li>
+                        <li>Client training for self-maintenance</li>
                     </ul>
                 </div>
 
