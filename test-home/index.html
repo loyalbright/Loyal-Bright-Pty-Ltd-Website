@@ -54,7 +54,7 @@
         .info-block p { margin: 0; color: #686868; font-size: 15px; }
         
         /* WeChat QR Styling */
-        .wechat-qr { max-width: 140px; height: auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); border: 1px solid #eee; margin-top: 12px; }
+        .wechat-qr { max-width: 160px; height: auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); border: 1px solid #eee; margin-top: 12px; }
 
         /* --- CONTACT FORM (RIGHT) --- */
         .contact-form-container { flex: 1.5; min-width: 300px; background: #fff; padding: 40px; border-radius: 8px; border-top: 4px solid #5d5179; box-shadow: 0 5px 20px rgba(0,0,0,0.05); }
@@ -62,8 +62,8 @@
         
         .form-group { margin-bottom: 20px; }
         .form-group label { display: block; margin-bottom: 8px; color: #353535; font-weight: bold; font-family: "Open Sans", sans-serif; font-size: 14px; }
-        .form-control { width: 100%; padding: 12px 15px; border: 1px solid #ddd; border-radius: 4px; font-family: "Open Sans", sans-serif; font-size: 15px; color: #353535; box-sizing: border-box; transition: border-color 0.3s; }
-        .form-control:focus { border-color: #96349b; outline: none; }
+        .form-control { width: 100%; padding: 12px 15px; border: 1px solid #ddd; border-radius: 4px; font-family: "Open Sans", sans-serif; font-size: 15px; color: #353535; box-sizing: border-box; transition: border-color 0.3s; background-color: #fcfcfc;}
+        .form-control:focus { border-color: #96349b; outline: none; background-color: #fff;}
         textarea.form-control { resize: vertical; min-height: 120px; }
         
         .submit-btn { background-color: #5d5179; color: white !important; padding: 15px 35px; border-radius: 5px; border: none; font-weight: bold; font-size: 16px; cursor: pointer; transition: background 0.3s; font-family: "Open Sans", sans-serif; width: 100%; }
@@ -121,7 +121,7 @@
                     <i class="fas fa-mobile-alt"></i>
                     <div>
                         <h4>Call Us</h4>
-                        <p>Tony Geng: <a href="tel:+61 401 456 769" style="color: #686868; text-decoration: none;">+61 401 456 769</a></p>
+                        <p><a href="tel:+61401456769" style="color: #686868; text-decoration: none;">(+61) 401 456 769</a></p>
                     </div>
                 </div>
 
@@ -145,32 +145,27 @@
                     <i class="fab fa-weixin"></i>
                     <div>
                         <h4>WeChat</h4>
-                        <p style="margin-bottom: 5px;">Scan the QR code below to connect with Tony directly for seamless communication.</p>
-                        <img src="/wp-content/uploads/2024/01/wechat-qr.jpg" alt="WeChat QR Code" class="wechat-qr">
+                        <p style="margin-bottom: 5px;">Scan the QR code below to connect with us directly for seamless communication.</p>
+                        <img src="/wp-content/uploads/2024/01/wechat-qr.jpg" alt="Loyal Bright WeChat QR Code" class="wechat-qr">
                     </div>
                 </div>
             </div>
 
             <div class="contact-form-container">
                 <h3>Send us a message</h3>
-                <form action="#" method="POST">
-                    <div style="display: flex; gap: 20px;">
-                        <div class="form-group" style="flex: 1;">
-                            <label for="firstName">First Name *</label>
-                            <input type="text" id="firstName" name="firstName" class="form-control" required>
-                        </div>
-                        <div class="form-group" style="flex: 1;">
-                            <label for="lastName">Last Name *</label>
-                            <input type="text" id="lastName" name="lastName" class="form-control" required>
-                        </div>
+                <form action="https://formspree.io/f/mvzwagjv" method="POST">
+                    
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
                     </div>
                     
-                    <div style="display: flex; gap: 20px;">
-                        <div class="form-group" style="flex: 1;">
+                    <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                        <div class="form-group" style="flex: 1; min-width: 120px;">
                             <label for="email">Email Address *</label>
                             <input type="email" id="email" name="email" class="form-control" required>
                         </div>
-                        <div class="form-group" style="flex: 1;">
+                        <div class="form-group" style="flex: 1; min-width: 120px;">
                             <label for="phone">Phone Number</label>
                             <input type="tel" id="phone" name="phone" class="form-control">
                         </div>
@@ -194,7 +189,9 @@
                         <textarea id="message" name="message" class="form-control" placeholder="Please provide a brief description of your inquiry..." required></textarea>
                     </div>
 
-                    <button type="submit" class="submit-btn">Request Consultation</button>
+                    <input type="text" name="_gotcha" style="display:none" />
+
+                    <button type="submit" class="submit-btn">Send Message</button>
                 </form>
             </div>
 
