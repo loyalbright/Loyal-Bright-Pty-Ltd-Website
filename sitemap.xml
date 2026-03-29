@@ -3,6 +3,13 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>https://loyalbright.com.au/</loc>
+    <xhtml:link rel="alternate" hreflang="en-AU" href="https://loyalbright.com.au/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://loyalbright.com.au/zh/"/>
+    <lastmod>2026-03-30</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
     <loc>https://loyalbright.com.au/en/home/</loc>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://loyalbright.com.au/zh/"/>
     <xhtml:link rel="alternate" hreflang="en-AU" href="https://loyalbright.com.au/en/home/"/>
