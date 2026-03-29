@@ -9,89 +9,93 @@
     <lastmod>2026-03-30</lastmod>
     <priority>1.0</priority>
   </url>
-  <url>
-    <loc>https://loyalbright.com.au/en/home/</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://loyalbright.com.au/zh/"/>
-    <xhtml:link rel="alternate" hreflang="en-AU" href="https://loyalbright.com.au/en/home/"/>
-    <lastmod>2026-03-27</lastmod>
-    <priority>1.0</priority>
-  </url>
+
   <url>
     <loc>https://loyalbright.com.au/en/about/</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://loyalbright.com.au/zh/about-zh/"/>
     <xhtml:link rel="alternate" hreflang="en-AU" href="https://loyalbright.com.au/en/about/"/>
-    <lastmod>2026-03-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://loyalbright.com.au/zh/about-zh/"/>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.8</priority>
   </url>
+
   <url>
     <loc>https://loyalbright.com.au/en/services/</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://loyalbright.com.au/zh/services-zh/"/>
     <xhtml:link rel="alternate" hreflang="en-AU" href="https://loyalbright.com.au/en/services/"/>
-    <lastmod>2026-03-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://loyalbright.com.au/zh/services-zh/"/>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.8</priority>
   </url>
+
   <url>
     <loc>https://loyalbright.com.au/en/faq/</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://loyalbright.com.au/zh/faq-zh/"/>
     <xhtml:link rel="alternate" hreflang="en-AU" href="https://loyalbright.com.au/en/faq/"/>
-    <lastmod>2026-03-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://loyalbright.com.au/zh/faq-zh/"/>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.7</priority>
   </url>
+
   <url>
     <loc>https://loyalbright.com.au/en/contact/</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://loyalbright.com.au/zh/contact-zh/"/>
     <xhtml:link rel="alternate" hreflang="en-AU" href="https://loyalbright.com.au/en/contact/"/>
-    <lastmod>2026-03-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://loyalbright.com.au/zh/contact-zh/"/>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.8</priority>
   </url>
+
   <url>
     <loc>https://loyalbright.com.au/en/privacy-policy/</loc>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://loyalbright.com.au/zh/privacy-policy-zh/"/>
     <xhtml:link rel="alternate" hreflang="en-AU" href="https://loyalbright.com.au/en/privacy-policy/"/>
-    <lastmod>2026-03-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://loyalbright.com.au/zh/privacy-policy-zh/"/>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.3</priority>
   </url>
 
   <url>
     <loc>https://loyalbright.com.au/zh/</loc>
-    <xhtml:link rel="alternate" hreflang="en-AU" href="https://loyalbright.com.au/en/home/"/>
+    <xhtml:link rel="alternate" hreflang="en-AU" href="https://loyalbright.com.au/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://loyalbright.com.au/zh/"/>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>1.0</priority>
   </url>
+
   <url>
     <loc>https://loyalbright.com.au/zh/about-zh/</loc>
     <xhtml:link rel="alternate" hreflang="en-AU" href="https://loyalbright.com.au/en/about/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://loyalbright.com.au/zh/about-zh/"/>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.8</priority>
   </url>
+
   <url>
     <loc>https://loyalbright.com.au/zh/services-zh/</loc>
     <xhtml:link rel="alternate" hreflang="en-AU" href="https://loyalbright.com.au/en/services/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://loyalbright.com.au/zh/services-zh/"/>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.8</priority>
   </url>
+
   <url>
     <loc>https://loyalbright.com.au/zh/faq-zh/</loc>
     <xhtml:link rel="alternate" hreflang="en-AU" href="https://loyalbright.com.au/en/faq/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://loyalbright.com.au/zh/faq-zh/"/>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.7</priority>
   </url>
+
   <url>
     <loc>https://loyalbright.com.au/zh/contact-zh/</loc>
     <xhtml:link rel="alternate" hreflang="en-AU" href="https://loyalbright.com.au/en/contact/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://loyalbright.com.au/zh/contact-zh/"/>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.8</priority>
   </url>
+
   <url>
     <loc>https://loyalbright.com.au/zh/privacy-policy-zh/</loc>
     <xhtml:link rel="alternate" hreflang="en-AU" href="https://loyalbright.com.au/en/privacy-policy/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://loyalbright.com.au/zh/privacy-policy-zh/"/>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <priority>0.3</priority>
   </url>
+
 </urlset>
