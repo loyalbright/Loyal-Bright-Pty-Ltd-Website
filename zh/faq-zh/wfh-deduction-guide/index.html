@@ -46,12 +46,19 @@
         .article-container { padding: 40px; border-radius: 8px; border: 1px solid #eee; box-shadow: 0 5px 25px rgba(0,0,0,0.03); border-top: 4px solid #5d5179; }
         .article-container h2 { color: #03263B; margin-top: 40px; margin-bottom: 20px; font-weight: 700; font-family: "Open Sans", sans-serif; font-size: 24px; border-left: 5px solid #96349b; padding-left: 15px;}
         .article-container p { color: #353535; font-size: 16px; line-height: 1.8; margin-bottom: 20px; font-family: "Open Sans", sans-serif; }
+        
+        /* 修复警告框样式：强制加粗加大红色标题 */
         .article-container .warning-box { background: #fff5f5; padding: 25px; border-radius: 6px; border: 1px solid #ff6663; margin-bottom: 30px;}
-        .article-container .warning-box h4 { color: #c53030; margin-top: 0; display: flex; align-items: center; }
+        .article-container .warning-box h4 { color: #c53030; margin-top: 0; display: flex; align-items: center; font-weight: 800 !important; font-size: 20px; font-family: "Open Sans", sans-serif;}
         .article-container .warning-box i { margin-right: 10px; }
         
         .back-link { display: inline-block; margin-top: 30px; color: #5d5179; font-weight: bold; text-decoration: none; transition: 0.3s; }
         .back-link:hover { color: #96349b; text-decoration: underline; }
+
+        /* 计算器专属样式 */
+        .calculator-box { background: #f4f7f6; padding: 30px; border-radius: 8px; border: 1px solid #dce4e1; margin-bottom: 30px; margin-top: 20px; }
+        .calc-slider { width: 100%; margin-top: 10px; margin-bottom: 20px; accent-color: #96349b; }
+        .calc-result { background: #fff; padding: 20px; border-radius: 6px; text-align: center; border: 2px solid #5d5179; margin-top: 20px; }
 	</style>
     <script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
     <script type="text/javascript" src="/wp-content/themes/primer/assets/js/navigation.min.js?ver=1.8.7"></script>
@@ -108,6 +115,88 @@
                     <li>您可以单独申报：电脑硬件折旧、办公家具折旧（如果超过 $300）。</li>
                 </ul>
 
-                <p>您可以使用下面的计算器初步估算您在本财年可以抵扣的金额：</p>
-```json?chameleon
-{"component":"LlmGeneratedComponent","props":{"height":"400px","prompt":"创建一个居家办公抵扣估算工具 (WFH Deduction Estimator)。目标：让用户通过调整工作时长了解固定费率法下的潜在抵扣额。初始值：每周工作38小时，每年工作48周。策略：Form Layout。输入：每周在家工作小时数 (Slider/Input, 范围0-80)，每年工作周数 (Slider/Input, 范围0-52)。计算逻辑：总小时数 * 0.67。行为：实时更新结果。结果显示包含三部分：总抵扣额、覆盖的项目列表（电费、网费、话费、文具）、以及提醒（不包含折旧）。语言：中文。","id":"im_7edda6d24549b357"}}
+                <div class="calculator-box">
+                    <h3 style="margin-top: 0; color: #03263B; font-size: 20px;"><i class="fas fa-calculator" style="color: #96349b; margin-right: 8px;"></i> 居家办公抵扣估算器</h3>
+                    <p style="font-size: 14px; color: #686868; margin-bottom: 20px;">通过调整下方滑块，快速估算您本财年使用固定费率法可申请的抵扣额度。</p>
+                    
+                    <div>
+                        <label for="hoursPerWeek" style="display: block; font-weight: bold; color: #353535;">每周在家工作小时数: <span id="hoursVal" style="color: #96349b;">38</span> 小时</label>
+                        <input type="range" id="hoursPerWeek" class="calc-slider" min="0" max="80" value="38">
+                    </div>
+                    
+                    <div>
+                        <label for="weeksPerYear" style="display: block; font-weight: bold; color: #353535;">本财年在家工作周数: <span id="weeksVal" style="color: #96349b;">48</span> 周</label>
+                        <input type="range" id="weeksPerYear" class="calc-slider" min="0" max="52" value="48">
+                    </div>
+                    
+                    <div class="calc-result">
+                        <p style="margin: 0; font-size: 16px; color: #686868; font-weight: bold;">预计总抵扣额 (按 $0.67/小时计算)</p>
+                        <p style="margin: 5px 0 0 0; font-size: 36px; font-weight: bold; color: #96349b;">$<span id="totalDeduction">1222.08</span></p>
+                    </div>
+                    
+                    <div style="margin-top: 20px; font-size: 14px; color: #555; background: #eef4f7; padding: 15px; border-radius: 6px;">
+                        <p style="margin-bottom: 8px;"><i class="fas fa-check-circle" style="color: #28a745; margin-right: 5px;"></i> <strong>已包含:</strong> 电费、网费、手机费、文具及耗材。</p>
+                        <p style="margin: 0;"><i class="fas fa-info-circle" style="color: #17a2b8; margin-right: 5px;"></i> <strong>未包含:</strong> 电脑、显示器、办公椅等资产的折旧（可另外单独申报）。</p>
+                    </div>
+                </div>
+
+                <script>
+                    // 计算器逻辑
+                    const hoursInput = document.getElementById('hoursPerWeek');
+                    const weeksInput = document.getElementById('weeksPerYear');
+                    const hoursVal = document.getElementById('hoursVal');
+                    const weeksVal = document.getElementById('weeksVal');
+                    const totalDeduction = document.getElementById('totalDeduction');
+
+                    function calculateDeduction() {
+                        const hours = parseInt(hoursInput.value);
+                        const weeks = parseInt(weeksInput.value);
+                        hoursVal.textContent = hours;
+                        weeksVal.textContent = weeks;
+                        
+                        const total = hours * weeks * 0.67;
+                        totalDeduction.textContent = total.toLocaleString('en-AU', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+                    }
+
+                    hoursInput.addEventListener('input', calculateDeduction);
+                    weeksInput.addEventListener('input', calculateDeduction);
+                    
+                    // 初始化计算
+                    calculateDeduction();
+                </script>
+                <h2>2. 实际成本法 (Actual Cost Method)</h2>
+                <p>如果您的工作需要消耗大量电力或高昂的电话费，您可以选择实际成本法。但这要求极其繁琐的记录：</p>
+                <ul>
+                    <li>所有费用的具体收据和账单。</li>
+                    <li>详细的计算逻辑，证明业务用途占总支出的比例。</li>
+                    <li>专用的办公空间面积与全屋面积的比例分析。</li>
+                </ul>
+
+                <h2>3. 哪些东西不能报？</h2>
+                <p>即便是在家办公，以下费用也是<strong>禁止申报</strong>的：</p>
+                <ul>
+                    <li>咖啡、茶、牛奶等食物及杂货。</li>
+                    <li>如果您偶尔在沙发上回邮件，而没有在专门的工作区域，相关的清洁费、房租或房贷利息。</li>
+                    <li>如果您是雇员，通常不能申报房租或房贷利息相关的抵扣。</li>
+                </ul>
+
+                <p style="background: #eef4f7; padding: 20px; border-radius: 6px;">
+                    <strong>专业建议：</strong> 建议您在手机中使用 <strong>ATO app</strong> 的 myDeductions 功能实时记录您的工作时长。如果您不确定哪种方法最适合您，请预约我们的咨询。
+                </p>
+
+                <a href="/zh/faq-zh/" class="back-link">&larr; 返回所有常见问题</a>
+            </div>
+		</div>
+
+		<footer class="site-footer" style="background: #f5f5f5; border-top: 1px solid #eee; padding: 40px 20px;">
+			<div class="site-info-inner" style="text-align: center;">
+				<a class="privacy-policy-link" href="/zh/privacy-policy-zh/" style="display:block; margin-bottom:10px; color: #686868;">隐私政策</a>	
+				<div class="site-info-text" style="color: #686868; font-size: 13px;">
+					Copyright &copy; 2019 - 2026 Loyal Bright Pty Ltd ATF Loyal Bright Trust t/a Loyal Bright Accountants. <br>
+                    <small>Liability limited by a scheme approved under Professional Standards Legislation.</small>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
