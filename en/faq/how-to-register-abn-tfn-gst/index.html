@@ -3,90 +3,234 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>How to Register for an ABN, TFN, and GST | Loyal Bright Accountants FAQ</title>
+	<title>How to Register for an ABN, TFN, and GST | Loyal Bright Accountants</title>
 	<meta name="description" content="Learn the step-by-step process of registering your new business for an Australian Business Number (ABN), Tax File Number (TFN), and GST.">
+
+    <link rel="canonical" href="https://loyalbright.com.au/en/faq/how-to-register-abn-tfn-gst/">
+    <link rel="alternate" hreflang="en-AU" href="https://loyalbright.com.au/en/faq/how-to-register-abn-tfn-gst/">
+    <link rel="alternate" hreflang="zh-CN" href="https://loyalbright.com.au/zh/faq-zh/how-to-register-abn-tfn-gst/">
+
+    <link rel="icon" href="/wp-content/uploads/2018/11/cropped-Loyal-Bright-Website-Tag-32x32.png" sizes="32x32">
+    <link rel="icon" href="/wp-content/uploads/2018/11/cropped-Loyal-Bright-Website-Tag-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="/wp-content/uploads/2018/11/cropped-Loyal-Bright-Website-Tag-180x180.png">
+	
 	<link rel="stylesheet" id="ascension-css" href="/wp-content/themes/ascension/style.css?ver=1.1.5" type="text/css" media="all">
 	<link rel="stylesheet" id="ascension-fonts-css" href="https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C700&amp;subset=latin&amp;ver=1.8.7" type="text/css" media="all">
+    <link rel="stylesheet" href="/wp-content/plugins/beaver-builder-lite-version/fonts/fontawesome/5.15.4/css/all.min.css">
+
 	<style type="text/css">
-		.site-title,.site-description{position:absolute;clip:rect(1px, 1px, 1px, 1px);}
-		.site-footer {background-color:#f5f5f5;}
-		.site-info-wrapper {background-color:#ffffff;}
-		.site-info-wrapper .site-info-text {color:#686868;}
-        .article-content h2 { margin-top: 30px; margin-bottom: 15px; font-size: 24px; }
-        .article-content h3 { margin-top: 25px; margin-bottom: 10px; font-size: 20px; }
-        .article-content p, .article-content ul { margin-bottom: 20px; line-height: 1.6; }
-        .article-content ul { list-style-type: disc; padding-left: 20px; }
+        /* --- HEADER STYLES --- */
+        .site-title, .site-description { position: absolute; clip: rect(1px, 1px, 1px, 1px); }
+        .site-header { background: #fff; padding: 20px 0; border-bottom: 1px solid #eee; }
+        .nav-container { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; flex-direction: row; justify-content: space-between; align-items: center; }
+        .custom-logo { max-width: 250px; height: auto; display: block; }
+        
+        /* Fixed Desktop Navigation Menu Colors */
+        .main-navigation .menu { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: row; align-items: center; }
+        .main-navigation .menu li { margin: 0 15px; }
+        .main-navigation .menu a { text-decoration: none; color: #5d5179; font-weight: 700; font-size: 15px; text-transform: uppercase; transition: color 0.3s; }
+        .main-navigation .menu a:hover { color: #96349b; }
+
+        /* Restores the Purple Hamburger Menu & Mobile Links */
+        .menu-toggle div { background-color: #96349b; } 
+        .main-navigation ul li a, .main-navigation ul li a:visited { color: #96349b; } 
+        .main-navigation ul li a:hover, .main-navigation ul li a:focus { color: rgba(150, 52, 155, 0.8); }
+
+        @media (max-width: 768px) {
+            .nav-container { flex-direction: column; justify-content: center; }
+            .custom-logo { margin-bottom: 20px; max-width: 200px; }
+            .main-navigation .menu { flex-direction: column; width: 100%; }
+            .main-navigation .menu li { margin: 0; width: 100%; text-align: center; border-bottom: 1px solid #f9f9f9; padding: 12px 0; }
+            .main-navigation .menu li:last-child { border-bottom: none; padding-bottom: 0; }
+        }
+
+        /* --- PAGE CONTENT STYLES --- */
+        .hero { 
+            background-image: linear-gradient(rgba(3, 38, 59, 0.75), rgba(3, 38, 59, 0.75)), url(/wp-content/uploads/2019/07/cropped-Home-Page-Hero-2400x1160.jpeg);
+            background-size: cover; background-position: center; padding: 80px 20px; text-align: center; color: #fff;
+        }
+        .hero h1 { font-size: 36px; color: #fff; margin-bottom: 10px; font-weight: 700; font-family: "Open Sans", sans-serif;}
+        
+        .site-content { max-width: 900px; margin: 60px auto; padding: 0 20px; background: #fff; }
+        .article-container { padding: 40px; border-radius: 8px; border: 1px solid #eee; box-shadow: 0 5px 25px rgba(0,0,0,0.03); border-top: 4px solid #5d5179; }
+        .article-container h2, .article-container h3 { color: #03263B; margin-top: 40px; margin-bottom: 20px; font-weight: 700; font-family: "Open Sans", sans-serif; }
+        .article-container h2 { font-size: 24px; border-left: 5px solid #96349b; padding-left: 15px;}
+        .article-container h3 { font-size: 20px; }
+        .article-container p, .article-container ul { color: #353535; font-size: 16px; line-height: 1.8; margin-bottom: 20px; font-family: "Open Sans", sans-serif; }
+        .article-container ul { padding-left: 20px; }
+        
+        .back-link { display: inline-block; margin-top: 30px; color: #5d5179; font-weight: bold; text-decoration: none; transition: 0.3s; }
+        .back-link:hover { color: #96349b; text-decoration: underline; }
+
+        /* Custom Calculator Styles */
+        .calculator-box { background: #fdfaf6; padding: 30px; border-radius: 8px; border: 1px solid #e8e1d7; margin-bottom: 30px; margin-top: 30px; }
+        .calc-slider { width: 100%; margin-top: 10px; margin-bottom: 20px; accent-color: #96349b; }
+        .calc-select { width: 100%; padding: 10px; margin-top: 5px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 4px; font-size: 16px; font-family: "Open Sans", sans-serif;}
+        .calc-result { background: #fff; padding: 20px; border-radius: 6px; text-align: center; border: 2px solid #5d5179; margin-top: 10px; }
+        .calc-result h4 { margin: 0 0 10px 0; font-size: 22px; }
+        .calc-result p { margin: 0; font-size: 15px; color: #555; }
 	</style>
+    <script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+    <script type="text/javascript" src="/wp-content/themes/primer/assets/js/navigation.min.js?ver=1.8.7"></script>
 </head>
 
-<body class="wp-singular page-template-default page layout-one-column-wide">
+<body class="page layout-one-column-wide">
 	<div id="page" class="hfeed site">
-		<header id="masthead" class="site-header" role="banner">
+        
+        <header id="masthead" class="site-header" role="banner">
 			<div class="site-header-wrapper">
 				<div class="site-title-wrapper">
-					<a href="/en/home/" class="custom-logo-link" rel="home"><img width="511" height="134" src="/wp-content/uploads/2018/11/cropped-1_Primary_logo_on_transparent_512-1.png" class="custom-logo" alt="Loyal Bright Accountants"></a>
+					<a href="/" class="custom-logo-link" rel="home"><img width="511" height="134" src="/wp-content/uploads/2018/11/cropped-1_Primary_logo_on_transparent_512-1.png" class="custom-logo" alt="Loyal Bright Accountants"></a>
+                    <h1 class="site-title"><a href="/" rel="home">Loyal Bright Accountants</a></h1>
 				</div>
 				<div class="main-navigation-container">
+                    <div class="menu-toggle" id="menu-toggle" role="button" tabindex="0">
+                        <div></div><div></div><div></div>
+                    </div>
 					<nav id="site-navigation" class="main-navigation">
-						<div class="menu-container">
-							<ul id="menu-en" class="menu">
-								<li class="menu-item"><a href="/en/home/">Home</a></li>
-								<li class="menu-item"><a href="/en/about/">About Us</a></li>
-								<li class="menu-item"><a href="/en/services/">Services</a></li>
-								<li class="menu-item"><a href="/en/faq/">FAQ</a></li>
-								<li class="menu-item"><a href="/en/contact/">Contact Us</a></li>
-								<li class="menu-item"><a href="/zh/faq-zh/how-to-register-abn-tfn-gst/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAXVBMVEXUAADlQgDLAADBAADtgXn63Xjypnf1wHHpcG/oZmbmXVzlU1PjS0q1AAD981775VvwnVD2zkvhPz/fNzfdMjHcKyvaJyfsi0baISHYGhqqAADWExPTDQ2jAACfAAApGpDBAAAAWklEQVR4ATXIhQHDQBTDUMll2n/RMiU5/vQsAE4EsPbaKVOU+pXNwc/WKQXeDZMKu+psCXw/Z7efarmENd6GIwEpXhUvM4spxoiEbouRNT7Fmtaq+RG4wAqZZvceD8DeIelqAAAAAElFTkSuQmCC" alt="" width="16" height="11" style="width: 16px; height: 11px;"><span style="margin-left:0.3em;">简体中文</span></a></li>
-							</ul>
-						</div>
+                        <div class="menu-primary-menu-container">
+                            <ul id="menu-primary-menu" class="menu">
+                                <li class="menu-item"><a href="/">Home</a></li>
+                                <li class="menu-item"><a href="/en/about/">About Us</a></li>
+                                <li class="menu-item"><a href="/en/services/">Services</a></li>
+                                <li class="menu-item"><a href="/en/faq/">FAQ</a></li>
+                                <li class="menu-item"><a href="/en/contact/">Contact Us</a></li>
+                                <li class="menu-item"><a href="/zh/faq-zh/how-to-register-abn-tfn-gst/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAXVBMVEXUAADlQgDLAADBAADtgXn63Xjypnf1wHHpcG/oZmbmXVzlU1PjS0q1AAD981775VvwnVD2zkvhPz/fNzfdMjHcKyvaJyfsi0baISHYGhqqAADWExPTDQ2jAACfAAApGpDBAAAAWklEQVR4ATXIhQHDQBTDUMll2n/RMiU5/vQsAE4EsPbaKVOU+pXNwc/WKQXeDZMKu+psCXw/Z7efarmENd6GIwEpXhUvM4spxoiEbouRNT7Fmtaq+RG4wAqZZvceD8DeIelqAAAAAElFTkSuQmCC" alt="" width="16" height="11" style="vertical-align: middle; margin-right: 5px;">中文</a></li>
+                            </ul>
+                        </div>
 					</nav>
 				</div>
 			</div>
 		</header>
 
-		<div class="hero"><div class="hero-inner"><div class="page-title-container">
-			<header class="page-header"><h1 class="page-title">How to Register for an ABN, TFN, and GST?</h1></header>
-		</div></div></div>
+		<section class="hero">
+			<h1>How to Register for an ABN, TFN, and GST</h1>
+		</section>
 
-		<div id="content" class="site-content" style="max-width: 800px; margin: 0 auto; padding: 40px 20px;">
-			<div class="article-content">
-				<p><em>Published in March 2026</em></p>
+		<div class="site-content">
+			<div class="article-container">
+				<p style="color: #999; font-size: 14px; font-weight: bold; margin-bottom: 30px;">Updated: April 2026</p>
 				
-                <p>When starting a new business in Australia, dealing with government registrations can feel overwhelming. Understanding the difference between an ABN, a TFN, and GST is your first step to getting your business off the ground legally and efficiently.</p>
+				<p>When starting a new business in Australia, dealing with government registrations can feel overwhelming. Understanding the difference between an ABN, a TFN, and GST is your first step to getting your business off the ground legally and efficiently.</p>
 
-                <h3>1. Australian Business Number (ABN)</h3>
-                <p>An ABN is a unique 11-digit number that identifies your business to the government and the community. You need an ABN to issue valid tax invoices, claim energy grants, and avoid having other businesses withhold tax from payments to you.</p>
-                <ul>
-                    <li><strong>Do I need one?</strong> Yes, if you are carrying on an enterprise in Australia, you should register for an ABN.</li>
-                    <li><strong>How to register:</strong> Registration is free through the <a href="https://www.abr.gov.au/" target="_blank" rel="noopener">Australian Business Register (ABR)</a> website.</li>
-                </ul>
+				<h2>1. Australian Business Number (ABN)</h2>
+				<p>An ABN is a unique 11-digit number that identifies your business to the government and the community. You need an ABN to issue valid tax invoices, claim energy grants, and avoid having other businesses withhold tax from payments to you.</p>
+				<ul>
+					<li><strong>Do I need one?</strong> Yes, if you are carrying on an enterprise in Australia, you should register for an ABN.</li>
+					<li><strong>How to register:</strong> Registration is free through the <a href="https://www.abr.gov.au/" target="_blank" rel="noopener" style="color:#96349b; font-weight:bold;">Australian Business Register (ABR)</a> website.</li>
+				</ul>
 
-                <h3>2. Tax File Number (TFN)</h3>
-                <p>Your TFN is your personal reference number in the tax and superannuation systems.</p>
-                <ul>
-                    <li><strong>Sole Traders:</strong> If you operate as a Sole Trader, you simply use your existing individual TFN for your business dealings. You do not need a new one.</li>
-                    <li><strong>Companies, Partnerships, and Trusts:</strong> If you set up a separate business entity, that entity MUST apply for its own separate business TFN. You can apply for this at the same time you apply for your ABN on the ABR website.</li>
-                </ul>
+				<h2>2. Tax File Number (TFN)</h2>
+				<p>Your TFN is your personal reference number in the tax and superannuation systems.</p>
+				<ul>
+					<li><strong>Sole Traders:</strong> If you operate as a Sole Trader, you simply use your existing individual TFN for your business dealings. You do not need a new one.</li>
+					<li><strong>Companies, Partnerships, and Trusts:</strong> If you set up a separate business entity (like a Pty Ltd company), that entity <strong>must</strong> apply for its own separate business TFN. You can apply for this at the same time you apply for your ABN on the ABR website.</li>
+				</ul>
 
-                <h3>3. Goods and Services Tax (GST)</h3>
-                <p>GST is a broad-based tax of 10% on most goods, services, and other items sold or consumed in Australia.</p>
-                <ul>
-                    <li><strong>The $75,000 Threshold:</strong> You are <strong>only required</strong> to register for GST when your business has a gross income (turnover) of $75,000 or more per year. (Note: For non-profit organizations, the threshold is $150,000, and for taxi/ride-share drivers, you must register immediately regardless of income).</li>
-                    <li><strong>Should I register early?</strong> If your turnover is under $75,000, registering is optional. It might be beneficial if you have large business expenses and want to claim back the GST credits, but remember that once registered, you must charge an extra 10% on your sales and lodge regular Business Activity Statements (BAS).</li>
-                </ul>
+				<h2>3. Goods and Services Tax (GST)</h2>
+				<p>GST is a broad-based tax of 10% on most goods, services, and other items sold or consumed in Australia.</p>
+				<ul>
+					<li><strong>The Registration Threshold:</strong> You are <strong>only required</strong> to register for GST when your business reaches a certain gross income (turnover) threshold.</li>
+					<li><strong>Should I register early?</strong> If your turnover is below the threshold, registering is optional. It might be beneficial if you have large business expenses and want to claim back the GST credits, but remember that once registered, you must charge an extra 10% on your sales and lodge regular Business Activity Statements (BAS).</li>
+				</ul>
 
-                <h3>Let us handle the paperwork!</h3>
-                <p>One small mistake during the registration process can cause major headaches with the ATO down the line. As registered Tax Agents, Loyal Bright Accountants can register your ABN, TFN, and GST simultaneously, ensuring your business is structured correctly from day one. Contact us today to get started.</p>
-                
-                <p><br><a href="/en/faq/">&larr; Back to all FAQs</a></p>
+                <div class="calculator-box">
+                    <h3 style="margin-top: 0; color: #03263B; font-size: 20px;"><i class="fas fa-clipboard-check" style="color: #96349b; margin-right: 8px;"></i> GST Requirement Checker</h3>
+                    <p style="font-size: 14px; color: #686868; margin-bottom: 20px;">Not sure if you need to register for GST? Select your business type and estimated annual turnover below to check your obligations.</p>
+                    
+                    <div>
+                        <label for="businessType" style="display: block; font-weight: bold; color: #353535;">What type of business do you operate?</label>
+                        <select id="businessType" class="calc-select">
+                            <option value="standard">Standard Business (Sole Trader, Company, etc.)</option>
+                            <option value="nonprofit">Non-Profit Organization</option>
+                            <option value="rideshare">Taxi or Ride-share Driver (e.g., Uber, DiDi)</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="turnoverAmount" style="display: block; font-weight: bold; color: #353535;">Estimated Annual Gross Turnover: $<span id="turnoverVal" style="color: #96349b;">50,000</span></label>
+                        <input type="range" id="turnoverAmount" class="calc-slider" min="0" max="200000" step="5000" value="50000">
+                    </div>
+                    
+                    <div class="calc-result" id="resultBox">
+                        <h4 id="statusHeading">Checking...</h4>
+                        <p id="statusMessage">Please select your options above.</p>
+                    </div>
+                </div>
+
+                <script>
+                    const typeInput = document.getElementById('businessType');
+                    const turnoverInput = document.getElementById('turnoverAmount');
+                    const turnoverVal = document.getElementById('turnoverVal');
+                    
+                    const resultBox = document.getElementById('resultBox');
+                    const statusHeading = document.getElementById('statusHeading');
+                    const statusMessage = document.getElementById('statusMessage');
+
+                    function updateGSTCheck() {
+                        const type = typeInput.value;
+                        const turnover = parseInt(turnoverInput.value);
+                        turnoverVal.textContent = turnover.toLocaleString('en-AU');
+                        
+                        let isRequired = false;
+                        let thresholdMessage = "";
+
+                        if (type === 'rideshare') {
+                            isRequired = true;
+                            thresholdMessage = "Taxi and ride-share drivers must register for GST regardless of their turnover. There is no minimum threshold.";
+                        } else if (type === 'nonprofit') {
+                            if (turnover >= 150000) {
+                                isRequired = true;
+                                thresholdMessage = "Because your turnover is $150,000 or more, your Non-Profit Organization is legally required to register for GST.";
+                            } else {
+                                isRequired = false;
+                                thresholdMessage = "Because your turnover is under $150,000, GST registration is entirely optional for your Non-Profit Organization.";
+                            }
+                        } else {
+                            if (turnover >= 75000) {
+                                isRequired = true;
+                                thresholdMessage = "Because your turnover is $75,000 or more, you are legally required to register for GST and lodge BAS returns.";
+                            } else {
+                                isRequired = false;
+                                thresholdMessage = "Because your turnover is under $75,000, GST registration is optional. You do not need to register yet.";
+                            }
+                        }
+
+                        if (isRequired) {
+                            resultBox.style.borderColor = "#c53030";
+                            statusHeading.style.color = "#c53030";
+                            statusHeading.innerHTML = '<i class="fas fa-exclamation-circle"></i> Registration Required';
+                        } else {
+                            resultBox.style.borderColor = "#28a745";
+                            statusHeading.style.color = "#28a745";
+                            statusHeading.innerHTML = '<i class="fas fa-check-circle"></i> Registration Optional';
+                        }
+                        
+                        statusMessage.textContent = thresholdMessage;
+                    }
+
+                    typeInput.addEventListener('change', updateGSTCheck);
+                    turnoverInput.addEventListener('input', updateGSTCheck);
+                    
+                    // Initialize
+                    updateGSTCheck();
+                </script>
+                <h2 style="border-left:none; padding-left:0; border-top: 1px solid #eee; padding-top:30px;">Let us handle the paperwork!</h2>
+				<p>One small mistake during the registration process can cause major headaches with the ATO down the line. As registered Tax Agents, Loyal Bright Accountants can register your ABN, TFN, and GST simultaneously, ensuring your business is structured correctly from day one. Contact us today to get started.</p>
+				
+				<a href="/en/faq/" class="back-link">&larr; Back to all FAQs</a>
 			</div>
 		</div>
 
-		<div class="site-info-wrapper">
-			<div class="site-info-inner" style="text-align: center; padding: 20px;">
-				<a class="privacy-policy-link" href="/en/privacy-policy/" style="display:block; margin-bottom:10px;">Privacy Policy</a>
-				<div class="site-info-text">Copyright &copy; 2019 - 2026 Loyal Bright Accountants. All Rights Reserved.</div>
+		<footer class="site-footer" style="background: #f5f5f5; border-top: 1px solid #eee; padding: 40px 20px;">
+			<div class="site-info-inner" style="text-align: center;">
+				<a class="privacy-policy-link" href="/en/privacy-policy/" style="display:block; margin-bottom:10px; color: #686868;">Privacy Policy</a>	
+				<div class="site-info-text" style="color: #686868; font-size: 13px;">
+					Copyright &copy; 2019 - 2026 Loyal Bright Pty Ltd ATF Loyal Bright Trust t/a Loyal Bright Accountants. <br>
+                    <small>Liability limited by a scheme approved under Professional Standards Legislation.</small>
+				</div>
 			</div>
-		</div>
+		</footer>
 	</div>
 </body>
 </html>
