@@ -19,22 +19,27 @@
     <link rel="stylesheet" href="/wp-content/plugins/beaver-builder-lite-version/fonts/fontawesome/5.15.4/css/all.min.css">
 
 	<style type="text/css">
-        /* --- HEADER STYLES (Fixed Menu Spacing) --- */
+		/* --- HEADER STYLES (Fixed Menu Spacing) --- */
         .site-title, .site-description { position: absolute; clip: rect(1px, 1px, 1px, 1px); }
         .site-header { background: #fff; padding: 20px 0; border-bottom: 1px solid #eee; }
-        .nav-container { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; flex-direction: row; justify-content: space-between; align-items: center; }
-        .custom-logo { max-width: 250px; height: auto; display: block; }
         
-        /* Fixed Desktop Navigation Menu Colors & Spacing */
-        .main-navigation .menu { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: row; align-items: center; }
-        .main-navigation .menu li { margin: 0 15px; } /* Controls Desktop Spacing */
+        /* 仅覆盖颜色和字体，将排版间距交还给原主题 */
+        .main-navigation ul li a, 
+        .main-navigation ul li a:visited { 
+            color: #5d5179 !important; 
+            font-weight: 700; 
+            font-size: 15px; 
+            text-transform: uppercase; 
+            transition: color 0.3s; 
+        }
         
-        /* Targeted Specificity to override theme defaults */
-        .main-navigation ul li a, .main-navigation ul li a:visited { text-decoration: none; color: #5d5179; font-weight: 700; font-size: 15px; text-transform: uppercase; transition: color 0.3s; }
-        .main-navigation ul li a:hover, .main-navigation ul li a:focus { color: #96349b; }
+        .main-navigation ul li a:hover, 
+        .main-navigation ul li a:focus { 
+            color: #96349b !important; 
+        }
 
-        /* Restores the Purple Hamburger Menu */
-        .menu-toggle div { background-color: #96349b; } 
+        /* 恢复移动端的紫色汉堡菜单按钮 */
+        .menu-toggle div { background-color: #96349b !important; }
 
         @media (max-width: 768px) {
             .nav-container { flex-direction: column; justify-content: center; }
