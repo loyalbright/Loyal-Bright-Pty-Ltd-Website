@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>家庭信托分配与 Section 100A 指南 | 墨尔本诚明会计师事务所</title>
+	<meta name="description" content="了解 ATO 对家庭信托分配 (Section 100A) 的严查机制。如何合法将利润分配给成年子女以实现节税，同时规避税务审计风险。">
+
+    <link rel="canonical" href="https://loyalbright.com.au/zh/faq-zh/family-trust-100a-guide/">
+    <link rel="alternate" hreflang="en-AU" href="https://loyalbright.com.au/en/faq/family-trust-100a-guide/">
+    <link rel="alternate" hreflang="zh-CN" href="https://loyalbright.com.au/zh/faq-zh/family-trust-100a-guide/">
+
+    <link rel="icon" href="/wp-content/uploads/2018/11/cropped-Loyal-Bright-Website-Tag-32x32.png" sizes="32x32">
+    <link rel="icon" href="/wp-content/uploads/2018/11/cropped-Loyal-Bright-Website-Tag-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="/wp-content/uploads/2018/11/cropped-Loyal-Bright-Website-Tag-180x180.png">
+	
+    <link rel="stylesheet" id="ascension-css" href="/wp-content/themes/ascension/style.css?ver=1.1.5" type="text/css" media="all">
+	<link rel="stylesheet" id="ascension-fonts-css" href="https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C700&amp;subset=latin&amp;ver=1.8.7" type="text/css" media="all">
+    <link rel="stylesheet" href="/wp-content/plugins/beaver-builder-lite-version/fonts/fontawesome/5.15.4/css/all.min.css">
+
+	<style type="text/css">
+		.site-title, .site-description { position: absolute; clip: rect(1px, 1px, 1px, 1px); }
+        .site-header { background: #fff; padding: 20px 0; border-bottom: 1px solid #eee; }
+        .nav-container { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; flex-direction: row; justify-content: space-between; align-items: center; }
+        .custom-logo { max-width: 250px; height: auto; display: block; }
+        .custom-nav { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: row; align-items: center; }
+        .custom-nav li { margin: 0 15px; }
+        .custom-nav a { text-decoration: none; color: #5d5179; font-weight: 700; font-size: 15px; text-transform: uppercase; transition: color 0.3s; }
+        .custom-nav a:hover { color: #96349b; }
+        .menu-toggle div { background-color: #96349b; }
+
+        @media (max-width: 768px) {
+            .nav-container { flex-direction: column; justify-content: center; }
+            .custom-logo { margin-bottom: 20px; max-width: 200px; }
+            .custom-nav { flex-direction: column; width: 100%; }
+            .custom-nav li { margin: 0; width: 100%; text-align: center; border-bottom: 1px solid #f9f9f9; padding: 12px 0; }
+        }
+
+        .hero { 
+            background-image: linear-gradient(rgba(3, 38, 59, 0.75), rgba(3, 38, 59, 0.75)), url(/wp-content/uploads/2019/07/cropped-Home-Page-Hero-2400x1160.jpeg);
+            background-size: cover; background-position: center; padding: 80px 20px; text-align: center; color: #fff;
+        }
+        .hero h1 { font-size: 36px; color: #fff; margin-bottom: 10px; font-weight: 700; font-family: "Open Sans", sans-serif;}
+        
+        .site-content { max-width: 900px; margin: 60px auto; padding: 0 20px; background: #fff; }
+        .article-container { padding: 40px; border-radius: 8px; border: 1px solid #eee; box-shadow: 0 5px 25px rgba(0,0,0,0.03); border-top: 4px solid #5d5179; }
+        .article-container h2 { color: #03263B; margin-top: 40px; margin-bottom: 20px; font-weight: 700; font-family: "Open Sans", sans-serif; font-size: 24px; border-left: 5px solid #96349b; padding-left: 15px;}
+        .article-container p, .article-container ul { color: #353535; font-size: 16px; line-height: 1.8; margin-bottom: 20px; font-family: "Open Sans", sans-serif; }
+        .article-container ul { padding-left: 20px; }
+        
+        .warning-box { background: #fff5f5; padding: 25px; border-radius: 6px; border: 1px solid #ff6663; margin-bottom: 30px;}
+        .warning-box h4 { color: #c53030; margin-top: 0; display: flex; align-items: center; font-weight: 800 !important; font-size: 20px; font-family: "Open Sans", sans-serif;}
+        
+        .back-link { display: inline-block; margin-top: 30px; color: #5d5179; font-weight: bold; text-decoration: none; transition: 0.3s; }
+        .back-link:hover { color: #96349b; text-decoration: underline; }
+
+        /* 计算器专属样式 */
+        .calculator-box { background: #fdfaf6; padding: 30px; border-radius: 8px; border: 1px solid #e8e1d7; margin-bottom: 30px; margin-top: 20px; }
+        .calc-slider { width: 100%; margin-top: 10px; margin-bottom: 20px; accent-color: #96349b; }
+        .calc-result { background: #fff; padding: 20px; border-radius: 6px; text-align: center; border: 2px solid #5d5179; margin-top: 20px; display: flex; justify-content: space-around; flex-wrap: wrap;}
+        .calc-stat { text-align: center; margin: 10px; width: 40%;}
+        .calc-stat p { margin: 0; font-size: 14px; color: #686868; font-weight: bold; }
+        .calc-stat .val { font-size: 26px; font-weight: bold; color: #03263B; margin-top: 5px;}
+        .highlight-stat { width: 100%; background: #eef4f7; padding: 15px; border-radius: 6px; margin-top: 15px; border-left: 4px solid #5d5179;}
+	</style>
+    <script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+    <script type="text/javascript" src="/wp-content/themes/primer/assets/js/navigation.min.js?ver=1.8.7"></script>
+</head>
+
+<body class="page layout-one-column-wide">
+	<div id="page" class="hfeed site">
+        
+        <header id="masthead" class="site-header" role="banner">
+			<div class="site-header-wrapper">
+				<div class="site-title-wrapper">
+					<a href="/zh/" class="custom-logo-link" rel="home"><img width="511" height="134" src="/wp-content/uploads/2018/11/cropped-1_Primary_logo_on_transparent_512-1.png" class="custom-logo" alt="墨尔本诚明会计师事务所"></a>
+                    <h1 class="site-title"><a href="/zh/" rel="home">墨尔本诚明会计师事务所</a></h1>
+				</div>
+				<div class="main-navigation-container">
+                    <div class="menu-toggle" id="menu-toggle" role="button" tabindex="0">
+                        <div></div><div></div><div></div>
+                    </div>
+					<nav id="site-navigation" class="main-navigation">
+                        <div class="menu-primary-menu-container">
+                            <ul id="menu-zh" class="menu">
+                                <li class="menu-item"><a href="/zh/">首页</a></li>
+                                <li class="menu-item"><a href="/zh/about-zh/">关于我们</a></li>
+                                <li class="menu-item"><a href="/zh/services-zh/">服务</a></li>
+                                <li class="menu-item"><a href="/zh/faq-zh/">常见问题</a></li>
+                                <li class="menu-item"><a href="/zh/contact-zh/">联系我们</a></li>
+                                <li class="menu-item"><a href="/en/faq/family-trust-100a-guide/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAtFBMVEXAdIWHf6gAKI+NIUCRHz51OWgACXMAAF1HYqIAAE4AAEAAADRJS43kxszj4+veqbDt2d2ntNJyh7pnfbTHz+FbcqvOBwfhjZDlfn/lbm7dZGZQaKexutUwT5hTb6yPMVPkur/xp6W0gpmeqco8WZ1tg7YAACl7irrozdLKiZagutylkK26w9mQnMEAAB1qQnVZereLdp5Ka62biapBXZ8pSZN3jr42VJqVpccZO4gAAA8AAAIF8g6vAAAAmUlEQVR4AR1HU4IFQQysdAbJrO3v5f0Ps3q27c6gXATK4HkXEYpJx5nhOYtMh2AZJJTBQLtocKRES6eq5sVLJLggi5/4PrRjDZFALxfn6/2Jk/BERKZy0ejc/1z0wePn6u6oM70bv6yOH/n2wIFiNpt8ja+a92Dn1aGHw/ap+GYYg6P76dtku1lY+Xb9m5w5UgLhSYBjwByQApiiN1ociSrgAAAAAElFTkSuQmCC" alt="" width="16" height="11" style="vertical-align: middle; margin-right: 5px;">English</a></li>
+                            </ul>
+                        </div>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<section class="hero">
+			<h1>家庭信托分配与 Section 100A 指南</h1>
+		</section>
+
+		<div class="site-content">
+            <div class="article-container">
+                <p style="color: #999; font-size: 14px; font-weight: bold; margin-bottom: 30px;">更新日期：2026年4月</p>
+
+                <div class="warning-box">
+                    <h4><i class="fas fa-exclamation-triangle"></i> ATO 严查警告 (Section 100A)</h4>
+                    <p style="margin-bottom:0;">澳大利亚税务局 (ATO) 目前正在严厉打击违反第 100A 条 (Section 100A) 的信托利润分配。如果您将信托利润账面分配给了低税率的成年子女，但资金实际上却流回了父母手中用于还房贷或日常开销，ATO 会将其视为“避税安排”，并对该笔收入征收 <strong>最高 47% 的惩罚性税率</strong>。</p>
+                </div>
+
+                <h2>为什么家庭信托可以节税？</h2>
+                <p>家庭信托 (Discretionary Family Trust) 不像公司那样拥有固定的税率。信托每年产生的净利润，可以通过受托人 (Trustee) 的决议，灵活地分配给税率较低的家庭成员（如在读大学的成年子女、退休的父母等）。由于澳洲实行阶梯税率，通过将利润从高收入者转移到低收入者名下，整个家庭的整体税负可以大幅降低。</p>
+
+                <div class="calculator-box">
+                    <h3 style="margin-top: 0; color: #03263B; font-size: 20px;"><i class="fas fa-random" style="color: #96349b; margin-right: 8px;"></i> 家庭信托分配节税估算器</h3>
+                    <p style="font-size: 14px; color: #686868; margin-bottom: 20px;">通过下方滑块输入信托本年度产生的净利润。对比“全部由父母一人承担”与“平分给父母和一个无其他收入的成年子女”的税额差异。（估算已包含最新减税方案及2%医疗保险附加费）</p>
+                    
+                    <div>
+                        <label for="trustProfit" style="display: block; font-weight: bold; color: #353535;">信托本年净利润: $<span id="trustProfitVal" style="color: #96349b;">100,000</span></label>
+                        <input type="range" id="trustProfit" class="calc-slider" min="20000" max="300000" step="5000" value="100000">
+                    </div>
+                    
+                    <div class="calc-result">
+                        <div class="calc-stat">
+                            <p>场景 A: 全部分给父母 (高税率)</p>
+                            <div class="val" style="color: #c53030;">$<span id="taxScenarioA">24,188</span></div>
+                        </div>
+                        <div class="calc-stat" style="border-left: 1px solid #eee;">
+                            <p>场景 B: 父母与子女 50/50 平分</p>
+                            <div class="val" style="color: #28a745;">$<span id="taxScenarioB">13,276</span></div>
+                        </div>
+                        <div class="highlight-stat">
+                            <p style="color: #03263B; font-size: 16px; margin:0;">利用信托分配，您的家庭大约节省了： <strong style="font-size: 24px; color: #96349b;">$<span id="taxSaved">10,912</span></strong></p>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    const profitInput = document.getElementById('trustProfit');
+                    const profitVal = document.getElementById('trustProfitVal');
+                    const taxAOut = document.getElementById('taxScenarioA');
+                    const taxBOut = document.getElementById('taxScenarioB');
+                    const taxSavedOut = document.getElementById('taxSaved');
+
+                    function formatMoney(num) {
+                        return num.toLocaleString('en-AU', {maximumFractionDigits: 0});
+                    }
+
+                    // 简化的澳洲个人所得税计算器 (含 Medicare)
+                    function calcIndividualTax(income) {
+                        let tax = 0;
+                        let taxable = income;
+                        if (taxable > 190000) { tax += (taxable - 190000) * 0.45; taxable = 190000; }
+                        if (taxable > 135000) { tax += (taxable - 135000) * 0.37; taxable = 135000; }
+                        if (taxable > 45000) { tax += (taxable - 45000) * 0.30; taxable = 45000; }
+                        if (taxable > 18200) { tax += (taxable - 18200) * 0.16; }
+                        let medicare = income > 32500 ? (income * 0.02) : 0;
+                        return tax + medicare;
+                    }
+
+                    function updateTrustCalc() {
+                        const profit = parseInt(profitInput.value);
+                        profitVal.textContent = formatMoney(profit);
+                        
+                        // 场景A：全给一个人（假设这个人已有 $80k 基础工资）
+                        const parentBaseIncome = 80000;
+                        const taxWithTrust = calcIndividualTax(parentBaseIncome + profit);
+                        const taxWithoutTrust = calcIndividualTax(parentBaseIncome);
+                        const taxA = taxWithTrust - taxWithoutTrust; // 信托部分引发的额外税额
+                        
+                        // 场景B：父母分一半，成年子女分一半 (假设子女无其他收入)
+                        const splitAmount = profit / 2;
+                        const taxParentSplit = calcIndividualTax(parentBaseIncome + splitAmount) - taxWithoutTrust;
+                        const taxChildSplit = calcIndividualTax(splitAmount);
+                        const taxB = taxParentSplit + taxChildSplit;
+
+                        const saved = taxA - taxB;
+
+                        taxAOut.textContent = formatMoney(taxA);
+                        taxBOut.textContent = formatMoney(taxB);
+                        taxSavedOut.textContent = formatMoney(Math.max(0, saved));
+                    }
+
+                    profitInput.addEventListener('input', updateTrustCalc);
+                    updateTrustCalc();
+                </script>
+                <h2>如何安全合规地分配利润？</h2>
+                <p>虽然通过分配给低收入家庭成员可以节省大量税款（如上方计算器所示），但这笔钱<strong>必须符合真实的经济利益转移</strong>。为了避免触发 ATO 的 Section 100A 反避税条款，您必须做到：</p>
+                <ul>
+                    <li><strong>资金必须易手：</strong> 如果您将 $50,000 的利润分配给了在读大学的儿子，这笔钱必须实际转入儿子的个人银行账户，或用于支付他名下的真实开销（如他的大学学费、买车等）。</li>
+                    <li><strong>保留文书记录：</strong> 您必须在每年 6 月 30 日之前，起草并签署正式的《信托分配决议》(Trust Distribution Resolution)。</li>
+                    <li><strong>杜绝“纸面富贵”：</strong> 绝不能做账面上分给孩子，但实际上父母却把钱拿去投资、旅游或还自己名下房贷的操作（即 Reimbursement Agreement）。</li>
+                </ul>
+
+                <p style="background: #eef4f7; padding: 20px; border-radius: 6px;">
+                    <strong>专业建议：</strong> 家庭信托分配的合规性正在遭受 ATO 的空前关注。如果您经营着家族企业或通过信托持有大量投资组合，请务必在每年 6 月中旬之前与我们预约 <strong>EOFY 税务规划会议</strong>。
+                </p>
+
+                <a href="/zh/faq-zh/" class="back-link">&larr; 返回所有常见问题</a>
+            </div>
+		</div>
+
+		<footer class="site-footer" style="background: #f5f5f5; border-top: 1px solid #eee; padding: 40px 20px;">
+			<div class="site-info-inner" style="text-align: center;">
+				<a class="privacy-policy-link" href="/zh/privacy-policy-zh/" style="display:block; margin-bottom:10px; color: #686868;">隐私政策</a>	
+				<div class="site-info-text" style="color: #686868; font-size: 13px;">
+					Copyright &copy; 2019 - 2026 Loyal Bright Pty Ltd ATF Loyal Bright Trust t/a Loyal Bright Accountants. <br>
+                    <small>Liability limited by a scheme approved under Professional Standards Legislation.</small>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
