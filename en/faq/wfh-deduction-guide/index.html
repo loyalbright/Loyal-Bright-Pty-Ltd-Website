@@ -46,12 +46,19 @@
         .article-container { padding: 40px; border-radius: 8px; border: 1px solid #eee; box-shadow: 0 5px 25px rgba(0,0,0,0.03); border-top: 4px solid #5d5179; }
         .article-container h2 { color: #03263B; margin-top: 40px; margin-bottom: 20px; font-weight: 700; font-family: "Open Sans", sans-serif; font-size: 24px; border-left: 5px solid #96349b; padding-left: 15px;}
         .article-container p { color: #353535; font-size: 16px; line-height: 1.8; margin-bottom: 20px; font-family: "Open Sans", sans-serif; }
+        
+        /* Updated Warning Box Styles */
         .article-container .warning-box { background: #fff5f5; padding: 25px; border-radius: 6px; border: 1px solid #ff6663; margin-bottom: 30px;}
-        .article-container .warning-box h4 { color: #c53030; margin-top: 0; display: flex; align-items: center; }
+        .article-container .warning-box h4 { color: #c53030; margin-top: 0; display: flex; align-items: center; font-weight: 800 !important; font-size: 20px; font-family: "Open Sans", sans-serif;}
         .article-container .warning-box i { margin-right: 10px; }
         
         .back-link { display: inline-block; margin-top: 30px; color: #5d5179; font-weight: bold; text-decoration: none; transition: 0.3s; }
         .back-link:hover { color: #96349b; text-decoration: underline; }
+
+        /* Custom Calculator Styles */
+        .calculator-box { background: #f4f7f6; padding: 30px; border-radius: 8px; border: 1px solid #dce4e1; margin-bottom: 30px; margin-top: 20px; }
+        .calc-slider { width: 100%; margin-top: 10px; margin-bottom: 20px; accent-color: #96349b; }
+        .calc-result { background: #fff; padding: 20px; border-radius: 6px; text-align: center; border: 2px solid #5d5179; margin-top: 20px; }
 	</style>
     <script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
     <script type="text/javascript" src="/wp-content/themes/primer/assets/js/navigation.min.js?ver=1.8.7"></script>
@@ -108,42 +115,88 @@
                     <li>You can claim depreciation separately for computer hardware and office furniture (if over $300).</li>
                 </ul>
 
-                <p>You can use the calculator below to get a rough estimate of your potential deduction for this financial year:</p>
-```json?chameleon
-{"component":"LlmGeneratedComponent","props":{"height":"400px","prompt":"Create a Working From Home (WFH) Deduction Estimator. Objective: Allow users to understand the fixed-rate method calculation by adjusting their work hours. Initial Values: 38 hours per week, 48 weeks per year. Strategy: Form Layout. Inputs: Hours worked from home per week (Slider/Input, range 0-80), Weeks worked per year (Slider/Input, range 0-52). Calculation Logic: Total hours * 0.67. Behavior: Update results in real-time. Display results in three parts: Total Deduction, Expenses Covered (Electricity, Internet, Phone, Stationery), and a Reminder (Depreciation not included). Language: English.","id":"im_3296b7bd8bea4cf9"}}
-<h2>2. The Actual Cost Method</h2>
-            <p>If your work requires significant power consumption or high phone bills, you may choose the actual cost method. However, this requires meticulous record-keeping:</p>
-            <ul>
-                <li>Specific receipts and bills for all expenses.</li>
-                <li>Detailed calculation logic proving the work-related percentage of total expenses.</li>
-                <li>A floor plan analysis showing the proportion of your dedicated home office area to the entire house.</li>
-            </ul>
+                <div class="calculator-box">
+                    <h3 style="margin-top: 0; color: #03263B; font-size: 20px;"><i class="fas fa-calculator" style="color: #96349b; margin-right: 8px;"></i> WFH Deduction Estimator</h3>
+                    <p style="font-size: 14px; color: #686868; margin-bottom: 20px;">Adjust the sliders below to quickly estimate your potential deduction for this financial year using the fixed rate method.</p>
+                    
+                    <div>
+                        <label for="hoursPerWeek" style="display: block; font-weight: bold; color: #353535;">Hours worked from home per week: <span id="hoursVal" style="color: #96349b;">38</span> hours</label>
+                        <input type="range" id="hoursPerWeek" class="calc-slider" min="0" max="80" value="38">
+                    </div>
+                    
+                    <div>
+                        <label for="weeksPerYear" style="display: block; font-weight: bold; color: #353535;">Weeks worked from home this year: <span id="weeksVal" style="color: #96349b;">48</span> weeks</label>
+                        <input type="range" id="weeksPerYear" class="calc-slider" min="0" max="52" value="48">
+                    </div>
+                    
+                    <div class="calc-result">
+                        <p style="margin: 0; font-size: 16px; color: #686868; font-weight: bold;">Estimated Total Deduction (at $0.67/hour)</p>
+                        <p style="margin: 5px 0 0 0; font-size: 36px; font-weight: bold; color: #96349b;">$<span id="totalDeduction">1222.08</span></p>
+                    </div>
+                    
+                    <div style="margin-top: 20px; font-size: 14px; color: #555; background: #eef4f7; padding: 15px; border-radius: 6px;">
+                        <p style="margin-bottom: 8px;"><i class="fas fa-check-circle" style="color: #28a745; margin-right: 5px;"></i> <strong>Includes:</strong> Electricity, gas, internet, mobile data, and stationery.</p>
+                        <p style="margin: 0;"><i class="fas fa-info-circle" style="color: #17a2b8; margin-right: 5px;"></i> <strong>Excludes:</strong> Depreciation of assets like computers, monitors, and office chairs (these can be claimed separately).</p>
+                    </div>
+                </div>
 
-            <h2>3. What CANNOT be claimed?</h2>
-            <p>Even if you are working from home, the following expenses are <strong>strictly prohibited</strong>:</p>
-            <ul>
-                <li>Food and groceries like coffee, tea, and milk.</li>
-                <li>Cleaning costs, rent, or mortgage interest if you occasionally check emails on the couch without a dedicated work area.</li>
-                <li>Generally, employees cannot claim occupancy expenses like rent or mortgage interest.</li>
-            </ul>
+                <script>
+                    // Calculator Logic
+                    const hoursInput = document.getElementById('hoursPerWeek');
+                    const weeksInput = document.getElementById('weeksPerYear');
+                    const hoursVal = document.getElementById('hoursVal');
+                    const weeksVal = document.getElementById('weeksVal');
+                    const totalDeduction = document.getElementById('totalDeduction');
 
-            <p style="background: #eef4f7; padding: 20px; border-radius: 6px;">
-                <strong>Professional Advice:</strong> We strongly recommend using the myDeductions tool in the <strong>ATO app</strong> to record your hours in real-time. If you are unsure which method yields the best tax outcome for you, please book a consultation with us.
-            </p>
+                    function calculateDeduction() {
+                        const hours = parseInt(hoursInput.value);
+                        const weeks = parseInt(weeksInput.value);
+                        hoursVal.textContent = hours;
+                        weeksVal.textContent = weeks;
+                        
+                        const total = hours * weeks * 0.67;
+                        totalDeduction.textContent = total.toLocaleString('en-AU', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+                    }
 
-            <a href="/en/faq/" class="back-link">&larr; Back to all FAQs</a>
-        </div>
-	</div>
+                    hoursInput.addEventListener('input', calculateDeduction);
+                    weeksInput.addEventListener('input', calculateDeduction);
+                    
+                    // Initialize Calculation
+                    calculateDeduction();
+                </script>
+                <h2>2. The Actual Cost Method</h2>
+                <p>If your work requires significant power consumption or high phone bills, you may choose the actual cost method. However, this requires meticulous record-keeping:</p>
+                <ul>
+                    <li>Specific receipts and bills for all expenses.</li>
+                    <li>Detailed calculation logic proving the work-related percentage of total expenses.</li>
+                    <li>A floor plan analysis showing the proportion of your dedicated home office area to the entire house.</li>
+                </ul>
 
-	<footer class="site-footer" style="background: #f5f5f5; border-top: 1px solid #eee; padding: 40px 20px;">
-		<div class="site-info-inner" style="text-align: center;">
-			<a class="privacy-policy-link" href="/en/privacy-policy/" style="display:block; margin-bottom:10px; color: #686868;">Privacy Policy</a>	
-			<div class="site-info-text" style="color: #686868; font-size: 13px;">
-				Copyright &copy; 2019 - 2026 Loyal Bright Pty Ltd ATF Loyal Bright Trust t/a Loyal Bright Accountants. <br>
-                <small>Liability limited by a scheme approved under Professional Standards Legislation.</small>
-			</div>
+                <h2>3. What CANNOT be claimed?</h2>
+                <p>Even if you are working from home, the following expenses are <strong>strictly prohibited</strong>:</p>
+                <ul>
+                    <li>Food and groceries like coffee, tea, and milk.</li>
+                    <li>Cleaning costs, rent, or mortgage interest if you occasionally check emails on the couch without a dedicated work area.</li>
+                    <li>Generally, employees cannot claim occupancy expenses like rent or mortgage interest.</li>
+                </ul>
+
+                <p style="background: #eef4f7; padding: 20px; border-radius: 6px;">
+                    <strong>Professional Advice:</strong> We strongly recommend using the myDeductions tool in the <strong>ATO app</strong> to record your hours in real-time. If you are unsure which method yields the best tax outcome for you, please book a consultation with us.
+                </p>
+
+                <a href="/en/faq/" class="back-link">&larr; Back to all FAQs</a>
+            </div>
 		</div>
-	</footer>
-</div>
+
+		<footer class="site-footer" style="background: #f5f5f5; border-top: 1px solid #eee; padding: 40px 20px;">
+			<div class="site-info-inner" style="text-align: center;">
+				<a class="privacy-policy-link" href="/en/privacy-policy/" style="display:block; margin-bottom:10px; color: #686868;">Privacy Policy</a>	
+				<div class="site-info-text" style="color: #686868; font-size: 13px;">
+					Copyright &copy; 2019 - 2026 Loyal Bright Pty Ltd ATF Loyal Bright Trust t/a Loyal Bright Accountants. <br>
+                    <small>Liability limited by a scheme approved under Professional Standards Legislation.</small>
+				</div>
+			</div>
+		</footer>
+	</div>
 </body>
 </html>
