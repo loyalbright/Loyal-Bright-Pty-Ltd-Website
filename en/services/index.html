@@ -15,25 +15,25 @@
     <link rel="stylesheet" href="/wp-content/plugins/beaver-builder-lite-version/fonts/fontawesome/5.15.4/css/all.min.css">
 
 	<style type="text/css">
-        /* --- HEADER STYLES --- */
-		.site-title, .site-description { position: absolute; clip: rect(1px, 1px, 1px, 1px); }
+		/* --- HEADER STYLES --- */
+        .site-title, .site-description { position: absolute; clip: rect(1px, 1px, 1px, 1px); }
         .site-header { background: #fff; padding: 20px 0; border-bottom: 1px solid #eee; }
         .nav-container { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; flex-direction: row; justify-content: space-between; align-items: center; }
         .custom-logo { max-width: 250px; height: auto; display: block; }
-        .custom-nav { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: row; align-items: center; }
-        .custom-nav li { margin: 0 15px; }
-        .custom-nav a { text-decoration: none; color: #5d5179; font-weight: 700; font-size: 15px; text-transform: uppercase; transition: color 0.3s; }
-        .custom-nav a:hover { color: #96349b; }
-
-        /* Restores the Purple Hamburger Menu */
-        .menu-toggle div { background-color: #96349b; } 
+        
+        /* Fixed Navigation Menu Colors */
+        .main-navigation .menu { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: row; align-items: center; }
+        .main-navigation .menu li { margin: 0 15px; }
+        .main-navigation .menu a { text-decoration: none; color: #5d5179; font-weight: 700; font-size: 15px; text-transform: uppercase; transition: color 0.3s; }
+        .main-navigation .menu a:hover { color: #96349b; }
+        
+        .menu-toggle div { background-color: #96349b; }
 
         @media (max-width: 768px) {
             .nav-container { flex-direction: column; justify-content: center; }
             .custom-logo { margin-bottom: 20px; max-width: 200px; }
-            .custom-nav { flex-direction: column; width: 100%; }
-            .custom-nav li { margin: 0; width: 100%; text-align: center; border-bottom: 1px solid #f9f9f9; padding: 12px 0; }
-            .custom-nav li:last-child { border-bottom: none; padding-bottom: 0; }
+            .main-navigation .menu { flex-direction: column; width: 100%; }
+            .main-navigation .menu li { margin: 0; width: 100%; text-align: center; border-bottom: 1px solid #f9f9f9; padding: 12px 0; }
         }
 
         /* --- HERO SECTION --- */
