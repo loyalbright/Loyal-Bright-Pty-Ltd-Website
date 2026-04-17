@@ -3,89 +3,249 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>The "Right to Disconnect" Laws for Small Businesses | Loyal Bright Accountants FAQ</title>
+	<title>The "Right to Disconnect" Laws for Small Businesses | Loyal Bright Accountants</title>
 	<meta name="description" content="Learn how the new Right to Disconnect laws affect Australian small businesses, what constitutes unreasonable after-hours contact, and how to stay compliant.">
+
+    <link rel="canonical" href="https://loyalbright.com.au/en/faq/right-to-disconnect-laws/">
+    <link rel="alternate" hreflang="en-AU" href="https://loyalbright.com.au/en/faq/right-to-disconnect-laws/">
+    <link rel="alternate" hreflang="zh-CN" href="https://loyalbright.com.au/zh/faq-zh/right-to-disconnect-laws/">
+
+    <link rel="icon" href="/wp-content/uploads/2018/11/cropped-Loyal-Bright-Website-Tag-32x32.png" sizes="32x32">
+    <link rel="icon" href="/wp-content/uploads/2018/11/cropped-Loyal-Bright-Website-Tag-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="/wp-content/uploads/2018/11/cropped-Loyal-Bright-Website-Tag-180x180.png">
+	
 	<link rel="stylesheet" id="ascension-css" href="/wp-content/themes/ascension/style.css?ver=1.1.5" type="text/css" media="all">
 	<link rel="stylesheet" id="ascension-fonts-css" href="https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C700&amp;subset=latin&amp;ver=1.8.7" type="text/css" media="all">
+    <link rel="stylesheet" href="/wp-content/plugins/beaver-builder-lite-version/fonts/fontawesome/5.15.4/css/all.min.css">
+
 	<style type="text/css">
-		.site-title,.site-description{position:absolute;clip:rect(1px, 1px, 1px, 1px);}
-		.site-footer {background-color:#f5f5f5;}
-		.site-info-wrapper {background-color:#ffffff;}
-		.site-info-wrapper .site-info-text {color:#686868;}
-        .article-content h2 { margin-top: 30px; margin-bottom: 15px; font-size: 24px; }
-        .article-content h3 { margin-top: 25px; margin-bottom: 10px; font-size: 20px; }
-        .article-content p, .article-content ul { margin-bottom: 20px; line-height: 1.6; }
-        .article-content ul { list-style-type: disc; padding-left: 20px; }
+        /* --- HEADER STYLES (Fixed Menu Spacing) --- */
+        .site-title, .site-description { position: absolute; clip: rect(1px, 1px, 1px, 1px); }
+        .site-header { background: #fff; padding: 20px 0; border-bottom: 1px solid #eee; }
+        
+        /* 仅覆盖颜色和字体，将排版间距交还给原主题 */
+        .main-navigation ul li a, 
+        .main-navigation ul li a:visited { 
+            color: #5d5179 !important; 
+            font-weight: 700; 
+            font-size: 15px; 
+            text-transform: uppercase; 
+            transition: color 0.3s; 
+        }
+        
+        .main-navigation ul li a:hover, 
+        .main-navigation ul li a:focus { 
+            color: #96349b !important; 
+        }
+
+        /* 恢复移动端的紫色汉堡菜单按钮 */
+        .menu-toggle div { background-color: #96349b !important; } 
+
+        @media (max-width: 768px) {
+            .nav-container { flex-direction: column; justify-content: center; }
+            .custom-logo { margin-bottom: 20px; max-width: 200px; }
+            /* Mobile Spacing, borders and padding */
+            .main-navigation .menu li { margin: 0; width: 100%; text-align: center; border-bottom: 1px solid #f9f9f9; padding: 12px 0; } 
+            .main-navigation .menu li:last-child { border-bottom: none; padding-bottom: 0; }
+        }
+
+        /* --- PAGE CONTENT STYLES --- */
+        .hero { 
+            background-image: linear-gradient(rgba(3, 38, 59, 0.75), rgba(3, 38, 59, 0.75)), url(/wp-content/uploads/2019/07/cropped-Home-Page-Hero-2400x1160.jpeg);
+            background-size: cover; background-position: center; padding: 80px 20px; text-align: center; color: #fff;
+        }
+        .hero h1 { font-size: 36px; color: #fff; margin-bottom: 10px; font-weight: 700; font-family: "Open Sans", sans-serif;}
+        
+        .site-content { max-width: 900px; margin: 60px auto; padding: 0 20px; background: #fff; }
+        .article-container { padding: 40px; border-radius: 8px; border: 1px solid #eee; box-shadow: 0 5px 25px rgba(0,0,0,0.03); border-top: 4px solid #5d5179; }
+        .article-container h2, .article-container h3 { color: #03263B; margin-top: 40px; margin-bottom: 20px; font-weight: 700; font-family: "Open Sans", sans-serif; }
+        .article-container h2 { font-size: 24px; border-left: 5px solid #96349b; padding-left: 15px;}
+        .article-container h3 { font-size: 20px; }
+        .article-container p, .article-container ul { color: #353535; font-size: 16px; line-height: 1.8; margin-bottom: 20px; font-family: "Open Sans", sans-serif; }
+        .article-container ul { padding-left: 20px; }
+        
+        .warning-box { background: #fff5f5; padding: 25px; border-radius: 6px; border: 1px solid #ff6663; margin-bottom: 30px; margin-top: 30px;}
+        .warning-box h4 { color: #c53030; margin-top: 0; display: flex; align-items: center; font-weight: 800 !important; font-size: 20px; font-family: "Open Sans", sans-serif; margin-bottom: 10px;}
+        .warning-box i { margin-right: 10px; }
+
+        .back-link { display: inline-block; margin-top: 30px; color: #5d5179; font-weight: bold; text-decoration: none; transition: 0.3s; }
+        .back-link:hover { color: #96349b; text-decoration: underline; }
+
+        /* Custom Interactive Assessor Styles */
+        .calculator-box { background: #fdfaf6; padding: 30px; border-radius: 8px; border: 1px solid #e8e1d7; margin-bottom: 30px; margin-top: 30px; }
+        .calc-select { width: 100%; padding: 10px; margin-top: 5px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 4px; font-size: 16px; font-family: "Open Sans", sans-serif;}
+        .calc-result { background: #fff; padding: 25px; border-radius: 6px; text-align: center; border: 2px solid #5d5179; margin-top: 20px; }
+        .calc-result h4 { font-size: 24px; margin: 0 0 10px 0;}
+        .calc-result p { margin: 0; font-size: 15px; color: #555; line-height: 1.5; }
 	</style>
+    <script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+    <script type="text/javascript" src="/wp-content/themes/primer/assets/js/navigation.min.js?ver=1.8.7"></script>
 </head>
 
-<body class="wp-singular page-template-default page layout-one-column-wide">
+<body class="page layout-one-column-wide">
 	<div id="page" class="hfeed site">
-		<header id="masthead" class="site-header" role="banner">
+        
+        <header id="masthead" class="site-header" role="banner">
 			<div class="site-header-wrapper">
 				<div class="site-title-wrapper">
-					<a href="/en/home/" class="custom-logo-link" rel="home"><img width="511" height="134" src="/wp-content/uploads/2018/11/cropped-1_Primary_logo_on_transparent_512-1.png" class="custom-logo" alt="Loyal Bright Accountants"></a>
+					<a href="/" class="custom-logo-link" rel="home"><img width="511" height="134" src="/wp-content/uploads/2018/11/cropped-1_Primary_logo_on_transparent_512-1.png" class="custom-logo" alt="Loyal Bright Accountants"></a>
+                    <h1 class="site-title"><a href="/" rel="home">Loyal Bright Accountants</a></h1>
 				</div>
 				<div class="main-navigation-container">
+                    <div class="menu-toggle" id="menu-toggle" role="button" tabindex="0">
+                        <div></div><div></div><div></div>
+                    </div>
 					<nav id="site-navigation" class="main-navigation">
-						<div class="menu-container">
-							<ul id="menu-en" class="menu">
-								<li class="menu-item"><a href="/en/home/">Home</a></li>
-								<li class="menu-item"><a href="/en/about/">About Us</a></li>
-								<li class="menu-item"><a href="/en/services/">Services</a></li>
-								<li class="menu-item"><a href="/en/faq/">FAQ</a></li>
-								<li class="menu-item"><a href="/en/contact/">Contact Us</a></li>
-								<li class="menu-item"><a href="/zh/faq-zh/right-to-disconnect-laws/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAXVBMVEXUAADlQgDLAADBAADtgXn63Xjypnf1wHHpcG/oZmbmXVzlU1PjS0q1AAD981775VvwnVD2zkvhPz/fNzfdMjHcKyvaJyfsi0baISHYGhqqAADWExPTDQ2jAACfAAApGpDBAAAAWklEQVR4ATXIhQHDQBTDUMll2n/RMiU5/vQsAE4EsPbaKVOU+pXNwc/WKQXeDZMKu+psCXw/Z7efarmENd6GIwEpXhUvM4spxoiEbouRNT7Fmtaq+RG4wAqZZvceD8DeIelqAAAAAElFTkSuQmCC" alt="" width="16" height="11" style="width: 16px; height: 11px;"><span style="margin-left:0.3em;">简体中文</span></a></li>
-							</ul>
-						</div>
+                        <div class="menu-primary-menu-container">
+                            <ul id="menu-primary-menu" class="menu">
+                                <li class="menu-item"><a href="/">Home</a></li>
+                                <li class="menu-item"><a href="/en/about/">About Us</a></li>
+                                <li class="menu-item"><a href="/en/services/">Services</a></li>
+                                <li class="menu-item"><a href="/en/faq/">FAQ</a></li>
+                                <li class="menu-item"><a href="/en/contact/">Contact Us</a></li>
+                                <li class="menu-item"><a href="/zh/faq-zh/right-to-disconnect-laws/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAXVBMVEXUAADlQgDLAADBAADtgXn63Xjypnf1wHHpcG/oZmbmXVzlU1PjS0q1AAD981775VvwnVD2zkvhPz/fNzfdMjHcKyvaJyfsi0baISHYGhqqAADWExPTDQ2jAACfAAApGpDBAAAAWklEQVR4ATXIhQHDQBTDUMll2n/RMiU5/vQsAE4EsPbaKVOU+pXNwc/WKQXeDZMKu+psCXw/Z7efarmENd6GIwEpXhUvM4spxoiEbouRNT7Fmtaq+RG4wAqZZvceD8DeIelqAAAAAElFTkSuQmCC" alt="" width="16" height="11" style="vertical-align: middle; margin-right: 5px;">中文</a></li>
+                            </ul>
+                        </div>
 					</nav>
 				</div>
 			</div>
 		</header>
 
-		<div class="hero"><div class="hero-inner"><div class="page-title-container">
-			<header class="page-header"><h1 class="page-title">The "Right to Disconnect" Laws for Small Businesses</h1></header>
-		</div></div></div>
+		<section class="hero">
+			<h1>The "Right to Disconnect" Laws for Small Businesses</h1>
+		</section>
 
-		<div id="content" class="site-content" style="max-width: 800px; margin: 0 auto; padding: 40px 20px;">
-			<div class="article-content">
-				<p><em>Published in March 2026</em></p>
+		<div class="site-content">
+			<div class="article-container">
+				<p style="color: #999; font-size: 14px; font-weight: bold; margin-bottom: 30px;">Updated: April 2026</p>
 				
-                <p>As of 26 August 2025, the Fair Work "Right to Disconnect" laws officially rolled out to small businesses (those with fewer than 15 employees). If you employ staff, you need to understand how this legislation impacts your ability to contact your team after hours.</p>
+				<p>As of 26 August 2025, the Fair Work "Right to Disconnect" laws officially rolled out to small businesses (those with fewer than 15 employees). If you employ staff, you need to understand how this legislation impacts your ability to contact your team after hours.</p>
 
-                <h3>1. What is the Right to Disconnect?</h3>
-                <p>The Right to Disconnect gives employees the legal right to refuse to monitor, read, or respond to contact (or attempted contact) from their employer—or third parties like clients—outside of their ordinary working hours, <strong>unless their refusal is unreasonable</strong>.</p>
-                <p>This means if you email or text a staff member at 8:00 PM on a Friday, they generally have the right to ignore it until they clock in on Monday morning without facing disciplinary action.</p>
+				<h2>1. What is the Right to Disconnect?</h2>
+				<p>The Right to Disconnect gives employees the legal right to refuse to monitor, read, or respond to contact (or attempted contact) from their employer—or third parties like clients—outside of their ordinary working hours, <strong>unless their refusal is unreasonable</strong>.</p>
+				<p>This means if you email or text a staff member at 8:00 PM on a Friday, they generally have the right to ignore it until they clock in on Monday morning without facing disciplinary action.</p>
 
-                <h3>2. Does this mean I can NEVER contact my staff after hours?</h3>
-                <p>No, you can still send emails or messages after hours. The law does not ban employers from sending communications; it simply protects the employee's right not to reply immediately. However, an employee's refusal to respond might be deemed <strong>unreasonable</strong> based on several factors:</p>
-                <ul>
-                    <li><strong>The reason for the contact:</strong> Is it a genuine emergency, or just a routine question that could wait?</li>
-                    <li><strong>The method of contact:</strong> An email that can be read the next day is different from calling their personal mobile and demanding an answer.</li>
-                    <li><strong>The nature of their role:</strong> A senior manager on a high salary is reasonably expected to be more available after hours than a junior, minimum-wage employee.</li>
-                    <li><strong>Compensation:</strong> Are they being paid an on-call allowance or a salary that explicitly compensates them for working outside normal hours?</li>
-                </ul>
+				<h2>2. Does this mean I can NEVER contact my staff after hours?</h2>
+				<p>No, you can still send emails or messages after hours. The law does not ban employers from sending communications; it simply protects the employee's right not to reply immediately.</p>
+				<p>However, an employee's refusal to respond might be deemed <strong>unreasonable</strong> (meaning they must reply) based on several factors:</p>
+				<ul>
+					<li><strong>The reason for the contact:</strong> Is it a genuine emergency, or just a routine question that could wait?</li>
+					<li><strong>The method of contact:</strong> An email that can be read the next day is different from calling their personal mobile and demanding an answer.</li>
+					<li><strong>The nature of their role:</strong> A senior manager on a high salary is reasonably expected to be more available after hours than a junior, minimum-wage employee.</li>
+					<li><strong>Compensation:</strong> Are they being paid an on-call allowance or a salary that explicitly compensates them for working outside normal hours?</li>
+				</ul>
 
-                <h3>3. What should small business owners do?</h3>
-                <p>To ensure you stay compliant and maintain a good relationship with your team, consider these steps:</p>
-                <ul>
-                    <li><strong>Use scheduled send:</strong> If you work late, use the "schedule send" feature on your email so messages arrive in your employee's inbox at 9:00 AM the next day.</li>
-                    <li><strong>Update employment contracts:</strong> If a role requires occasional after-hours contact, ensure this is clearly stated in their contract and that their remuneration reflects this expectation.</li>
-                    <li><strong>Set clear expectations:</strong> Have a conversation with your team. Let them know that if they receive an email after hours, they are not expected to read or reply to it until their next shift (unless it is explicitly marked as an urgent emergency).</li>
-                </ul>
+                <div class="calculator-box">
+                    <h3 style="margin-top: 0; color: #03263B; font-size: 20px;"><i class="fas fa-balance-scale-right" style="color: #96349b; margin-right: 8px;"></i> After-Hours Contact Assessor</h3>
+                    <p style="font-size: 14px; color: #686868; margin-bottom: 20px;">Not sure if your staff member has the right to ignore you? Select the context of your communication below to estimate how Fair Work might view their refusal to respond.</p>
+                    
+                    <div>
+                        <label for="urgency" style="display: block; font-weight: bold; color: #353535;">Urgency of Contact</label>
+                        <select id="urgency" class="calc-select">
+                            <option value="routine">Routine question (e.g., "Where did you save that file?")</option>
+                            <option value="shift">Shift change for tomorrow morning (e.g., "Can you start at 8am?")</option>
+                            <option value="emergency">Genuine Emergency (e.g., The server crashed, the shop is flooding)</option>
+                        </select>
+                    </div>
 
-                <p>Violating these rules and taking disciplinary action against an employee for exercising their right to disconnect can lead to severe penalties from the Fair Work Commission. If you need help reviewing your employment contracts or understanding your payroll and employer obligations, contact Loyal Bright Accountants today!</p>
-                
-                <p><br><a href="/en/faq/">&larr; Back to all FAQs</a></p>
+                    <div>
+                        <label for="role" style="display: block; font-weight: bold; color: #353535;">Employee's Role & Compensation</label>
+                        <select id="role" class="calc-select">
+                            <option value="junior">Junior / Minimum Wage (Hourly paid, no allowances)</option>
+                            <option value="senior">Senior Manager (High salary, contract includes reasonable overtime)</option>
+                            <option value="oncall">On-Call Staff (Paid a specific on-call allowance for this shift)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="calc-result" id="resultBox">
+                        <h4 id="resultHeading">Checking...</h4>
+                        <p id="resultDesc">Select options above.</p>
+                    </div>
+                </div>
+
+                <script>
+                    const urgencyInput = document.getElementById('urgency');
+                    const roleInput = document.getElementById('role');
+                    
+                    const resultBox = document.getElementById('resultBox');
+                    const resultHeading = document.getElementById('resultHeading');
+                    const resultDesc = document.getElementById('resultDesc');
+
+                    function assessContact() {
+                        const urgency = urgencyInput.value;
+                        const role = roleInput.value;
+                        
+                        let canRefuse = true;
+                        let message = "";
+
+                        // Evaluation Logic
+                        if (role === 'oncall') {
+                            canRefuse = false;
+                            message = "Because you are specifically paying this employee an on-call allowance, their refusal to answer is Unreasonable. They must respond.";
+                        } else if (urgency === 'emergency') {
+                            canRefuse = false;
+                            message = "Because this is a genuine business emergency, their refusal to answer is likely Unreasonable, regardless of their role. They should respond.";
+                        } else if (role === 'senior' && urgency === 'shift') {
+                            canRefuse = false;
+                            message = "Given their senior role, high salary, and the time-sensitive nature of the contact (tomorrow's shift), their refusal to answer is likely Unreasonable.";
+                        } else if (role === 'junior' && urgency === 'shift') {
+                            canRefuse = true;
+                            message = "While shift changes are important, a junior hourly employee has a strong right to disconnect. Their refusal to respond is likely Reasonable. You should use a roster app or call during their actual shift.";
+                        } else {
+                            // Default for routine things
+                            canRefuse = true;
+                            message = "This is routine contact. The employee has a strong Right to Disconnect. Their refusal to respond until their next shift is Reasonable. You should not take disciplinary action.";
+                        }
+
+                        // Display Results
+                        if (canRefuse) {
+                            resultBox.style.borderColor = "#28a745";
+                            resultHeading.style.color = "#28a745";
+                            resultHeading.innerHTML = '<i class="fas fa-check-circle"></i> Refusal is REASONABLE';
+                        } else {
+                            resultBox.style.borderColor = "#c53030";
+                            resultHeading.style.color = "#c53030";
+                            resultHeading.innerHTML = '<i class="fas fa-times-circle"></i> Refusal is UNREASONABLE';
+                        }
+                        
+                        resultDesc.innerHTML = message;
+                    }
+
+                    urgencyInput.addEventListener('change', assessContact);
+                    roleInput.addEventListener('change', assessContact);
+                    
+                    assessContact(); // Initialize
+                </script>
+                <h2>3. What should small business owners do?</h2>
+				<p>To ensure you stay compliant and maintain a good relationship with your team, consider these steps:</p>
+				<ul>
+					<li><strong>Use scheduled send:</strong> If you work late, use the "schedule send" feature on your email so messages arrive in your employee's inbox at 9:00 AM the next day.</li>
+					<li><strong>Update employment contracts:</strong> If a role requires occasional after-hours contact, ensure this is clearly stated in their contract and that their remuneration reflects this expectation.</li>
+					<li><strong>Set clear expectations:</strong> Have a conversation with your team. Let them know that if they receive an email after hours, they are not expected to read or reply to it until their next shift (unless it is explicitly marked as an urgent emergency).</li>
+				</ul>
+
+                <div class="warning-box">
+                    <h4><i class="fas fa-gavel"></i> Fair Work Penalties</h4>
+                    <p style="margin-bottom:0;">Violating these rules and taking disciplinary action against an employee for exercising their right to disconnect can lead to severe penalties from the Fair Work Commission.</p>
+                </div>
+
+				<p style="background: #eef4f7; padding: 20px; border-radius: 6px;">
+                    <strong>Next Steps:</strong> If you need help reviewing your employment contracts or understanding your payroll and employer obligations, contact Loyal Bright Accountants today!
+                </p>
+				
+				<a href="/en/faq/" class="back-link">&larr; Back to all FAQs</a>
 			</div>
 		</div>
 
-		<div class="site-info-wrapper">
-			<div class="site-info-inner" style="text-align: center; padding: 20px;">
-				<a class="privacy-policy-link" href="/en/privacy-policy/" style="display:block; margin-bottom:10px;">Privacy Policy</a>
-				<div class="site-info-text">Copyright &copy; 2019 - 2026 Loyal Bright Accountants. All Rights Reserved.</div>
+		<footer class="site-footer" style="background: #f5f5f5; border-top: 1px solid #eee; padding: 40px 20px;">
+			<div class="site-info-inner" style="text-align: center;">
+				<a class="privacy-policy-link" href="/en/privacy-policy/" style="display:block; margin-bottom:10px; color: #686868;">Privacy Policy</a>	
+				<div class="site-info-text" style="color: #686868; font-size: 13px;">
+					Copyright &copy; 2019 - 2026 Loyal Bright Pty Ltd ATF Loyal Bright Trust t/a Loyal Bright Accountants. <br>
+                    <small>Liability limited by a scheme approved under Professional Standards Legislation.</small>
+				</div>
 			</div>
-		</div>
+		</footer>
 	</div>
 </body>
 </html>
