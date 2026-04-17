@@ -3,92 +3,249 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Understanding Single Touch Payroll (STP) Phase 2 | Loyal Bright Accountants FAQ</title>
+	<title>Understanding Single Touch Payroll (STP) Phase 2 | Loyal Bright Accountants</title>
 	<meta name="description" content="Learn what STP Phase 2 means for Australian employers, what extra information you need to report to the ATO, and how to stay compliant.">
+
+    <link rel="canonical" href="https://loyalbright.com.au/en/faq/understanding-stp-phase-2/">
+    <link rel="alternate" hreflang="en-AU" href="https://loyalbright.com.au/en/faq/understanding-stp-phase-2/">
+    <link rel="alternate" hreflang="zh-CN" href="https://loyalbright.com.au/zh/faq-zh/understanding-stp-phase-2/">
+
+    <link rel="icon" href="/wp-content/uploads/2018/11/cropped-Loyal-Bright-Website-Tag-32x32.png" sizes="32x32">
+    <link rel="icon" href="/wp-content/uploads/2018/11/cropped-Loyal-Bright-Website-Tag-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="/wp-content/uploads/2018/11/cropped-Loyal-Bright-Website-Tag-180x180.png">
+	
 	<link rel="stylesheet" id="ascension-css" href="/wp-content/themes/ascension/style.css?ver=1.1.5" type="text/css" media="all">
 	<link rel="stylesheet" id="ascension-fonts-css" href="https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C700&amp;subset=latin&amp;ver=1.8.7" type="text/css" media="all">
+    <link rel="stylesheet" href="/wp-content/plugins/beaver-builder-lite-version/fonts/fontawesome/5.15.4/css/all.min.css">
+
 	<style type="text/css">
-		.site-title,.site-description{position:absolute;clip:rect(1px, 1px, 1px, 1px);}
-		.site-footer {background-color:#f5f5f5;}
-		.site-info-wrapper {background-color:#ffffff;}
-		.site-info-wrapper .site-info-text {color:#686868;}
-        .article-content h2 { margin-top: 30px; margin-bottom: 15px; font-size: 24px; }
-        .article-content h3 { margin-top: 25px; margin-bottom: 10px; font-size: 20px; }
-        .article-content p, .article-content ul { margin-bottom: 20px; line-height: 1.6; }
-        .article-content ul { list-style-type: disc; padding-left: 20px; }
+        /* --- HEADER STYLES (Fixed Menu Spacing) --- */
+        .site-title, .site-description { position: absolute; clip: rect(1px, 1px, 1px, 1px); }
+        .site-header { background: #fff; padding: 20px 0; border-bottom: 1px solid #eee; }
+        
+        /* 仅覆盖颜色和字体，将排版间距交还给原主题 */
+        .main-navigation ul li a, 
+        .main-navigation ul li a:visited { 
+            color: #5d5179 !important; 
+            font-weight: 700; 
+            font-size: 15px; 
+            text-transform: uppercase; 
+            transition: color 0.3s; 
+        }
+        
+        .main-navigation ul li a:hover, 
+        .main-navigation ul li a:focus { 
+            color: #96349b !important; 
+        }
+
+        /* 恢复移动端的紫色汉堡菜单按钮 */
+        .menu-toggle div { background-color: #96349b !important; } 
+
+        @media (max-width: 768px) {
+            .nav-container { flex-direction: column; justify-content: center; }
+            .custom-logo { margin-bottom: 20px; max-width: 200px; }
+            /* Mobile Spacing, borders and padding */
+            .main-navigation .menu li { margin: 0; width: 100%; text-align: center; border-bottom: 1px solid #f9f9f9; padding: 12px 0; } 
+            .main-navigation .menu li:last-child { border-bottom: none; padding-bottom: 0; }
+        }
+
+        /* --- PAGE CONTENT STYLES --- */
+        .hero { 
+            background-image: linear-gradient(rgba(3, 38, 59, 0.75), rgba(3, 38, 59, 0.75)), url(/wp-content/uploads/2019/07/cropped-Home-Page-Hero-2400x1160.jpeg);
+            background-size: cover; background-position: center; padding: 80px 20px; text-align: center; color: #fff;
+        }
+        .hero h1 { font-size: 36px; color: #fff; margin-bottom: 10px; font-weight: 700; font-family: "Open Sans", sans-serif;}
+        
+        .site-content { max-width: 900px; margin: 60px auto; padding: 0 20px; background: #fff; }
+        .article-container { padding: 40px; border-radius: 8px; border: 1px solid #eee; box-shadow: 0 5px 25px rgba(0,0,0,0.03); border-top: 4px solid #5d5179; }
+        .article-container h2, .article-container h3 { color: #03263B; margin-top: 40px; margin-bottom: 20px; font-weight: 700; font-family: "Open Sans", sans-serif; }
+        .article-container h2 { font-size: 24px; border-left: 5px solid #96349b; padding-left: 15px;}
+        .article-container h3 { font-size: 20px; }
+        .article-container p, .article-container ul { color: #353535; font-size: 16px; line-height: 1.8; margin-bottom: 20px; font-family: "Open Sans", sans-serif; }
+        .article-container ul { padding-left: 20px; }
+        
+        .info-box { background: #fdfaf6; padding: 25px; border-radius: 6px; border: 1px solid #e8e1d7; margin-bottom: 30px; margin-top: 30px;}
+        .info-box h4 { color: #03263B; margin-top: 0; display: flex; align-items: center; font-weight: 800 !important; font-size: 20px; font-family: "Open Sans", sans-serif; margin-bottom: 10px;}
+        .info-box i { margin-right: 10px; color: #96349b; }
+
+        .back-link { display: inline-block; margin-top: 30px; color: #5d5179; font-weight: bold; text-decoration: none; transition: 0.3s; }
+        .back-link:hover { color: #96349b; text-decoration: underline; }
+
+        /* Custom Interactive Visualizer Styles */
+        .calculator-box { background: #f4f7f6; padding: 30px; border-radius: 8px; border: 1px solid #dce4e1; margin-bottom: 30px; margin-top: 30px; }
+        .calc-slider { width: 100%; margin-top: 10px; margin-bottom: 20px; accent-color: #5d5179; }
+        .comparison-container { background: #fff; padding: 20px; border-radius: 6px; border: 2px solid #5d5179; margin-top: 20px; }
+        .phase-block { padding: 15px; border-radius: 6px; margin-bottom: 15px; }
+        .phase-1 { background: #ffebee; border-left: 4px solid #c53030; }
+        .phase-2 { background: #eef4f7; border-left: 4px solid #28a745; margin-bottom: 0; }
+        .phase-title { font-weight: bold; margin-bottom: 10px; font-size: 16px; color: #03263B; border-bottom: 1px solid rgba(0,0,0,0.1); padding-bottom: 5px;}
+        .data-row { display: flex; justify-content: space-between; font-size: 15px; color: #555; margin-bottom: 5px;}
+        .data-row strong { color: #333; }
 	</style>
+    <script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+    <script type="text/javascript" src="/wp-content/themes/primer/assets/js/navigation.min.js?ver=1.8.7"></script>
 </head>
 
-<body class="wp-singular page-template-default page layout-one-column-wide">
+<body class="page layout-one-column-wide">
 	<div id="page" class="hfeed site">
-		<header id="masthead" class="site-header" role="banner">
+        
+        <header id="masthead" class="site-header" role="banner">
 			<div class="site-header-wrapper">
 				<div class="site-title-wrapper">
-					<a href="/en/home/" class="custom-logo-link" rel="home"><img width="511" height="134" src="/wp-content/uploads/2018/11/cropped-1_Primary_logo_on_transparent_512-1.png" class="custom-logo" alt="Loyal Bright Accountants"></a>
+					<a href="/" class="custom-logo-link" rel="home"><img width="511" height="134" src="/wp-content/uploads/2018/11/cropped-1_Primary_logo_on_transparent_512-1.png" class="custom-logo" alt="Loyal Bright Accountants"></a>
+                    <h1 class="site-title"><a href="/" rel="home">Loyal Bright Accountants</a></h1>
 				</div>
 				<div class="main-navigation-container">
+                    <div class="menu-toggle" id="menu-toggle" role="button" tabindex="0">
+                        <div></div><div></div><div></div>
+                    </div>
 					<nav id="site-navigation" class="main-navigation">
-						<div class="menu-container">
-							<ul id="menu-en" class="menu">
-								<li class="menu-item"><a href="/en/home/">Home</a></li>
-								<li class="menu-item"><a href="/en/about/">About Us</a></li>
-								<li class="menu-item"><a href="/en/services/">Services</a></li>
-								<li class="menu-item"><a href="/en/faq/">FAQ</a></li>
-								<li class="menu-item"><a href="/en/contact/">Contact Us</a></li>
-								<li class="menu-item"><a href="/zh/faq-zh/understanding-stp-phase-2/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAXVBMVEXUAADlQgDLAADBAADtgXn63Xjypnf1wHHpcG/oZmbmXVzlU1PjS0q1AAD981775VvwnVD2zkvhPz/fNzfdMjHcKyvaJyfsi0baISHYGhqqAADWExPTDQ2jAACfAAApGpDBAAAAWklEQVR4ATXIhQHDQBTDUMll2n/RMiU5/vQsAE4EsPbaKVOU+pXNwc/WKQXeDZMKu+psCXw/Z7efarmENd6GIwEpXhUvM4spxoiEbouRNT7Fmtaq+RG4wAqZZvceD8DeIelqAAAAAElFTkSuQmCC" alt="" width="16" height="11" style="width: 16px; height: 11px;"><span style="margin-left:0.3em;">简体中文</span></a></li>
-							</ul>
-						</div>
+                        <div class="menu-primary-menu-container">
+                            <ul id="menu-primary-menu" class="menu">
+                                <li class="menu-item"><a href="/">Home</a></li>
+                                <li class="menu-item"><a href="/en/about/">About Us</a></li>
+                                <li class="menu-item"><a href="/en/services/">Services</a></li>
+                                <li class="menu-item"><a href="/en/faq/">FAQ</a></li>
+                                <li class="menu-item"><a href="/en/contact/">Contact Us</a></li>
+                                <li class="menu-item"><a href="/zh/faq-zh/understanding-stp-phase-2/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAXVBMVEXUAADlQgDLAADBAADtgXn63Xjypnf1wHHpcG/oZmbmXVzlU1PjS0q1AAD981775VvwnVD2zkvhPz/fNzfdMjHcKyvaJyfsi0baISHYGhqqAADWExPTDQ2jAACfAAApGpDBAAAAWklEQVR4ATXIhQHDQBTDUMll2n/RMiU5/vQsAE4EsPbaKVOU+pXNwc/WKQXeDZMKu+psCXw/Z7efarmENd6GIwEpXhUvM4spxoiEbouRNT7Fmtaq+RG4wAqZZvceD8DeIelqAAAAAElFTkSuQmCC" alt="" width="16" height="11" style="vertical-align: middle; margin-right: 5px;">中文</a></li>
+                            </ul>
+                        </div>
 					</nav>
 				</div>
 			</div>
 		</header>
 
-		<div class="hero"><div class="hero-inner"><div class="page-title-container">
-			<header class="page-header"><h1 class="page-title">Understanding Single Touch Payroll (STP) Phase 2</h1></header>
-		</div></div></div>
+		<section class="hero">
+			<h1>Understanding Single Touch Payroll (STP) Phase 2</h1>
+		</section>
 
-		<div id="content" class="site-content" style="max-width: 800px; margin: 0 auto; padding: 40px 20px;">
-			<div class="article-content">
-				<p><em>Published in March 2026</em></p>
+		<div class="site-content">
+			<div class="article-container">
+				<p style="color: #999; font-size: 14px; font-weight: bold; margin-bottom: 30px;">Updated: April 2026</p>
 				
-                <p>If you employ staff in Australia, you are likely already familiar with Single Touch Payroll (STP)—the system that sends your payroll data to the ATO every time you pay your employees. However, the ATO has rolled out an expanded reporting system known as <strong>STP Phase 2</strong>.</p>
-                <p>The goal of Phase 2 is to reduce the reporting burden on employers who previously had to send data to multiple government agencies (like Services Australia and Centrelink).</p>
+				<p>If you employ staff in Australia, you are likely already familiar with Single Touch Payroll (STP)—the system that sends your payroll data to the ATO every time you pay your employees. However, the ATO has rolled out an expanded reporting system known as <strong>STP Phase 2</strong>.</p>
+				<p>The goal of Phase 2 is to reduce the reporting burden on employers who previously had to send data to multiple government agencies (like Services Australia and Centrelink) by capturing more granular data in a single reporting event.</p>
 
-                <h3>1. What is changing under STP Phase 2?</h3>
-                <p>The main change is that the ATO requires more granular detail about <em>how</em> your employees are being paid. Under Phase 1, you reported a single "Gross" pay amount. Under Phase 2, this gross amount must be broken down into specific categories:</p>
-                <ul>
-                    <li><strong>Allowances:</strong> All allowances (e.g., travel, meals, tools) must be reported separately, not bundled into gross pay.</li>
-                    <li><strong>Paid Leave:</strong> Annual leave, sick leave, and long service leave must be categorized so the ATO can identify the type of leave being taken.</li>
-                    <li><strong>Overtime:</strong> Overtime pay must be separated from ordinary earnings.</li>
-                    <li><strong>Directors' Fees:</strong> If you are a company director taking a fee, it must be reported separately from regular wages.</li>
-                </ul>
+				<h2>1. What is changing under STP Phase 2?</h2>
+				<p>The main change is that the ATO requires more detail about <em>how</em> your employees are being paid. Under Phase 1, you reported a single bundled "Gross Pay" amount. Under Phase 2, this gross amount must be broken down (disaggregated) into specific categories:</p>
+				<ul>
+					<li><strong>Allowances:</strong> All allowances (e.g., travel, meals, tools) must be reported separately, not bundled into gross pay.</li>
+					<li><strong>Paid Leave:</strong> Annual leave, sick leave, and long service leave must be categorized so the ATO can identify the specific type of leave being taken.</li>
+					<li><strong>Overtime:</strong> Overtime pay must be separated from ordinary earnings.</li>
+					<li><strong>Directors' Fees:</strong> If you are a company director taking a fee, it must be reported distinctly from regular wages.</li>
+				</ul>
 
-                <h3>2. New Onboarding Information</h3>
-                <p>STP Phase 2 also simplifies the onboarding process for new employees. You now report the following information directly through your payroll software, meaning less manual paperwork:</p>
-                <ul>
-                    <li><strong>TFN Declarations:</strong> You no longer need to send a physical Tax File Number declaration to the ATO. The details are sent electronically in your STP report.</li>
-                    <li><strong>Employment Basis:</strong> You must declare whether the employee is full-time, part-time, or casual.</li>
-                    <li><strong>Cessation Reason:</strong> If an employee leaves your business, you must report the reason (e.g., voluntary resignation, redundancy, or dismissal). This eliminates the need to issue a separation certificate for Centrelink.</li>
-                </ul>
+                <div class="calculator-box">
+                    <h3 style="margin-top: 0; color: #03263B; font-size: 20px;"><i class="fas fa-file-invoice-dollar" style="color: #5d5179; margin-right: 8px;"></i> STP Phase 1 vs. Phase 2 Visualizer</h3>
+                    <p style="font-size: 14px; color: #686868; margin-bottom: 20px;">Use the sliders to generate a sample weekly payslip. See how the exact same pay is reported differently to the ATO under the old and new systems.</p>
+                    
+                    <div>
+                        <label for="basePay" style="display: block; font-weight: bold; color: #353535;">Base Ordinary Earnings: $<span id="baseVal" style="color: #5d5179;">1,500</span></label>
+                        <input type="range" id="basePay" class="calc-slider" min="500" max="3000" step="50" value="1500">
+                    </div>
 
-                <h3>3. What is NOT changing?</h3>
-                <p>The good news is that the way you lodge STP remains the same. You still lodge it on or before the day you pay your employees, your PAYG withholding and superannuation calculations do not change, and the due dates for your payments to the ATO and super funds remain the same.</p>
+                    <div>
+                        <label for="overtimePay" style="display: block; font-weight: bold; color: #353535;">Overtime Pay: $<span id="overtimeVal" style="color: #5d5179;">300</span></label>
+                        <input type="range" id="overtimePay" class="calc-slider" min="0" max="1500" step="50" value="300">
+                    </div>
 
-                <h3>How to stay compliant</h3>
-                <p>To comply with STP Phase 2, your payroll software (like Xero, MYOB, or QuickBooks) must be updated and configured correctly. This means reviewing your pay items and ensuring every allowance, leave type, and deduction is mapped to the correct ATO reporting category.</p>
+                    <div>
+                        <label for="allowancePay" style="display: block; font-weight: bold; color: #353535;">Tool/Travel Allowances: $<span id="allowanceVal" style="color: #5d5179;">100</span></label>
+                        <input type="range" id="allowancePay" class="calc-slider" min="0" max="500" step="10" value="100">
+                    </div>
+                    
+                    <div class="comparison-container">
+                        <div class="phase-block phase-1">
+                            <div class="phase-title"><i class="fas fa-archive" style="color: #c53030; margin-right:5px;"></i> Old System: STP Phase 1 Report</div>
+                            <p style="font-size: 13px; color: #666; margin-bottom: 10px;">The ATO only sees a single bundled figure.</p>
+                            <div class="data-row"><span>Gross Pay (Bundled)</span> <strong>$<span id="p1Gross">1,900</span></strong></div>
+                        </div>
 
-                <p>If you need help migrating to STP Phase 2 or want to ensure your payroll software is configured correctly to avoid ATO penalties, contact the payroll experts at Loyal Bright Accountants today!</p>
-                
-                <p><br><a href="/en/faq/">&larr; Back to all FAQs</a></p>
+                        <div class="phase-block phase-2">
+                            <div class="phase-title"><i class="fas fa-check-circle" style="color: #28a745; margin-right:5px;"></i> Current System: STP Phase 2 Report</div>
+                            <p style="font-size: 13px; color: #666; margin-bottom: 10px;">The ATO now demands disaggregated categories for Centrelink & tax tracking.</p>
+                            <div class="data-row"><span>Gross: Ordinary Time Earnings</span> <strong>$<span id="p2Base">1,500</span></strong></div>
+                            <div class="data-row"><span>Gross: Overtime</span> <strong style="color: #03263B;">$<span id="p2Overtime">300</span></strong></div>
+                            <div class="data-row"><span>Allowances (Tool/Travel)</span> <strong style="color: #03263B;">$<span id="p2Allowance">100</span></strong></div>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    const baseInput = document.getElementById('basePay');
+                    const overInput = document.getElementById('overtimePay');
+                    const allowInput = document.getElementById('allowancePay');
+                    
+                    const baseVal = document.getElementById('baseVal');
+                    const overVal = document.getElementById('overtimeVal');
+                    const allowVal = document.getElementById('allowanceVal');
+                    
+                    const p1Gross = document.getElementById('p1Gross');
+                    const p2Base = document.getElementById('p2Base');
+                    const p2Overtime = document.getElementById('p2Overtime');
+                    const p2Allowance = document.getElementById('p2Allowance');
+
+                    function formatMoney(num) {
+                        return num.toLocaleString('en-AU', {maximumFractionDigits: 0});
+                    }
+
+                    function updateSTPVisualizer() {
+                        const base = parseInt(baseInput.value);
+                        const overtime = parseInt(overInput.value);
+                        const allowance = parseInt(allowInput.value);
+
+                        baseVal.textContent = formatMoney(base);
+                        overVal.textContent = formatMoney(overtime);
+                        allowVal.textContent = formatMoney(allowance);
+
+                        const totalGross = base + overtime + allowance;
+
+                        // Update Phase 1
+                        p1Gross.textContent = formatMoney(totalGross);
+
+                        // Update Phase 2
+                        p2Base.textContent = formatMoney(base);
+                        p2Overtime.textContent = formatMoney(overtime);
+                        p2Allowance.textContent = formatMoney(allowance);
+                    }
+
+                    baseInput.addEventListener('input', updateSTPVisualizer);
+                    overInput.addEventListener('input', updateSTPVisualizer);
+                    allowInput.addEventListener('input', updateSTPVisualizer);
+                    
+                    updateSTPVisualizer(); // Initialize
+                </script>
+                <h2>2. New Onboarding Information</h2>
+				<p>STP Phase 2 also simplifies the onboarding process for new employees. You now report the following information directly through your payroll software, meaning less manual paperwork:</p>
+				<ul>
+					<li><strong>TFN Declarations:</strong> You no longer need to send a physical Tax File Number declaration to the ATO. The details are sent electronically in your STP report.</li>
+					<li><strong>Employment Basis:</strong> You must declare whether the employee is full-time, part-time, or casual.</li>
+					<li><strong>Cessation Reason:</strong> If an employee leaves your business, you must report the reason (e.g., voluntary resignation, redundancy, or dismissal). This eliminates the need to issue a separation certificate for Centrelink.</li>
+				</ul>
+
+				<h2>3. What is NOT changing?</h2>
+				<p>The good news is that the core mechanism of how you lodge STP remains the same. You still lodge it on or before the day you pay your employees. Your PAYG withholding and superannuation calculations do not change, and the due dates for your payments to the ATO and your super clearing houses remain identical.</p>
+
+				<h2>How to stay compliant</h2>
+				<p>To comply with STP Phase 2, your payroll software must be configured with precise mapping. This means reviewing your pay items and ensuring every allowance, leave type, and deduction is mapped to the correct ATO reporting category.</p>
+
+				<p style="background: #eef4f7; padding: 20px; border-radius: 6px;">
+                    <strong>Next Steps:</strong> Whether you process payroll through small business platforms like Xero or MYOB, or utilize enterprise-grade systems like Microsoft Dynamics 365 Finance & Operations, maintaining compliant pay categories is critical. If you need help migrating to Phase 2 or want to ensure your pay items are mapped correctly to avoid ATO penalties, contact the payroll compliance experts at Loyal Bright Accountants today.
+                </p>
+				
+				<a href="/en/faq/" class="back-link">&larr; Back to all FAQs</a>
 			</div>
 		</div>
 
-		<div class="site-info-wrapper">
-			<div class="site-info-inner" style="text-align: center; padding: 20px;">
-				<a class="privacy-policy-link" href="/en/privacy-policy/" style="display:block; margin-bottom:10px;">Privacy Policy</a>
-				<div class="site-info-text">Copyright &copy; 2019 - 2026 Loyal Bright Accountants. All Rights Reserved.</div>
+		<footer class="site-footer" style="background: #f5f5f5; border-top: 1px solid #eee; padding: 40px 20px;">
+			<div class="site-info-inner" style="text-align: center;">
+				<a class="privacy-policy-link" href="/en/privacy-policy/" style="display:block; margin-bottom:10px; color: #686868;">Privacy Policy</a>	
+				<div class="site-info-text" style="color: #686868; font-size: 13px;">
+					Copyright &copy; 2019 - 2026 Loyal Bright Pty Ltd ATF Loyal Bright Trust t/a Loyal Bright Accountants. <br>
+                    <small>Liability limited by a scheme approved under Professional Standards Legislation.</small>
+				</div>
 			</div>
-		</div>
+		</footer>
 	</div>
 </body>
 </html>
