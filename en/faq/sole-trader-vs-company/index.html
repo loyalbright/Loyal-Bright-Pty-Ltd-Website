@@ -148,11 +148,11 @@
                     <div class="calc-result">
                         <div class="calc-stat">
                             <p>Tax as a Sole Trader</p>
-                            <div class="val" style="color: #c53030;">$<span id="soleTraderTax">17,776</span></div>
+                            <div class="val" id="soleTraderTax">$17,776</div>
                         </div>
                         <div class="calc-stat" style="border-left: 1px solid #eee;">
                             <p>Tax as a Company (25%)</p>
-                            <div class="val" style="color: #28a745;">$<span id="companyTax">20,000</span></div>
+                            <div class="val" id="companyTax">$20,000</div>
                         </div>
                     </div>
                     <p style="font-size: 13px; color: #888; text-align: center; margin-top: 15px;"><em>Note: Withdrawing profit from a company later as a dividend will have its own tax implications for the individual shareholders.</em></p>
@@ -188,8 +188,8 @@
                         const soleTraderTax = calcIndividualTax(profit);
                         const companyTax = profit * 0.25;
 
-                        soleTraderTaxOut.textContent = formatMoney(soleTraderTax);
-                        companyTaxOut.textContent = formatMoney(companyTax);
+                        soleTraderTaxOut.textContent = "$" + formatMoney(soleTraderTax);
+                        companyTaxOut.textContent = "$" + formatMoney(companyTax);
                         
                         // Highlight the cheaper option
                         if(companyTax < soleTraderTax) {
@@ -204,7 +204,8 @@
                     profitInput.addEventListener('input', updateTaxCalc);
                     updateTaxCalc();
                 </script>
-                <h2>Which should you choose?</h2>
+
+				<h2>Which should you choose?</h2>
 				<p>Generally, a <strong>Sole Trader</strong> structure is great for low-risk businesses, freelancers, or side-hustles just starting out. A <strong>Company</strong> structure is strongly recommended if your business carries a higher risk of being sued, if you plan to employ staff, if you need to raise capital from investors, or if your business generates significant profit.</p>
 
 				<p style="background: #eef4f7; padding: 20px; border-radius: 6px;">
