@@ -3,90 +3,230 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>如何注册 ABN、TFN 和 GST？ | 诚明会计师事务所常见问题</title>
+	<title>如何注册 ABN、TFN 和 GST？ | 诚明会计师事务所</title>
 	<meta name="description" content="了解在澳大利亚创办新生意时，如何逐步注册澳大利亚商业号码 (ABN)、税号 (TFN) 以及商品及服务税 (GST)。">
+
+    <link rel="canonical" href="https://loyalbright.com.au/zh/faq-zh/how-to-register-abn-tfn-gst/">
+    <link rel="alternate" hreflang="en-AU" href="https://loyalbright.com.au/en/faq/how-to-register-abn-tfn-gst/">
+    <link rel="alternate" hreflang="zh-CN" href="https://loyalbright.com.au/zh/faq-zh/how-to-register-abn-tfn-gst/">
+
+    <link rel="icon" href="/wp-content/uploads/2018/11/cropped-Loyal-Bright-Website-Tag-32x32.png" sizes="32x32">
+    <link rel="icon" href="/wp-content/uploads/2018/11/cropped-Loyal-Bright-Website-Tag-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="/wp-content/uploads/2018/11/cropped-Loyal-Bright-Website-Tag-180x180.png">
+	
 	<link rel="stylesheet" id="ascension-css" href="/wp-content/themes/ascension/style.css?ver=1.1.5" type="text/css" media="all">
 	<link rel="stylesheet" id="ascension-fonts-css" href="https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C700&amp;subset=latin&amp;ver=1.8.7" type="text/css" media="all">
+    <link rel="stylesheet" href="/wp-content/plugins/beaver-builder-lite-version/fonts/fontawesome/5.15.4/css/all.min.css">
+
 	<style type="text/css">
-		.site-title,.site-description{position:absolute;clip:rect(1px, 1px, 1px, 1px);}
-		.site-footer {background-color:#f5f5f5;}
-		.site-info-wrapper {background-color:#ffffff;}
-		.site-info-wrapper .site-info-text {color:#686868;}
-        .article-content h2 { margin-top: 30px; margin-bottom: 15px; font-size: 24px; }
-        .article-content h3 { margin-top: 25px; margin-bottom: 10px; font-size: 20px; }
-        .article-content p, .article-content ul { margin-bottom: 20px; line-height: 1.6; }
-        .article-content ul { list-style-type: disc; padding-left: 20px; }
+        /* --- HEADER STYLES (Fixed Menu Spacing) --- */
+        .site-title, .site-description { position: absolute; clip: rect(1px, 1px, 1px, 1px); }
+        .site-header { background: #fff; padding: 20px 0; border-bottom: 1px solid #eee; }
+        .nav-container { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; flex-direction: row; justify-content: space-between; align-items: center; }
+        .custom-logo { max-width: 250px; height: auto; display: block; }
+        
+        /* Targeted Specificity to override theme defaults without breaking spacing */
+        .main-navigation ul li a, .main-navigation ul li a:visited { text-decoration: none; color: #5d5179 !important; font-weight: 700; font-size: 15px; text-transform: uppercase; transition: color 0.3s; }
+        .main-navigation ul li a:hover, .main-navigation ul li a:focus { color: #96349b !important; }
+
+        /* Restores the Purple Hamburger Menu */
+        .menu-toggle div { background-color: #96349b !important; } 
+
+        @media (max-width: 768px) {
+            .nav-container { flex-direction: column; justify-content: center; }
+            .custom-logo { margin-bottom: 20px; max-width: 200px; }
+            /* Mobile Spacing, borders and padding */
+            .main-navigation .menu li { margin: 0; width: 100%; text-align: center; border-bottom: 1px solid #f9f9f9; padding: 12px 0; } 
+            .main-navigation .menu li:last-child { border-bottom: none; padding-bottom: 0; }
+        }
+
+        /* --- PAGE CONTENT STYLES --- */
+        .hero { 
+            background-image: linear-gradient(rgba(3, 38, 59, 0.75), rgba(3, 38, 59, 0.75)), url(/wp-content/uploads/2019/07/cropped-Home-Page-Hero-2400x1160.jpeg);
+            background-size: cover; background-position: center; padding: 80px 20px; text-align: center; color: #fff;
+        }
+        .hero h1 { font-size: 36px; color: #fff; margin-bottom: 10px; font-weight: 700; font-family: "Open Sans", sans-serif;}
+        
+        .site-content { max-width: 900px; margin: 60px auto; padding: 0 20px; background: #fff; }
+        .article-container { padding: 40px; border-radius: 8px; border: 1px solid #eee; box-shadow: 0 5px 25px rgba(0,0,0,0.03); border-top: 4px solid #5d5179; }
+        .article-container h2, .article-container h3 { color: #03263B; margin-top: 40px; margin-bottom: 20px; font-weight: 700; font-family: "Open Sans", sans-serif; }
+        .article-container h2 { font-size: 24px; border-left: 5px solid #96349b; padding-left: 15px;}
+        .article-container h3 { font-size: 20px; }
+        .article-container p, .article-container ul { color: #353535; font-size: 16px; line-height: 1.8; margin-bottom: 20px; font-family: "Open Sans", sans-serif; }
+        .article-container ul { padding-left: 20px; }
+        
+        .back-link { display: inline-block; margin-top: 30px; color: #5d5179; font-weight: bold; text-decoration: none; transition: 0.3s; }
+        .back-link:hover { color: #96349b; text-decoration: underline; }
+
+        /* Custom Calculator Styles */
+        .calculator-box { background: #fdfaf6; padding: 30px; border-radius: 8px; border: 1px solid #e8e1d7; margin-bottom: 30px; margin-top: 30px; }
+        .calc-slider { width: 100%; margin-top: 10px; margin-bottom: 20px; accent-color: #96349b; }
+        .calc-select { width: 100%; padding: 10px; margin-top: 5px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 4px; font-size: 16px; font-family: "Open Sans", sans-serif;}
+        .calc-result { background: #fff; padding: 20px; border-radius: 6px; text-align: center; border: 2px solid #5d5179; margin-top: 10px; }
+        .calc-result h4 { margin: 0 0 10px 0; font-size: 22px; }
+        .calc-result p { margin: 0; font-size: 15px; color: #555; }
 	</style>
+    <script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+    <script type="text/javascript" src="/wp-content/themes/primer/assets/js/navigation.min.js?ver=1.8.7"></script>
 </head>
 
-<body class="wp-singular page-template-default page layout-one-column-wide">
+<body class="page layout-one-column-wide">
 	<div id="page" class="hfeed site">
-		<header id="masthead" class="site-header" role="banner">
+        
+        <header id="masthead" class="site-header" role="banner">
 			<div class="site-header-wrapper">
 				<div class="site-title-wrapper">
-					<a href="/zh/" class="custom-logo-link" rel="home"><img width="511" height="134" src="/wp-content/uploads/2018/11/cropped-1_Primary_logo_on_transparent_512-1.png" class="custom-logo" alt="墨尔本诚明会计师事务所"></a>
+					<a href="/zh/" class="custom-logo-link" rel="home"><img width="511" height="134" src="/wp-content/uploads/2018/11/cropped-1_Primary_logo_on_transparent_512-1.png" class="custom-logo" alt="诚明会计师事务所"></a>
+                    <h1 class="site-title"><a href="/zh/" rel="home">Loyal Bright Accountants</a></h1>
 				</div>
 				<div class="main-navigation-container">
+                    <div class="menu-toggle" id="menu-toggle" role="button" tabindex="0">
+                        <div></div><div></div><div></div>
+                    </div>
 					<nav id="site-navigation" class="main-navigation">
-						<div class="menu-container">
-							<ul id="menu-zh" class="menu">
-								<li class="menu-item"><a href="/zh/">首页</a></li>
-								<li class="menu-item"><a href="/zh/about-zh/">关于我们</a></li>
-								<li class="menu-item"><a href="/zh/services-zh/">服务</a></li>
-								<li class="menu-item"><a href="/zh/faq-zh/">常见问题</a></li>
-								<li class="menu-item"><a href="/zh/contact-zh/">联系我们</a></li>
-								<li class="menu-item"><a href="/en/faq/how-to-register-abn-tfn-gst/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAtFBMVEXAdIWHf6gAKI+NIUCRHz51OWgACXMAAF1HYqIAAE4AAEAAADRJS43kxszj4+veqbDt2d2ntNJyh7pnfbTHz+FbcqvOBwfhjZDlfn/lbm7dZGZQaKexutUwT5hTb6yPMVPkur/xp6W0gpmeqco8WZ1tg7YAACl7irrozdLKiZagutylkK26w9mQnMEAAB1qQnVZereLdp5Ka62biapBXZ8pSZN3jr42VJqVpccZO4gAAA8AAAIF8g6vAAAAmUlEQVR4AR1HU4IFQQysdAbJrO3v5f0Ps3q27c6gXATK4HkXEYpJx5nhOYtMh2AZJJTBQLtocKRES6eq5sVLJLggi5/4PrRjDZFALxfn6/2Jk/BERKZy0ejc/1z0wePn6u6oM70bv6yOH/n2wIFiNpt8ja+a92Dn1aGHw/ap+GYYg6P76dtku1lY+Xb9m5w5UgLhSYBjwByQApiiN1ociSrgAAAAAElFTkSuQmCC" alt="" width="16" height="11" style="width: 16px; height: 11px;"><span style="margin-left:0.3em;">English</span></a></li>
-							</ul>
-						</div>
+                        <div class="menu-primary-menu-container">
+                            <ul id="menu-zh" class="menu">
+                                <li class="menu-item"><a href="/zh/">首页</a></li>
+                                <li class="menu-item"><a href="/zh/about-zh/">关于我们</a></li>
+                                <li class="menu-item"><a href="/zh/services-zh/">服务</a></li>
+                                <li class="menu-item"><a href="/zh/faq-zh/">常见问题</a></li>
+                                <li class="menu-item"><a href="/zh/contact-zh/">联系我们</a></li>
+                                <li class="menu-item"><a href="/en/faq/how-to-register-abn-tfn-gst/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAtFBMVEXAdIWHf6gAKI+NIUCRHz51OWgACXMAAF1HYqIAAE4AAEAAADRJS43kxszj4+veqbDt2d2ntNJyh7pnfbTHz+FbcqvOBwfhjZDlfn/lbm7dZGZQaKexutUwT5hTb6yPMVPkur/xp6W0gpmeqco8WZ1tg7YAACl7irrozdLKiZagutylkK26w9mQnMEAAB1qQnVZereLdp5Ka62biapBXZ8pSZN3jr42VJqVpccZO4gAAA8AAAIF8g6vAAAAmUlEQVR4AR1HU4IFQQysdAbJrO3v5f0Ps3q27c6gXATK4HkXEYpJx5nhOYtMh2AZJJTBQLtocKRES6eq5sVLJLggi5/4PrRjDZFALxfn6/2Jk/BERKZy0ejc/1z0wePn6u6oM70bv6yOH/n2wIFiNpt8ja+a92Dn1aGHw/ap+GYYg6P76dtku1lY+Xb9m5w5UgLhSYBjwByQApiiN1ociSrgAAAAAElFTkSuQmCC" alt="" width="16" height="11" style="vertical-align: middle; margin-right: 5px;">English</a></li>
+                            </ul>
+                        </div>
 					</nav>
 				</div>
 			</div>
 		</header>
 
-		<div class="hero"><div class="hero-inner"><div class="page-title-container">
-			<header class="page-header"><h1 class="page-title">如何注册 ABN、TFN 和 GST？</h1></header>
-		</div></div></div>
+		<section class="hero">
+			<h1>如何注册 ABN、TFN 和 GST？</h1>
+		</section>
 
-		<div id="content" class="site-content" style="max-width: 800px; margin: 0 auto; padding: 40px 20px;">
-			<div class="article-content">
-				<p><em>发布于: 2026年3月</em></p>
+		<div class="site-content">
+			<div class="article-container">
+				<p style="color: #999; font-size: 14px; font-weight: bold; margin-bottom: 30px;">更新日期：2026年4月</p>
 				
-                <p>在澳大利亚创办新生意时，处理政府注册文件可能会让人感到不知所措。了解 ABN、TFN 和 GST 之间的区别，是让您的企业合法、高效起步的第一步。</p>
+				<p>在澳大利亚创办新生意时，处理政府注册文件可能会让人感到不知所措。了解 ABN、TFN 和 GST 之间的区别，是让您的企业合法、高效起步的第一步。</p>
 
-                <h3>1. 澳大利亚商业号码 (ABN - Australian Business Number)</h3>
-                <p>ABN 是一个唯一的 11 位数字，用于向政府和公众标识您的企业。您需要 ABN 才能开具有效的税务发票，并且可以避免其他企业在向您付款时按最高税率预扣税款。</p>
-                <ul>
-                    <li><strong>我需要注册吗？</strong> 是的，如果您在澳大利亚开展业务，您就应该注册 ABN。</li>
-                    <li><strong>如何注册：</strong> 您可以通过<a href="https://www.abr.gov.au/" target="_blank" rel="noopener">澳大利亚商业登记处 (ABR)</a> 网站免费进行注册。</li>
-                </ul>
+				<h2>1. 澳大利亚商业号码 (ABN - Australian Business Number)</h2>
+				<p>ABN 是一个唯一的 11 位数字，用于向政府和公众标识您的企业。您需要 ABN 才能开具有效的税务发票，并且可以避免其他企业在向您付款时按最高税率预扣税款。</p>
+				<ul>
+					<li><strong>我需要注册吗？</strong> 是的，如果您在澳大利亚开展业务，您就应该注册 ABN。</li>
+					<li><strong>如何注册：</strong> 您可以通过 <a href="https://www.abr.gov.au/" target="_blank" rel="noopener" style="color:#96349b; font-weight:bold;">澳大利亚商业登记处 (ABR)</a> 网站免费进行注册。</li>
+				</ul>
 
-                <h3>2. 税号 (TFN - Tax File Number)</h3>
-                <p>TFN 是您在税务和养老金系统中的个人参考号码。</p>
-                <ul>
-                    <li><strong>个体户 (Sole Traders):</strong> 如果您以个体户身份运营，您只需使用您现有的个人 TFN 进行商业活动，无需申请新的税号。</li>
-                    <li><strong>公司、合伙企业和信托 (Companies, Partnerships, Trusts):</strong> 如果您成立了独立的商业实体，该实体必须申请自己独立的商业 TFN。您可以在 ABR 网站上申请 ABN 的同时申请商业 TFN。</li>
-                </ul>
+				<h2>2. 税号 (TFN - Tax File Number)</h2>
+				<p>TFN 是您在税务和养老金系统中的个人参考号码。</p>
+				<ul>
+					<li><strong>个体户 (Sole Traders):</strong> 如果您以个体户身份运营，您只需使用您现有的个人 TFN 进行商业活动，无需申请新的税号。</li>
+					<li><strong>公司、合伙企业和信托:</strong> 如果您成立了独立的商业实体（例如 Pty Ltd 公司），该实体<strong>必须</strong>申请自己独立的商业 TFN。您可以在 ABR 网站上申请 ABN 的同时申请商业 TFN。</li>
+				</ul>
 
-                <h3>3. 商品及服务税 (GST - Goods and Services Tax)</h3>
-                <p>GST 是对澳大利亚销售或消费的大多数商品、服务及其他项目征收的 10% 的广泛税种。</p>
-                <ul>
-                    <li><strong>$75,000 营业额门槛：</strong> 只有当您的企业年总收入（营业额）达到 <strong>$75,000 或以上</strong> 时，您才被<strong>强制要求</strong>注册 GST。（注意：非营利组织的门槛为 $150,000；而对于出租车/共享出行司机，无论收入多少，都必须立即注册）。</li>
-                    <li><strong>我应该提前注册吗？</strong> 如果您的营业额低于 $75,000，注册是自愿的。如果您有大量的商业开支并希望申请退回 GST 抵免，提前注册可能是有利的。但请记住，一旦注册，您必须在销售额上额外收取 10% 的 GST，并定期递交商业活动报表 (BAS)。</li>
-                </ul>
+				<h2>3. 商品及服务税 (GST - Goods and Services Tax)</h2>
+				<p>GST 是对澳大利亚大多数商品及服务征收的 10% 广泛税种。</p>
+				<ul>
+					<li><strong>强制注册门槛：</strong> 只有当您的企业年总收入（营业额 Turnover）达到法定的门槛时，您才被<strong>强制要求</strong>注册 GST。</li>
+					<li><strong>我应该提前注册吗？</strong> 如果您的营业额低于门槛，注册是自愿的。如果您有大量的商业开支并希望向ATO申请退回支出的 GST 抵免，提前注册可能是有利的。但请记住，一旦注册，您必须在销售额上额外收取 10% 的 GST，并定期递交商业活动报表 (BAS)。</li>
+				</ul>
 
-                <h3>把文书工作交给我们吧！</h3>
-                <p>注册过程中的一个小错误可能会在未来给您与 ATO 的沟通带来巨大的麻烦。作为注册税务代理，诚明会计师事务所 (Loyal Bright Accountants) 可以为您同步注册 ABN、TFN 和 GST，确保您的企业从第一天起就拥有正确的结构。请今天就联系我们，让我们助您一臂之力！</p>
-                
-                <p><br><a href="/zh/faq-zh/">&larr; 返回所有常见问题</a></p>
+                <div class="calculator-box">
+                    <h3 style="margin-top: 0; color: #03263B; font-size: 20px;"><i class="fas fa-clipboard-check" style="color: #96349b; margin-right: 8px;"></i> GST 注册义务检查器</h3>
+                    <p style="font-size: 14px; color: #686868; margin-bottom: 20px;">不确定是否需要注册 GST？在下方选择您的业务类型并滑动预计年营业额，快速检查您的法定注册义务。</p>
+                    
+                    <div>
+                        <label for="businessType" style="display: block; font-weight: bold; color: #353535;">您经营哪种类型的业务？</label>
+                        <select id="businessType" class="calc-select">
+                            <option value="standard">普通企业 (个体户、公司、合伙企业等)</option>
+                            <option value="nonprofit">非营利组织 (Non-Profit Organization)</option>
+                            <option value="rideshare">出租车或共享出行司机 (如：Uber、DiDi)</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="turnoverAmount" style="display: block; font-weight: bold; color: #353535;">预计年总营业额: $<span id="turnoverVal" style="color: #96349b;">50,000</span></label>
+                        <input type="range" id="turnoverAmount" class="calc-slider" min="0" max="200000" step="5000" value="50000">
+                    </div>
+                    
+                    <div class="calc-result" id="resultBox">
+                        <h4 id="statusHeading">检查中...</h4>
+                        <p id="statusMessage">请在上方选择您的选项。</p>
+                    </div>
+                </div>
+
+                <script>
+                    const typeInput = document.getElementById('businessType');
+                    const turnoverInput = document.getElementById('turnoverAmount');
+                    const turnoverVal = document.getElementById('turnoverVal');
+                    
+                    const resultBox = document.getElementById('resultBox');
+                    const statusHeading = document.getElementById('statusHeading');
+                    const statusMessage = document.getElementById('statusMessage');
+
+                    function updateGSTCheck() {
+                        const type = typeInput.value;
+                        const turnover = parseInt(turnoverInput.value);
+                        turnoverVal.textContent = turnover.toLocaleString('en-AU');
+                        
+                        let isRequired = false;
+                        let thresholdMessage = "";
+
+                        if (type === 'rideshare') {
+                            isRequired = true;
+                            thresholdMessage = "根据 ATO 规定，出租车和共享出行司机（Uber、DiDi等）无论营业额多少，都必须从第一天起强制注册 GST。没有最低门槛。";
+                        } else if (type === 'nonprofit') {
+                            if (turnover >= 150000) {
+                                isRequired = true;
+                                thresholdMessage = "因为您的营业额达到或超过 $150,000 的专属门槛，您的非营利组织在法律上被强制要求注册 GST。";
+                            } else {
+                                isRequired = false;
+                                thresholdMessage = "因为您的营业额低于 $150,000，您的非营利组织目前只需自愿注册 GST。";
+                            }
+                        } else {
+                            if (turnover >= 75000) {
+                                isRequired = true;
+                                thresholdMessage = "因为您的营业额达到或超过 $75,000 标准门槛，您在法律上被强制要求注册 GST，并需要定期递交 BAS 报表。";
+                            } else {
+                                isRequired = false;
+                                thresholdMessage = "因为您的营业额低于 $75,000 标准门槛，您目前无需强制注册 GST。注册完全是自愿的。";
+                            }
+                        }
+
+                        if (isRequired) {
+                            resultBox.style.borderColor = "#c53030";
+                            statusHeading.style.color = "#c53030";
+                            statusHeading.innerHTML = '<i class="fas fa-exclamation-circle"></i> 必须强制注册 GST';
+                        } else {
+                            resultBox.style.borderColor = "#28a745";
+                            statusHeading.style.color = "#28a745";
+                            statusHeading.innerHTML = '<i class="fas fa-check-circle"></i> 注册 GST 为自愿选项';
+                        }
+                        
+                        statusMessage.textContent = thresholdMessage;
+                    }
+
+                    typeInput.addEventListener('change', updateGSTCheck);
+                    turnoverInput.addEventListener('input', updateGSTCheck);
+                    
+                    // Initialize
+                    updateGSTCheck();
+                </script>
+                <h2 style="border-left:none; padding-left:0; border-top: 1px solid #eee; padding-top:30px;">把文书工作交给我们吧！</h2>
+				<p>注册过程中的一个小错误可能会在未来给您与 ATO 的沟通带来巨大的麻烦。作为注册税务代理，诚明会计师事务所 (Loyal Bright Accountants) 可以为您同步注册 ABN、TFN 和 GST，并确保您的企业从第一天起就拥有正确的法律和税务结构。请今天就联系我们，让我们助您一臂之力！</p>
+				
+				<a href="/zh/faq-zh/" class="back-link">&larr; 返回所有常见问题</a>
 			</div>
 		</div>
 
-		<div class="site-info-wrapper">
-			<div class="site-info-inner" style="text-align: center; padding: 20px;">
-				<a class="privacy-policy-link" href="/zh/privacy-policy-zh/" style="display:block; margin-bottom:10px;">隐私政策</a>
-				<div class="site-info-text">Copyright &copy; 2019 - 2026 Loyal Bright Accountants. All Rights Reserved.</div>
+		<footer class="site-footer" style="background: #f5f5f5; border-top: 1px solid #eee; padding: 40px 20px;">
+			<div class="site-info-inner" style="text-align: center;">
+				<a class="privacy-policy-link" href="/zh/privacy-policy-zh/" style="display:block; margin-bottom:10px; color: #686868;">隐私政策</a>	
+				<div class="site-info-text" style="color: #686868; font-size: 13px;">
+					Copyright &copy; 2019 - 2026 Loyal Bright Pty Ltd ATF Loyal Bright Trust t/a Loyal Bright Accountants. <br>
+                    <small>Liability limited by a scheme approved under Professional Standards Legislation.</small>
+				</div>
 			</div>
-		</div>
+		</footer>
 	</div>
 </body>
 </html>
