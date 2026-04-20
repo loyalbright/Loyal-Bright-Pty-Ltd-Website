@@ -3,85 +3,235 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Division 7A 贷款：为什么公司的钱不是您个人的钱？ | 诚明会计师事务所常见问题</title>
+	<title>Division 7A 贷款：为什么公司的钱不是您个人的钱？ | 诚明会计师事务所</title>
 	<meta name="description" content="了解什么是 Division 7A，为什么澳洲税务局 (ATO) 严查将公司账户用于个人开支的董事，以及如何建立合规的贷款协议。">
+
+    <link rel="canonical" href="https://loyalbright.com.au/zh/faq-zh/division-7a-loans/">
+    <link rel="alternate" hreflang="en-AU" href="https://loyalbright.com.au/en/faq/division-7a-loans/">
+    <link rel="alternate" hreflang="zh-CN" href="https://loyalbright.com.au/zh/faq-zh/division-7a-loans/">
+
+    <link rel="icon" href="/wp-content/uploads/2018/11/cropped-Loyal-Bright-Website-Tag-32x32.png" sizes="32x32">
+    <link rel="icon" href="/wp-content/uploads/2018/11/cropped-Loyal-Bright-Website-Tag-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="/wp-content/uploads/2018/11/cropped-Loyal-Bright-Website-Tag-180x180.png">
+	
 	<link rel="stylesheet" id="ascension-css" href="/wp-content/themes/ascension/style.css?ver=1.1.5" type="text/css" media="all">
 	<link rel="stylesheet" id="ascension-fonts-css" href="https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C700&amp;subset=latin&amp;ver=1.8.7" type="text/css" media="all">
+    <link rel="stylesheet" href="/wp-content/plugins/beaver-builder-lite-version/fonts/fontawesome/5.15.4/css/all.min.css">
+
 	<style type="text/css">
-		.site-title,.site-description{position:absolute;clip:rect(1px, 1px, 1px, 1px);}
-		.site-footer {background-color:#f5f5f5;}
-		.site-info-wrapper {background-color:#ffffff;}
-		.site-info-wrapper .site-info-text {color:#686868;}
-        .article-content h2 { margin-top: 30px; margin-bottom: 15px; font-size: 24px; }
-        .article-content h3 { margin-top: 25px; margin-bottom: 10px; font-size: 20px; }
-        .article-content p, .article-content ul { margin-bottom: 20px; line-height: 1.6; }
-        .article-content ul { list-style-type: disc; padding-left: 20px; }
+        /* --- HEADER STYLES (Fixed Menu Spacing) --- */
+        .site-title, .site-description { position: absolute; clip: rect(1px, 1px, 1px, 1px); }
+        .site-header { background: #fff; padding: 20px 0; border-bottom: 1px solid #eee; }
+        .nav-container { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; flex-direction: row; justify-content: space-between; align-items: center; }
+        .custom-logo { max-width: 250px; height: auto; display: block; }
+        
+        /* Targeted Specificity to override theme defaults without breaking spacing */
+        .main-navigation ul li a, .main-navigation ul li a:visited { text-decoration: none; color: #5d5179 !important; font-weight: 700; font-size: 15px; text-transform: uppercase; transition: color 0.3s; }
+        .main-navigation ul li a:hover, .main-navigation ul li a:focus { color: #96349b !important; }
+
+        /* Restores the Purple Hamburger Menu */
+        .menu-toggle div { background-color: #96349b !important; } 
+
+        @media (max-width: 768px) {
+            .nav-container { flex-direction: column; justify-content: center; }
+            .custom-logo { margin-bottom: 20px; max-width: 200px; }
+            /* Mobile Spacing, borders and padding */
+            .main-navigation .menu li { margin: 0; width: 100%; text-align: center; border-bottom: 1px solid #f9f9f9; padding: 12px 0; } 
+            .main-navigation .menu li:last-child { border-bottom: none; padding-bottom: 0; }
+        }
+
+        /* --- PAGE CONTENT STYLES --- */
+        .hero { 
+            background-image: linear-gradient(rgba(3, 38, 59, 0.75), rgba(3, 38, 59, 0.75)), url(/wp-content/uploads/2019/07/cropped-Home-Page-Hero-2400x1160.jpeg);
+            background-size: cover; background-position: center; padding: 80px 20px; text-align: center; color: #fff;
+        }
+        .hero h1 { font-size: 36px; color: #fff; margin-bottom: 10px; font-weight: 700; font-family: "Open Sans", sans-serif;}
+        
+        .site-content { max-width: 900px; margin: 60px auto; padding: 0 20px; background: #fff; }
+        .article-container { padding: 40px; border-radius: 8px; border: 1px solid #eee; box-shadow: 0 5px 25px rgba(0,0,0,0.03); border-top: 4px solid #5d5179; }
+        .article-container h2, .article-container h3 { color: #03263B; margin-top: 40px; margin-bottom: 20px; font-weight: 700; font-family: "Open Sans", sans-serif; }
+        .article-container h2 { font-size: 24px; border-left: 5px solid #96349b; padding-left: 15px;}
+        .article-container h3 { font-size: 20px; }
+        .article-container p, .article-container ul { color: #353535; font-size: 16px; line-height: 1.8; margin-bottom: 20px; font-family: "Open Sans", sans-serif; }
+        .article-container ul { padding-left: 20px; }
+        
+        .warning-box { background: #fff5f5; padding: 25px; border-radius: 6px; border: 1px solid #ff6663; margin-bottom: 30px; margin-top: 30px;}
+        .warning-box h4 { color: #c53030; margin-top: 0; display: flex; align-items: center; font-weight: 800 !important; font-size: 20px; font-family: "Open Sans", sans-serif; margin-bottom: 10px;}
+        .warning-box i { margin-right: 10px; }
+
+        .back-link { display: inline-block; margin-top: 30px; color: #5d5179; font-weight: bold; text-decoration: none; transition: 0.3s; }
+        .back-link:hover { color: #96349b; text-decoration: underline; }
+
+        /* Custom Calculator Styles */
+        .calculator-box { background: #fdfaf6; padding: 30px; border-radius: 8px; border: 1px solid #e8e1d7; margin-bottom: 30px; margin-top: 30px; }
+        .calc-slider { width: 100%; margin-top: 10px; margin-bottom: 20px; accent-color: #c53030; }
+        .calc-result { background: #fff; padding: 20px; border-radius: 6px; text-align: center; border: 2px solid #5d5179; margin-top: 10px; display: flex; justify-content: space-around; flex-wrap: wrap;}
+        .calc-stat { text-align: center; margin: 10px; width: 45%;}
+        .calc-stat p { margin: 0; font-size: 14px; color: #686868; font-weight: bold; }
+        .calc-stat .val { font-size: 26px; font-weight: bold; margin-top: 5px;}
 	</style>
+    <script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+    <script type="text/javascript" src="/wp-content/themes/primer/assets/js/navigation.min.js?ver=1.8.7"></script>
 </head>
 
-<body class="wp-singular page-template-default page layout-one-column-wide">
+<body class="page layout-one-column-wide">
 	<div id="page" class="hfeed site">
-		<header id="masthead" class="site-header" role="banner">
+        
+        <header id="masthead" class="site-header" role="banner">
 			<div class="site-header-wrapper">
 				<div class="site-title-wrapper">
-					<a href="/zh/" class="custom-logo-link" rel="home"><img width="511" height="134" src="/wp-content/uploads/2018/11/cropped-1_Primary_logo_on_transparent_512-1.png" class="custom-logo" alt="墨尔本诚明会计师事务所"></a>
+					<a href="/zh/" class="custom-logo-link" rel="home"><img width="511" height="134" src="/wp-content/uploads/2018/11/cropped-1_Primary_logo_on_transparent_512-1.png" class="custom-logo" alt="诚明会计师事务所"></a>
+                    <h1 class="site-title"><a href="/zh/" rel="home">Loyal Bright Accountants</a></h1>
 				</div>
 				<div class="main-navigation-container">
+                    <div class="menu-toggle" id="menu-toggle" role="button" tabindex="0">
+                        <div></div><div></div><div></div>
+                    </div>
 					<nav id="site-navigation" class="main-navigation">
-						<div class="menu-container">
-							<ul id="menu-zh" class="menu">
-								<li class="menu-item"><a href="/zh/">首页</a></li>
-								<li class="menu-item"><a href="/zh/about-zh/">关于我们</a></li>
-								<li class="menu-item"><a href="/zh/services-zh/">服务</a></li>
-								<li class="menu-item"><a href="/zh/faq-zh/">常见问题</a></li>
-								<li class="menu-item"><a href="/zh/contact-zh/">联系我们</a></li>
-								<li class="menu-item"><a href="/en/faq/division-7a-loans/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAtFBMVEXAdIWHf6gAKI+NIUCRHz51OWgACXMAAF1HYqIAAE4AAEAAADRJS43kxszj4+veqbDt2d2ntNJyh7pnfbTHz+FbcqvOBwfhjZDlfn/lbm7dZGZQaKexutUwT5hTb6yPMVPkur/xp6W0gpmeqco8WZ1tg7YAACl7irrozdLKiZagutylkK26w9mQnMEAAB1qQnVZereLdp5Ka62biapBXZ8pSZN3jr42VJqVpccZO4gAAA8AAAIF8g6vAAAAmUlEQVR4AR1HU4IFQQysdAbJrO3v5f0Ps3q27c6gXATK4HkXEYpJx5nhOYtMh2AZJJTBQLtocKRES6eq5sVLJLggi5/4PrRjDZFALxfn6/2Jk/BERKZy0ejc/1z0wePn6u6oM70bv6yOH/n2wIFiNpt8ja+a92Dn1aGHw/ap+GYYg6P76dtku1lY+Xb9m5w5UgLhSYBjwByQApiiN1ociSrgAAAAAElFTkSuQmCC" alt="" width="16" height="11" style="width: 16px; height: 11px;"><span style="margin-left:0.3em;">English</span></a></li>
-							</ul>
-						</div>
+                        <div class="menu-primary-menu-container">
+                            <ul id="menu-zh" class="menu">
+                                <li class="menu-item"><a href="/zh/">首页</a></li>
+                                <li class="menu-item"><a href="/zh/about-zh/">关于我们</a></li>
+                                <li class="menu-item"><a href="/zh/services-zh/">服务</a></li>
+                                <li class="menu-item"><a href="/zh/faq-zh/">常见问题</a></li>
+                                <li class="menu-item"><a href="/zh/contact-zh/">联系我们</a></li>
+                                <li class="menu-item"><a href="/en/faq/division-7a-loans/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAtFBMVEXAdIWHf6gAKI+NIUCRHz51OWgACXMAAF1HYqIAAE4AAEAAADRJS43kxszj4+veqbDt2d2ntNJyh7pnfbTHz+FbcqvOBwfhjZDlfn/lbm7dZGZQaKexutUwT5hTb6yPMVPkur/xp6W0gpmeqco8WZ1tg7YAACl7irrozdLKiZagutylkK26w9mQnMEAAB1qQnVZereLdp5Ka62biapBXZ8pSZN3jr42VJqVpccZO4gAAA8AAAIF8g6vAAAAmUlEQVR4AR1HU4IFQQysdAbJrO3v5f0Ps3q27c6gXATK4HkXEYpJx5nhOYtMh2AZJJTBQLtocKRES6eq5sVLJLggi5/4PrRjDZFALxfn6/2Jk/BERKZy0ejc/1z0wePn6u6oM70bv6yOH/n2wIFiNpt8ja+a92Dn1aGHw/ap+GYYg6P76dtku1lY+Xb9m5w5UgLhSYBjwByQApiiN1ociSrgAAAAAElFTkSuQmCC" alt="" width="16" height="11" style="vertical-align: middle; margin-right: 5px;">English</a></li>
+                            </ul>
+                        </div>
 					</nav>
 				</div>
 			</div>
 		</header>
 
-		<div class="hero"><div class="hero-inner"><div class="page-title-container">
-			<header class="page-header"><h1 class="page-title">Division 7A 贷款：为什么公司的钱不是您个人的钱？</h1></header>
-		</div></div></div>
+		<section class="hero">
+			<h1>Division 7A 贷款：为什么公司的钱不是您个人的钱？</h1>
+		</section>
 
-		<div id="content" class="site-content" style="max-width: 800px; margin: 0 auto; padding: 40px 20px;">
-			<div class="article-content">
-				<p><em>发布于: 2026年3月</em></p>
+		<div class="site-content">
+			<div class="article-container">
+				<p style="color: #999; font-size: 14px; font-weight: bold; margin-bottom: 30px;">更新日期：2026年4月</p>
 				
-                <p>当您以私人有限公司 (Pty Ltd) 的形式运营生意时，您创建了一个独立的法律实体。企业主最常犯的——也是最危险的——错误之一，就是把公司的银行账户当成自己的私人提款机。这会触发澳洲税务局 (ATO) 一项严格的税法规定，被称为 <strong>Division 7A</strong>。</p>
+				<p>当您以私人有限公司 (Pty Ltd) 的形式运营生意时，您在法律上创建了一个独立的实体。企业主最常犯的——也是最危险的——错误之一，就是把公司的银行账户当成自己的私人提款机。这会触发澳洲税务局 (ATO) 一项极其严格的税法规定：<strong>Division 7A</strong>。</p>
 
-                <h3>1. 什么是 Division 7A？</h3>
-                <p>Division 7A 是《所得税评估法》中的一个条款，旨在防止公司董事和股东从其公司中免税提取资金。因为公司缴纳的税率（通常为 25%）低于个人税率（最高可达 45%），ATO 希望确保您没有将个人财富隐藏在公司内部以逃避缴纳个人所得税。</p>
-                <p>如果您从公司提取资金用于个人用途（例如，偿还个人房贷、购买私家车或将现金转入您的个人账户），ATO 会将此视为“Division 7A 贷款”。</p>
+				<h2>1. 什么是 Division 7A？</h2>
+				<p>Division 7A 是《所得税评估法》中的一个条款，旨在防止公司董事和股东从其公司中免税提取资金。因为公司缴纳的税率（通常为 25%）远低于个人的最高边际税率（最高可达 45% + 医疗附加税），ATO 希望确保您没有将个人财富隐藏在公司内部以逃避个人所得税。</p>
+				<p>如果您从公司提取资金用于个人用途（例如，用公司卡购买私家车、支付个人房贷、甚至直接将现金转入您的个人账户），且没有在财年内偿还，ATO 就会将此视为“Division 7A 贷款”。</p>
 
-                <h3>2. “未免税股息” (Unfranked Dividend) 惩罚</h3>
-                <p>如果您提取了公司资金，并且在公司纳税申报表到期之前没有偿还该资金，也没有签订正式的贷款协议，ATO 将把这笔提款视为<strong>未免税股息 (Unfranked dividend)</strong>。</p>
-                <p>这意味着您提取的全部金额将被添加到您该年度的个人应税收入中，并且将按照您最高的个人边际税率征税——而且<em>没有任何</em>红利抵免 (Franking credits) 可以用来抵消这笔税单。这可能会导致一笔数额巨大且出乎意料的个人税务欠款。</p>
+                <div class="warning-box">
+                    <h4><i class="fas fa-exclamation-triangle"></i> “未免税股息” (Unfranked Dividend) 惩罚</h4>
+                    <p style="margin-bottom:0;">如果您提取了公司资金，并且在公司纳税申报表到期之前既没有全额偿还，也没有签订正式的合规贷款协议，ATO 将把这笔提款视为<strong>未免税股息</strong>。这意味着您提取的金额将全额计入您的个人应税收入中，按最高边际税率征税，且<strong>没有任何</strong>红利抵免 (Franking credits) 可以用来抵税。这将产生一笔灾难性的个人税务账单。</p>
+                </div>
 
-                <h3>3. 如何解决 Division 7A 问题</h3>
-                <p>如果您已经从您的公司借了钱，在递交公司纳税申报表之前，您有两个选择来避免严厉的税务处罚：</p>
-                <ul>
-                    <li><strong>偿还资金：</strong> 您可以将现金实际转回公司银行账户，或者宣布发放全额免税股息 (Fully franked dividend) 或工资来结清债务（然后您将依法对此缴税）。</li>
-                    <li><strong>建立合规的贷款协议 (Complying Loan Agreement)：</strong> 我们可以帮助您在您与公司之间建立一份正式的书面贷款协议。根据该协议，您必须在最长 7 年的期限内，按 ATO 规定的基准利率每年进行最低还款（包括本金和利息）。</li>
-                </ul>
+                <div class="calculator-box">
+                    <h3 style="margin-top: 0; color: #03263B; font-size: 20px;"><i class="fas fa-file-invoice-dollar" style="color: #c53030; margin-right: 8px;"></i> Div 7A 罚款 vs. 合规贷款估算器</h3>
+                    <p style="font-size: 14px; color: #686868; margin-bottom: 20px;">使用下方工具估算：如果您从公司违规拿走一笔钱被 ATO 认定为“未免税股息”，您个人将面临多少罚款税；对比建立合规的 7 年期贷款协议，您每年的最低还款额是多少。</p>
+                    
+                    <div>
+                        <label for="personalIncome" style="display: block; font-weight: bold; color: #353535;">您个人的其他年收入 (例如工资): $<span id="incomeVal" style="color: #5d5179;">100,000</span></label>
+                        <input type="range" id="personalIncome" class="calc-slider" style="accent-color:#5d5179;" min="40000" max="250000" step="5000" value="100000">
+                    </div>
 
-                <h3>保护您免受 ATO 审计</h3>
-                <p>Division 7A 合规性是 ATO 针对中小型企业的主要审计目标之一。如果您经常使用公司银行卡支付个人开支，您将面临极高的被审计风险。</p>
-                <p>请立即联系诚明会计师事务所 (Loyal Bright Accountants) 的团队。我们可以审查您的董事贷款账户，设置合规的贷款协议，并帮助您制定有效的税务策略，以合法的方式为您自己支付薪酬。</p>
-                
-                <p><br><a href="/zh/faq-zh/">&larr; 返回所有常见问题</a></p>
+                    <div>
+                        <label for="borrowedAmount" style="display: block; font-weight: bold; color: #353535;">您从公司账户拿走/花掉的资金: $<span id="borrowedVal" style="color: #c53030;">50,000</span></label>
+                        <input type="range" id="borrowedAmount" class="calc-slider" min="5000" max="200000" step="5000" value="50000">
+                    </div>
+                    
+                    <div class="calc-result">
+                        <div class="calc-stat">
+                            <p style="color: #c53030;"><i class="fas fa-times-circle"></i> 不合规 (按未免税股息罚税)</p>
+                            <div class="val" style="color: #c53030;">$<span id="penaltyTaxOut">18,500</span></div>
+                            <p style="font-size: 12px; font-weight: normal; margin-top: 5px;">(您个人必须立即补缴的税金)</p>
+                        </div>
+                        <div class="calc-stat" style="border-left: 1px solid #eee;">
+                            <p style="color: #28a745;"><i class="fas fa-check-circle"></i> 合规 (建立7年期贷款协议)</p>
+                            <div class="val" style="color: #28a745;">$<span id="loanRepaymentOut">9,850</span></div>
+                            <p style="font-size: 12px; font-weight: normal; margin-top: 5px;">(每年需偿还给公司的本息和)</p>
+                        </div>
+                    </div>
+                    <p style="font-size: 13px; color: #888; text-align: center; margin-top: 15px;"><em>* 估算包含 Medicare 附加费。合规贷款使用了 ATO 近期基准利率 (约 8.77%) 进行 7 年期等额本息估算。</em></p>
+                </div>
+
+                <script>
+                    const incomeInput = document.getElementById('personalIncome');
+                    const borrowedInput = document.getElementById('borrowedAmount');
+                    
+                    const incomeVal = document.getElementById('incomeVal');
+                    const borrowedVal = document.getElementById('borrowedVal');
+                    const penaltyTaxOut = document.getElementById('penaltyTaxOut');
+                    const loanRepaymentOut = document.getElementById('loanRepaymentOut');
+
+                    function formatMoney(num) {
+                        return num.toLocaleString('en-AU', {maximumFractionDigits: 0});
+                    }
+
+                    // Individual Tax Calc (inc. Medicare)
+                    function calcIndividualTax(income) {
+                        let tax = 0;
+                        let taxable = income;
+                        if (taxable > 190000) { tax += (taxable - 190000) * 0.45; taxable = 190000; }
+                        if (taxable > 135000) { tax += (taxable - 135000) * 0.37; taxable = 135000; }
+                        if (taxable > 45000) { tax += (taxable - 45000) * 0.30; taxable = 45000; }
+                        if (taxable > 18200) { tax += (taxable - 18200) * 0.16; }
+                        let medicare = income > 32500 ? (income * 0.02) : 0;
+                        return tax + medicare;
+                    }
+
+                    function updateDiv7ACalc() {
+                        const income = parseInt(incomeInput.value);
+                        const borrowed = parseInt(borrowedInput.value);
+
+                        incomeVal.textContent = formatMoney(income);
+                        borrowedVal.textContent = formatMoney(borrowed);
+
+                        // 1. Penalty Calculation: Tax on (Income + Borrowed) minus Tax on (Income alone)
+                        const normalTax = calcIndividualTax(income);
+                        const penaltyTaxTotal = calcIndividualTax(income + borrowed);
+                        const penaltyTax = penaltyTaxTotal - normalTax;
+
+                        penaltyTaxOut.textContent = formatMoney(penaltyTax);
+
+                        // 2. Complying Loan Calculation (7 years, ~8.77% interest)
+                        const rate = 0.0877;
+                        const years = 7;
+                        // Amortization formula: A = P * (r * (1 + r)^n) / ((1 + r)^n - 1)
+                        const top = rate * Math.pow(1 + rate, years);
+                        const bottom = Math.pow(1 + rate, years) - 1;
+                        const annualRepayment = borrowed * (top / bottom);
+
+                        loanRepaymentOut.textContent = formatMoney(annualRepayment);
+                    }
+
+                    incomeInput.addEventListener('input', updateDiv7ACalc);
+                    borrowedInput.addEventListener('input', updateDiv7ACalc);
+                    
+                    updateDiv7ACalc(); // Initialize
+                </script>
+                <h2>2. 如何解决 Division 7A 问题</h2>
+				<p>如果您已经从您的公司借了钱，在您的会计师递交公司纳税申报表之前，您有两个主要选择来避免上述严厉的税务处罚：</p>
+				<ul>
+					<li><strong>全额偿还资金：</strong> 您可以将现金实际转回公司银行账户；或者，公司可以宣布发放全额免税股息 (Fully franked dividend) 或董事工资，用这笔合法收入的税后净额来结清您的内部债务。</li>
+					<li><strong>建立合规的贷款协议 (Complying Loan Agreement)：</strong> 我们可以帮助您在您与公司之间建立一份正式的书面贷款协议。根据该协议，您必须在最长 7 年的期限内，按 ATO 每年规定的基准利率，每年进行法定的最低还款（包括本金和利息）。</li>
+				</ul>
+
+				<h2>保护您免受 ATO 审计</h2>
+				<p>Division 7A 合规性是 ATO 针对中小型企业的主要审计目标之一。如果您经常将公司与个人的银行账户混用，您将面临极高的被审计和罚款风险。</p>
+				<p style="background: #eef4f7; padding: 20px; border-radius: 6px; margin-top: 30px;">
+                    <strong>下一步：</strong> 请立即联系诚明会计师事务所 (Loyal Bright Accountants) 的团队。我们可以为您彻底审查董事贷款账户 (Director Loan Accounts)，设置合规的贷款协议，并帮助您制定有效的税务策略，以合法、省税的方式将公司利润分配给您自己。
+                </p>
+				
+				<a href="/zh/faq-zh/" class="back-link">&larr; 返回所有常见问题</a>
 			</div>
 		</div>
 
-		<div class="site-info-wrapper">
-			<div class="site-info-inner" style="text-align: center; padding: 20px;">
-				<a class="privacy-policy-link" href="/zh/privacy-policy-zh/" style="display:block; margin-bottom:10px;">隐私政策</a>
-				<div class="site-info-text">Copyright &copy; 2019 - 2026 Loyal Bright Accountants. All Rights Reserved.</div>
+		<footer class="site-footer" style="background: #f5f5f5; border-top: 1px solid #eee; padding: 40px 20px;">
+			<div class="site-info-inner" style="text-align: center;">
+				<a class="privacy-policy-link" href="/zh/privacy-policy-zh/" style="display:block; margin-bottom:10px; color: #686868;">隐私政策</a>	
+				<div class="site-info-text" style="color: #686868; font-size: 13px;">
+					Copyright &copy; 2019 - 2026 Loyal Bright Pty Ltd ATF Loyal Bright Trust t/a Loyal Bright Accountants. <br>
+                    <small>Liability limited by a scheme approved under Professional Standards Legislation.</small>
+				</div>
 			</div>
-		</div>
+		</footer>
 	</div>
 </body>
 </html>
