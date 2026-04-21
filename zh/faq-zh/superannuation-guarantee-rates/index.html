@@ -3,94 +3,245 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>养老金 (SG) 比例变化与缴纳截止日期 | 诚明会计师事务所常见问题</title>
+	<title>养老金 (SG) 比例变化与缴纳截止日期 | 诚明会计师事务所</title>
 	<meta name="description" content="了解当前和未来的雇主养老金 (SG) 缴纳比例、季度截止日期，以及从 2026 年 7 月起实施的“发薪日缴纳养老金” (Payday Super) 新规将如何影响您的企业。">
+
+    <link rel="canonical" href="https://loyalbright.com.au/zh/faq-zh/superannuation-guarantee-rates/">
+    <link rel="alternate" hreflang="en-AU" href="https://loyalbright.com.au/en/faq/superannuation-guarantee-rates/">
+    <link rel="alternate" hreflang="zh-CN" href="https://loyalbright.com.au/zh/faq-zh/superannuation-guarantee-rates/">
+
+    <link rel="icon" href="/wp-content/uploads/2018/11/cropped-Loyal-Bright-Website-Tag-32x32.png" sizes="32x32">
+    <link rel="icon" href="/wp-content/uploads/2018/11/cropped-Loyal-Bright-Website-Tag-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="/wp-content/uploads/2018/11/cropped-Loyal-Bright-Website-Tag-180x180.png">
+	
 	<link rel="stylesheet" id="ascension-css" href="/wp-content/themes/ascension/style.css?ver=1.1.5" type="text/css" media="all">
 	<link rel="stylesheet" id="ascension-fonts-css" href="https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C700&amp;subset=latin&amp;ver=1.8.7" type="text/css" media="all">
+    <link rel="stylesheet" href="/wp-content/plugins/beaver-builder-lite-version/fonts/fontawesome/5.15.4/css/all.min.css">
+
 	<style type="text/css">
-		.site-title,.site-description{position:absolute;clip:rect(1px, 1px, 1px, 1px);}
-		.site-footer {background-color:#f5f5f5;}
-		.site-info-wrapper {background-color:#ffffff;}
-		.site-info-wrapper .site-info-text {color:#686868;}
-        .article-content h2 { margin-top: 30px; margin-bottom: 15px; font-size: 24px; }
-        .article-content h3 { margin-top: 25px; margin-bottom: 10px; font-size: 20px; }
-        .article-content p, .article-content ul { margin-bottom: 20px; line-height: 1.6; }
-        .article-content ul { list-style-type: disc; padding-left: 20px; }
+        /* --- HEADER STYLES (Fixed Menu Spacing) --- */
+        .site-title, .site-description { position: absolute; clip: rect(1px, 1px, 1px, 1px); }
+        .site-header { background: #fff; padding: 20px 0; border-bottom: 1px solid #eee; }
+        .nav-container { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; flex-direction: row; justify-content: space-between; align-items: center; }
+        .custom-logo { max-width: 250px; height: auto; display: block; }
+        
+        /* Targeted Specificity to override theme defaults without breaking spacing */
+        .main-navigation ul li a, .main-navigation ul li a:visited { text-decoration: none; color: #5d5179 !important; font-weight: 700; font-size: 15px; text-transform: uppercase; transition: color 0.3s; }
+        .main-navigation ul li a:hover, .main-navigation ul li a:focus { color: #96349b !important; }
+
+        /* Restores the Purple Hamburger Menu */
+        .menu-toggle div { background-color: #96349b !important; } 
+
+        @media (max-width: 768px) {
+            .nav-container { flex-direction: column; justify-content: center; }
+            .custom-logo { margin-bottom: 20px; max-width: 200px; }
+            /* Mobile Spacing, borders and padding */
+            .main-navigation .menu li { margin: 0; width: 100%; text-align: center; border-bottom: 1px solid #f9f9f9; padding: 12px 0; } 
+            .main-navigation .menu li:last-child { border-bottom: none; padding-bottom: 0; }
+        }
+
+        /* --- PAGE CONTENT STYLES --- */
+        .hero { 
+            background-image: linear-gradient(rgba(3, 38, 59, 0.75), rgba(3, 38, 59, 0.75)), url(/wp-content/uploads/2019/07/cropped-Home-Page-Hero-2400x1160.jpeg);
+            background-size: cover; background-position: center; padding: 80px 20px; text-align: center; color: #fff;
+        }
+        .hero h1 { font-size: 36px; color: #fff; margin-bottom: 10px; font-weight: 700; font-family: "Open Sans", sans-serif;}
+        
+        .site-content { max-width: 900px; margin: 60px auto; padding: 0 20px; background: #fff; }
+        .article-container { padding: 40px; border-radius: 8px; border: 1px solid #eee; box-shadow: 0 5px 25px rgba(0,0,0,0.03); border-top: 4px solid #5d5179; }
+        .article-container h2, .article-container h3 { color: #03263B; margin-top: 40px; margin-bottom: 20px; font-weight: 700; font-family: "Open Sans", sans-serif; }
+        .article-container h2 { font-size: 24px; border-left: 5px solid #96349b; padding-left: 15px;}
+        .article-container h3 { font-size: 20px; }
+        .article-container p, .article-container ul { color: #353535; font-size: 16px; line-height: 1.8; margin-bottom: 20px; font-family: "Open Sans", sans-serif; }
+        .article-container ul { padding-left: 20px; }
+        
+        .warning-box { background: #fff5f5; padding: 25px; border-radius: 6px; border: 1px solid #ff6663; margin-bottom: 30px; margin-top: 30px;}
+        .warning-box h4 { color: #c53030; margin-top: 0; display: flex; align-items: center; font-weight: 800 !important; font-size: 20px; font-family: "Open Sans", sans-serif; margin-bottom: 10px;}
+        .warning-box i { margin-right: 10px; }
+
+        .info-box { background: #fdfaf6; padding: 25px; border-radius: 6px; border: 1px solid #e8e1d7; margin-bottom: 30px; margin-top: 30px;}
+        .info-box h4 { color: #03263B; margin-top: 0; display: flex; align-items: center; font-weight: 800 !important; font-size: 20px; font-family: "Open Sans", sans-serif; margin-bottom: 10px;}
+        .info-box i { margin-right: 10px; color: #96349b; }
+
+        .back-link { display: inline-block; margin-top: 30px; color: #5d5179; font-weight: bold; text-decoration: none; transition: 0.3s; }
+        .back-link:hover { color: #96349b; text-decoration: underline; }
+
+        /* Custom Calculator Styles */
+        .calculator-box { background: #f4f7f6; padding: 30px; border-radius: 8px; border: 1px solid #dce4e1; margin-bottom: 30px; margin-top: 30px; }
+        .calc-slider { width: 100%; margin-top: 10px; margin-bottom: 20px; accent-color: #5d5179; }
+        .calc-select { width: 100%; padding: 10px; margin-top: 5px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 4px; font-size: 16px; font-family: "Open Sans", sans-serif;}
+        .calc-result { background: #fff; padding: 20px; border-radius: 6px; text-align: center; border: 2px solid #5d5179; margin-top: 10px; display: flex; justify-content: space-around; flex-wrap: wrap;}
+        .calc-stat { text-align: center; margin: 10px; width: 45%;}
+        .calc-stat p { margin: 0; font-size: 14px; color: #686868; font-weight: bold; }
+        .calc-stat .val { font-size: 26px; font-weight: bold; margin-top: 5px; color: #03263B;}
 	</style>
+    <script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+    <script type="text/javascript" src="/wp-content/themes/primer/assets/js/navigation.min.js?ver=1.8.7"></script>
 </head>
 
-<body class="wp-singular page-template-default page layout-one-column-wide">
+<body class="page layout-one-column-wide">
 	<div id="page" class="hfeed site">
-		<header id="masthead" class="site-header" role="banner">
+        
+        <header id="masthead" class="site-header" role="banner">
 			<div class="site-header-wrapper">
 				<div class="site-title-wrapper">
-					<a href="/zh/" class="custom-logo-link" rel="home"><img width="511" height="134" src="/wp-content/uploads/2018/11/cropped-1_Primary_logo_on_transparent_512-1.png" class="custom-logo" alt="墨尔本诚明会计师事务所"></a>
+					<a href="/zh/" class="custom-logo-link" rel="home"><img width="511" height="134" src="/wp-content/uploads/2018/11/cropped-1_Primary_logo_on_transparent_512-1.png" class="custom-logo" alt="诚明会计师事务所"></a>
+                    <h1 class="site-title"><a href="/zh/" rel="home">Loyal Bright Accountants</a></h1>
 				</div>
 				<div class="main-navigation-container">
+                    <div class="menu-toggle" id="menu-toggle" role="button" tabindex="0">
+                        <div></div><div></div><div></div>
+                    </div>
 					<nav id="site-navigation" class="main-navigation">
-						<div class="menu-container">
-							<ul id="menu-zh" class="menu">
-								<li class="menu-item"><a href="/zh/">首页</a></li>
-								<li class="menu-item"><a href="/zh/about-zh/">关于我们</a></li>
-								<li class="menu-item"><a href="/zh/services-zh/">服务</a></li>
-								<li class="menu-item"><a href="/zh/faq-zh/">常见问题</a></li>
-								<li class="menu-item"><a href="/zh/contact-zh/">联系我们</a></li>
-								<li class="menu-item"><a href="/en/faq/superannuation-guarantee-rates/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAtFBMVEXAdIWHf6gAKI+NIUCRHz51OWgACXMAAF1HYqIAAE4AAEAAADRJS43kxszj4+veqbDt2d2ntNJyh7pnfbTHz+FbcqvOBwfhjZDlfn/lbm7dZGZQaKexutUwT5hTb6yPMVPkur/xp6W0gpmeqco8WZ1tg7YAACl7irrozdLKiZagutylkK26w9mQnMEAAB1qQnVZereLdp5Ka62biapBXZ8pSZN3jr42VJqVpccZO4gAAA8AAAIF8g6vAAAAmUlEQVR4AR1HU4IFQQysdAbJrO3v5f0Ps3q27c6gXATK4HkXEYpJx5nhOYtMh2AZJJTBQLtocKRES6eq5sVLJLggi5/4PrRjDZFALxfn6/2Jk/BERKZy0ejc/1z0wePn6u6oM70bv6yOH/n2wIFiNpt8ja+a92Dn1aGHw/ap+GYYg6P76dtku1lY+Xb9m5w5UgLhSYBjwByQApiiN1ociSrgAAAAAElFTkSuQmCC" alt="" width="16" height="11" style="width: 16px; height: 11px;"><span style="margin-left:0.3em;">English</span></a></li>
-							</ul>
-						</div>
+                        <div class="menu-primary-menu-container">
+                            <ul id="menu-zh" class="menu">
+                                <li class="menu-item"><a href="/zh/">首页</a></li>
+                                <li class="menu-item"><a href="/zh/about-zh/">关于我们</a></li>
+                                <li class="menu-item"><a href="/zh/services-zh/">服务</a></li>
+                                <li class="menu-item"><a href="/zh/faq-zh/">常见问题</a></li>
+                                <li class="menu-item"><a href="/zh/contact-zh/">联系我们</a></li>
+                                <li class="menu-item"><a href="/en/faq/superannuation-guarantee-rates/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAtFBMVEXAdIWHf6gAKI+NIUCRHz51OWgACXMAAF1HYqIAAE4AAEAAADRJS43kxszj4+veqbDt2d2ntNJyh7pnfbTHz+FbcqvOBwfhjZDlfn/lbm7dZGZQaKexutUwT5hTb6yPMVPkur/xp6W0gpmeqco8WZ1tg7YAACl7irrozdLKiZagutylkK26w9mQnMEAAB1qQnVZereLdp5Ka62biapBXZ8pSZN3jr42VJqVpccZO4gAAA8AAAIF8g6vAAAAmUlEQVR4AR1HU4IFQQysdAbJrO3v5f0Ps3q27c6gXATK4HkXEYpJx5nhOYtMh2AZJJTBQLtocKRES6eq5sVLJLggi5/4PrRjDZFALxfn6/2Jk/BERKZy0ejc/1z0wePn6u6oM70bv6yOH/n2wIFiNpt8ja+a92Dn1aGHw/ap+GYYg6P76dtku1lY+Xb9m5w5UgLhSYBjwByQApiiN1ociSrgAAAAAElFTkSuQmCC" alt="" width="16" height="11" style="vertical-align: middle; margin-right: 5px;">English</a></li>
+                            </ul>
+                        </div>
 					</nav>
 				</div>
 			</div>
 		</header>
 
-		<div class="hero"><div class="hero-inner"><div class="page-title-container">
-			<header class="page-header"><h1 class="page-title">养老金 (SG) 比例变化与缴纳截止日期</h1></header>
-		</div></div></div>
+		<section class="hero">
+			<h1>养老金 (SG) 比例变化与缴纳截止日期</h1>
+		</section>
 
-		<div id="content" class="site-content" style="max-width: 800px; margin: 0 auto; padding: 40px 20px;">
-			<div class="article-content">
-				<p><em>发布于: 2026年3月</em></p>
+		<div class="site-content">
+			<div class="article-container">
+				<p style="color: #999; font-size: 14px; font-weight: bold; margin-bottom: 30px;">更新日期：2026年4月</p>
 				
-                <p>作为雇主，全额且按时支付员工的养老金 (Superannuation Guarantee, SG) 是一项严格的法律要求。澳洲税务局 (ATO) 会定期更新养老金比例，错过缴纳截止日期可能会引发高额罚款和额外的养老金担保费 (SGC)。</p>
+				<p>作为雇主，全额且按时支付员工的养老金 (Superannuation Guarantee, 简称 SG) 是一项严格的法律要求。澳洲税务局 (ATO) 会定期更新养老金比例，错过缴纳截止日期可能会引发高额罚款和额外的养老金担保费 (SGC)。</p>
 
-                <h3>1. 养老金 (SG) 比例变化</h3>
-                <p>养老金比例是指您必须存入员工指定养老金账户的其常规工作收入 (OTE) 的最低百分比。该比例最近已达到法定上限 12%，并将在可预见的未来保持在这一水平。</p>
-                <ul>
-                    <li><strong>2024–2025 财政年度:</strong> 11.5%</li>
-                    <li><strong>2025–2026 财政年度:</strong> 12.0%</li>
-                    <li><strong>2026–2027 财政年度:</strong> 12.0%</li>
-                    <li><strong>2027–2028 财政年度及以后:</strong> 12.0%</li>
-                </ul>
+				<h2>1. 养老金 (SG) 比例变化</h2>
+				<p>养老金比例是指您必须存入员工指定养老金账户的、基于其常规工作收入 (OTE) 的最低百分比。该比例最近已达到法定上限 12%，并将在可预见的未来保持在这一水平。</p>
+				<ul>
+					<li><strong>2024–2025 财政年度:</strong> 11.5%</li>
+					<li><strong>2025–2026 财政年度:</strong> 12.0%</li>
+					<li><strong>2026–2027 财政年度及以后:</strong> 12.0%</li>
+				</ul>
 
-                <h3>2. 养老金缴纳截止日期 (2026年7月1日之前)</h3>
-                <p>对于 2025–26 财政年度，养老金必须至少按季度缴纳。款项必须在以下截止日期前成功存入员工的养老金账户：</p>
-                <ul>
-                    <li><strong>第一季度 (7月 - 9月):</strong> 截止日期 10月28日</li>
-                    <li><strong>第二季度 (10月 - 12月):</strong> 截止日期 1月28日</li>
-                    <li><strong>第三季度 (1月 - 3月):</strong> 截止日期 4月28日</li>
-                    <li><strong>第四季度 (4月 - 6月):</strong> 截止日期 7月28日</li>
-                </ul>
-                <p><em>注意：如果 28 日恰逢周末或公共假日，则截止日期顺延至下一个工作日。强烈建议您至少提前 5-7 天通过结算所 (Clearing House) 处理付款，以确保资金在截止日期前成功清算并到账。</em></p>
+                <div class="calculator-box">
+                    <h3 style="margin-top: 0; color: #03263B; font-size: 20px;"><i class="fas fa-piggy-bank" style="color: #5d5179; margin-right: 8px;"></i> 养老金 (SG) 现金流测算器</h3>
+                    <p style="font-size: 14px; color: #686868; margin-bottom: 20px;">使用此工具计算员工的强制性养老金。更重要的是，直观地看看即将到来的 "Payday Super" (发薪日缴纳) 新规将如何改变您的企业现金流节奏。</p>
+                    
+                    <div>
+                        <label for="annualWage" style="display: block; font-weight: bold; color: #353535;">员工年收入 (税前): $<span id="wageVal" style="color: #5d5179;">80,000</span></label>
+                        <input type="range" id="annualWage" class="calc-slider" min="30000" max="250000" step="5000" value="80000">
+                    </div>
 
-                <h3>3. 重大政策变更："发薪日缴纳养老金" (Payday Super，自 2026年7月1日起)</h3>
-                <p>澳大利亚数十年来最大的工资制度变革即将到来。<strong>从 2026年7月1日起，按季度缴纳养老金的截止日期将被废除。</strong> 法律将强制要求雇主在向员工支付工资的同时（即在实际的发薪日）为其缴纳养老金。</p>
-                <p>如果您按周发工资，您就必须按周缴纳养老金。如果您每两周发一次工资，养老金也必须每两周缴纳一次。在 2026 年 7 月的最后期限之前，确保您的企业现金流和工资软件为此过渡做好准备至关重要。</p>
+                    <div>
+                        <label for="finYear" style="display: block; font-weight: bold; color: #353535; margin-top: 10px;">选择财政年度</label>
+                        <select id="finYear" class="calc-select">
+                            <option value="0.115">2024–2025 (11.5%)</option>
+                            <option value="0.12" selected>2025–2026 及以后 (12.0%)</option>
+                        </select>
+                    </div>
 
-                <h3>如果逾期缴纳会怎样？</h3>
-                <p>如果您错过了截止日期（哪怕只晚了一天），这笔养老金支出将不再能为您的企业抵税。您还必须向 ATO 递交养老金担保费 (SGC) 声明，并为每位员工支付名义利息和管理费。</p>
+                    <div>
+                        <label for="payCycle" style="display: block; font-weight: bold; color: #353535; margin-top: 10px;">员工的发薪周期</label>
+                        <select id="payCycle" class="calc-select">
+                            <option value="52">按周发薪 (Weekly)</option>
+                            <option value="26" selected>每两周发薪 (Fortnightly)</option>
+                            <option value="12">按月发薪 (Monthly)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="calc-result">
+                        <div style="width: 100%; border-bottom: 1px solid #eee; padding-bottom: 15px; margin-bottom: 15px;">
+                            <p style="font-size: 16px; color: #03263B; margin: 0;">全年需缴纳的总养老金: <strong style="font-size: 24px; color: #96349b;" id="totalAnnualOutBox"><span id="totalAnnualOut">$9,600</span></strong></p>
+                        </div>
+                        <div class="calc-stat">
+                            <p>旧系统：每季度需准备的现金</p>
+                            <div class="val" style="color: #c53030;" id="quarterlyOutBox">$<span id="quarterlyOut">2,400</span></div>
+                        </div>
+                        <div class="calc-stat" style="border-left: 1px solid #eee;">
+                            <p style="color: #28a745;"><strong>Payday Super：</strong>每次发薪时需扣除的现金</p>
+                            <div class="val" style="color: #28a745;" id="paydayOutBox">$<span id="paydayOut">369</span></div>
+                        </div>
+                    </div>
+                </div>
 
-                <p>如果您需要协助计算 SGC，或者需要帮助升级您的工资系统以应对即将到来的 Payday Super 新规，请立即联系诚明会计师事务所 (Loyal Bright Accountants)！</p>
-                
-                <p><br><a href="/zh/faq-zh/">&larr; 返回所有常见问题</a></p>
+                <script>
+                    const wageInput = document.getElementById('annualWage');
+                    const fyInput = document.getElementById('finYear');
+                    const cycleInput = document.getElementById('payCycle');
+                    
+                    const wageVal = document.getElementById('wageVal');
+                    const totalAnnualOut = document.getElementById('totalAnnualOut');
+                    const quarterlyOut = document.getElementById('quarterlyOut');
+                    const paydayOut = document.getElementById('paydayOut');
+
+                    function formatMoney(num) {
+                        return num.toLocaleString('en-AU', {maximumFractionDigits: 0});
+                    }
+
+                    function updateSGCalc() {
+                        const wage = parseInt(wageInput.value);
+                        const rate = parseFloat(fyInput.value);
+                        const cycle = parseInt(cycleInput.value);
+
+                        wageVal.textContent = formatMoney(wage);
+
+                        const totalAnnual = wage * rate;
+                        const quarterly = totalAnnual / 4;
+                        const payday = totalAnnual / cycle;
+
+                        totalAnnualOut.textContent = "$" + formatMoney(totalAnnual);
+                        quarterlyOut.textContent = formatMoney(quarterly);
+                        paydayOut.textContent = formatMoney(payday);
+                    }
+
+                    wageInput.addEventListener('input', updateSGCalc);
+                    fyInput.addEventListener('change', updateSGCalc);
+                    cycleInput.addEventListener('change', updateSGCalc);
+                    
+                    updateSGCalc(); // Initialize
+                </script>
+                <h2>2. 养老金缴纳截止日期 (2026年7月1日之前)</h2>
+				<p>对于当前的 2025–26 财政年度，养老金仍可以至少按季度缴纳。款项必须在以下截止日期前<strong>成功存入</strong>员工的养老金账户：</p>
+				<ul>
+					<li><strong>第一季度 (7月 - 9月):</strong> 截止日期 10月28日</li>
+					<li><strong>第二季度 (10月 - 12月):</strong> 截止日期 1月28日</li>
+					<li><strong>第三季度 (1月 - 3月):</strong> 截止日期 4月28日</li>
+					<li><strong>第四季度 (4月 - 6月):</strong> 截止日期 7月28日</li>
+				</ul>
+				<p><em>注意：如果 28 日恰逢周末或公共假日，则截止日期顺延至下一个工作日。强烈建议您至少提前 5-7 天通过结算所 (Clearing House) 处理付款，以确保资金在截止日期前成功清算并到账。</em></p>
+
+                <div class="info-box">
+                    <h4><i class="fas fa-calendar-alt"></i> 3. 重大政策变更："发薪日缴纳养老金" (Payday Super)</h4>
+                    <p style="margin-bottom:10px;">澳大利亚数十年来最大的工资制度变革即将到来。<strong>从 2026年7月1日起，按季度缴纳养老金的制度将被彻底废除。</strong> 法律将强制要求雇主在向员工支付工资的同时（即在实际的发薪日）为其缴纳养老金。</p>
+                    <p style="margin-bottom:0;">如果您按周发工资，您就必须按周缴纳养老金。这意味着企业主再也不能利用养老金作为季度性的“现金流缓冲”了。</p>
+                </div>
+
+				<h2>如果逾期缴纳会怎样？</h2>
+                <div class="warning-box">
+                    <h4><i class="fas fa-exclamation-triangle"></i> 养老金担保费 (SGC) 与丧失抵税资格</h4>
+                    <p style="margin-bottom:0;">这是许多雇主不知道的惩罚：如果您错过了截止日期（哪怕只晚了一天，或者钱在路上没到账），<strong>这笔养老金支出将永远失去企业所得税的抵扣资格 (Non-deductible)！</strong> 此外，您还必须依法向 ATO 递交养老金担保费 (SGC) 声明，并为每位员工支付名义利息和每季度 $20 的管理费。</p>
+                </div>
+
+				<p style="background: #eef4f7; padding: 20px; border-radius: 6px; margin-top: 30px;">
+                    <strong>下一步：</strong> 在 2026 年 7 月的最后期限到来之前，确保您的企业现金流和工资软件为 Payday Super 过渡做好准备至关重要。如果您需要协助计算逾期缴纳的 SGC，或者需要帮助升级您的工资系统，请立即联系诚明会计师事务所 (Loyal Bright Accountants)！
+                </p>
+				
+				<a href="/zh/faq-zh/" class="back-link">&larr; 返回所有常见问题</a>
 			</div>
 		</div>
 
-		<div class="site-info-wrapper">
-			<div class="site-info-inner" style="text-align: center; padding: 20px;">
-				<a class="privacy-policy-link" href="/zh/privacy-policy-zh/" style="display:block; margin-bottom:10px;">隐私政策</a>
-				<div class="site-info-text">Copyright &copy; 2019 - 2026 Loyal Bright Accountants. All Rights Reserved.</div>
+		<footer class="site-footer" style="background: #f5f5f5; border-top: 1px solid #eee; padding: 40px 20px;">
+			<div class="site-info-inner" style="text-align: center;">
+				<a class="privacy-policy-link" href="/zh/privacy-policy-zh/" style="display:block; margin-bottom:10px; color: #686868;">隐私政策</a>	
+				<div class="site-info-text" style="color: #686868; font-size: 13px;">
+					Copyright &copy; 2019 - 2026 Loyal Bright Pty Ltd ATF Loyal Bright Trust t/a Loyal Bright Accountants. <br>
+                    <small>Liability limited by a scheme approved under Professional Standards Legislation.</small>
+				</div>
 			</div>
-		</div>
+		</footer>
 	</div>
 </body>
 </html>
