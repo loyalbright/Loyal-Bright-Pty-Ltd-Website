@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>加密货币 (Crypto) 报税材料准备清单 | 诚明会计师事务所</title>
+	<meta name="description" content="准备您的加密货币报税材料。使用此清单确保您下载了所有必要的 CSV 交易流水、质押记录和费用凭证，以符合 ATO 的合规要求。">
+
+    <link rel="canonical" href="https://loyalbright.com.au/zh/faq-zh/crypto-tax-checklist/">
+    <link rel="alternate" hreflang="en-AU" href="https://loyalbright.com.au/en/faq/crypto-tax-checklist/">
+    <link rel="alternate" hreflang="zh-CN" href="https://loyalbright.com.au/zh/faq-zh/crypto-tax-checklist/">
+
+    <link rel="icon" href="/wp-content/uploads/2018/11/cropped-Loyal-Bright-Website-Tag-32x32.png" sizes="32x32">
+    <link rel="icon" href="/wp-content/uploads/2018/11/cropped-Loyal-Bright-Website-Tag-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="/wp-content/uploads/2018/11/cropped-Loyal-Bright-Website-Tag-180x180.png">
+	
+	<link rel="stylesheet" id="ascension-css" href="/wp-content/themes/ascension/style.css?ver=1.1.5" type="text/css" media="all">
+	<link rel="stylesheet" id="ascension-fonts-css" href="https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C700&amp;subset=latin&amp;ver=1.8.7" type="text/css" media="all">
+    <link rel="stylesheet" href="/wp-content/plugins/beaver-builder-lite-version/fonts/fontawesome/5.15.4/css/all.min.css">
+
+	<style type="text/css">
+        /* --- HEADER STYLES --- */
+        .site-title, .site-description { position: absolute; clip: rect(1px, 1px, 1px, 1px); }
+        .site-header { background: #fff; padding: 20px 0; border-bottom: 1px solid #eee; }
+        .nav-container { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; flex-direction: row; justify-content: space-between; align-items: center; }
+        .custom-logo { max-width: 250px; height: auto; display: block; }
+        
+        .main-navigation ul li a, .main-navigation ul li a:visited { text-decoration: none; color: #5d5179 !important; font-weight: 700; font-size: 15px; text-transform: none; transition: color 0.3s; }
+        .main-navigation ul li a:hover, .main-navigation ul li a:focus { color: #96349b !important; }
+        .menu-toggle div { background-color: #96349b !important; } 
+
+        @media (max-width: 768px) {
+            .nav-container { flex-direction: column; justify-content: center; }
+            .custom-logo { margin-bottom: 20px; max-width: 200px; }
+            .main-navigation .menu li { margin: 0; width: 100%; text-align: center; border-bottom: 1px solid #f9f9f9; padding: 12px 0; } 
+            .main-navigation .menu li:last-child { border-bottom: none; padding-bottom: 0; }
+        }
+
+        /* --- PAGE CONTENT STYLES --- */
+        .hero { 
+            background-image: linear-gradient(rgba(3, 38, 59, 0.75), rgba(3, 38, 59, 0.75)), url(/wp-content/uploads/2019/07/cropped-Home-Page-Hero-2400x1160.jpeg);
+            background-size: cover; background-position: center; padding: 80px 20px; text-align: center; color: #fff;
+        }
+        .hero h1 { font-size: 36px; color: #fff; margin-bottom: 10px; font-weight: 700; font-family: "Open Sans", sans-serif;}
+        
+        .site-content { max-width: 900px; margin: 60px auto; padding: 0 20px; background: #fff; }
+        .article-container { padding: 40px; border-radius: 8px; border: 1px solid #eee; box-shadow: 0 5px 25px rgba(0,0,0,0.03); border-top: 4px solid #5d5179; background: #fff;}
+        .article-container p { color: #353535; font-size: 16px; line-height: 1.8; margin-bottom: 20px; font-family: "Open Sans", sans-serif; }
+        
+        .back-link { display: inline-block; margin-top: 30px; color: #5d5179; font-weight: bold; text-decoration: none; transition: 0.3s; }
+        .back-link:hover { color: #96349b; text-decoration: underline; }
+
+        /* Custom Checklist Styles */
+        .checklist-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; border-bottom: 2px solid #5d5179; padding-bottom: 15px;}
+        .checklist-header h2 { margin: 0; color: #03263B; font-size: 26px; font-family: "Open Sans", sans-serif; font-weight: 700;}
+        .progress-container { font-size: 14px; font-weight: bold; color: #96349b; background: #fdfaf6; padding: 8px 15px; border-radius: 20px; border: 1px solid #e8e1d7;}
+        
+        .checklist-section { margin-bottom: 35px; }
+        .checklist-section h3 { color: #5d5179; font-size: 20px; margin-bottom: 15px; font-family: "Open Sans", sans-serif; font-weight: 700; display: flex; align-items: center;}
+        .checklist-section h3 i { margin-right: 10px; }
+        
+        .check-item { display: flex; align-items: flex-start; margin-bottom: 12px; font-size: 16px; color: #353535; cursor: pointer; padding: 8px; border-radius: 6px; transition: background 0.2s;}
+        .check-item:hover { background-color: #f9f9f9; }
+        .check-item input[type="checkbox"] { margin-top: 4px; margin-right: 15px; width: 18px; height: 18px; accent-color: #5d5179; cursor: pointer; flex-shrink: 0;}
+        .check-item span { line-height: 1.5; }
+        .check-item .sub-text { display: block; font-size: 13px; color: #888; margin-top: 2px;}
+
+        .print-btn { background-color: #5d5179; color: white !important; padding: 12px 25px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; font-weight: bold; margin-top: 20px; transition: 0.3s; display: inline-flex; align-items: center; text-decoration: none;}
+        .print-btn:hover { background-color: #96349b; }
+        .print-btn i { margin-right: 8px; }
+
+        /* Print Styles */
+        @media print {
+            body * { visibility: hidden; }
+            #print-area, #print-area * { visibility: visible; }
+            #print-area { position: absolute; left: 0; top: 0; width: 100%; padding: 0; }
+            .hero, .site-header, .site-footer, .back-link, .print-btn, .progress-container { display: none !important; }
+            .article-container { border: none; box-shadow: none; padding: 0; }
+            .check-item { break-inside: avoid; }
+        }
+	</style>
+    <script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+    <script type="text/javascript" src="/wp-content/themes/primer/assets/js/navigation.min.js?ver=1.8.7"></script>
+</head>
+
+<body class="page layout-one-column-wide">
+	<div id="page" class="hfeed site">
+        
+        <header id="masthead" class="site-header" role="banner">
+			<div class="site-header-wrapper">
+				<div class="site-title-wrapper">
+					<a href="/zh/" class="custom-logo-link" rel="home"><img width="511" height="134" src="/wp-content/uploads/2018/11/cropped-1_Primary_logo_on_transparent_512-1.png" class="custom-logo" alt="诚明会计师事务所"></a>
+                    <h1 class="site-title"><a href="/zh/" rel="home">Loyal Bright Accountants</a></h1>
+				</div>
+				<div class="main-navigation-container">
+                    <div class="menu-toggle" id="menu-toggle" role="button" tabindex="0">
+                        <div></div><div></div><div></div>
+                    </div>
+					<nav id="site-navigation" class="main-navigation">
+                        <div class="menu-primary-menu-container">
+                            <ul id="menu-zh" class="menu">
+                                <li class="menu-item"><a href="/zh/">首页</a></li>
+                                <li class="menu-item"><a href="/zh/about-zh/">关于我们</a></li>
+                                <li class="menu-item"><a href="/zh/services-zh/">服务</a></li>
+                                <li class="menu-item"><a href="/zh/faq-zh/">常见问题</a></li>
+                                <li class="menu-item"><a href="/zh/contact-zh/">联系我们</a></li>
+                                <li class="menu-item"><a href="/en/faq/crypto-tax-checklist/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAtFBMVEXAdIWHf6gAKI+NIUCRHz51OWgACXMAAF1HYqIAAE4AAEAAADRJS43kxszj4+veqbDt2d2ntNJyh7pnfbTHz+FbcqvOBwfhjZDlfn/lbm7dZGZQaKexutUwT5hTb6yPMVPkur/xp6W0gpmeqco8WZ1tg7YAACl7irrozdLKiZagutylkK26w9mQnMEAAB1qQnVZereLdp5Ka62biapBXZ8pSZN3jr42VJqVpccZO4gAAA8AAAIF8g6vAAAAmUlEQVR4AR1HU4IFQQysdAbJrO3v5f0Ps3q27c6gXATK4HkXEYpJx5nhOYtMh2AZJJTBQLtocKRES6eq5sVLJLggi5/4PrRjDZFALxfn6/2Jk/BERKZy0ejc/1z0wePn6u6oM70bv6yOH/n2wIFiNpt8ja+a92Dn1aGHw/ap+GYYg6P76dtku1lY+Xb9m5w5UgLhSYBjwByQApiiN1ociSrgAAAAAElFTkSuQmCC" alt="" width="16" height="11" style="vertical-align: middle; margin-right: 5px;">English</a></li>
+                            </ul>
+                        </div>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<section class="hero">
+			<h1>加密货币 (Crypto) 报税材料准备清单</h1>
+		</section>
+
+		<div class="site-content">
+			<div class="article-container" id="print-area">
+				
+				<p>ATO 对加密货币的税务审查越来越严格。为了准确计算您的资本利得 (CGT) 和普通收入，请勿仅提供“账户余额截图”。我们需要您提供所有交易的原始数据。请在预约税务咨询前准备好以下文件。</p>
+
+                <div class="checklist-header">
+                    <h2><i class="fab fa-bitcoin" style="color:#5d5179; margin-right: 10px;"></i> Crypto 税务材料清单</h2>
+                    <div class="progress-container">已准备: <span id="progress-text">0</span> / <span id="total-text">8</span></div>
+                </div>
+
+                <div class="checklist-section">
+                    <h3><i class="fas fa-exchange-alt"></i> 1. 交易所记录 (Exchange Records)</h3>
+                    <label class="check-item">
+                        <input type="checkbox" class="task-check">
+                        <div>
+                            <span>所有交易所的 CSV 交易流水 (Transaction History)</span>
+                            <span class="sub-text">登录您使用的每一个交易所 (如 Binance, CoinSpot, Swyftx)，下载涵盖整个财政年度 (7月1日至次年6月30日) 的完整 CSV 格式报表。</span>
+                        </div>
+                    </label>
+                    <label class="check-item">
+                        <input type="checkbox" class="task-check">
+                        <div>
+                            <span>充值与提现记录 (Deposits & Withdrawals)</span>
+                            <span class="sub-text">包括法币 (澳元) 的充值/提现记录，以及在不同钱包和交易所之间的加密货币转账记录。</span>
+                        </div>
+                    </label>
+                    <label class="check-item">
+                        <input type="checkbox" class="task-check">
+                        <div>
+                            <span>场外交易记录 (OTC / Peer-to-Peer)</span>
+                            <span class="sub-text">如果您曾与朋友或通过场外交易私下买卖代币，请提供日期、币种数量及当时澳元价值的记录。</span>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="checklist-section">
+                    <h3><i class="fas fa-wallet"></i> 2. 钱包、被动收入与空投</h3>
+                    <label class="check-item">
+                        <input type="checkbox" class="task-check">
+                        <div>
+                            <span>DeFi、质押与流动性挖矿记录 (Staking & Yield Farming)</span>
+                            <span class="sub-text">提供通过质押代币获得的利息奖励记录（需包含获得奖励的确切日期及数量）。</span>
+                        </div>
+                    </label>
+                    <label class="check-item">
+                        <input type="checkbox" class="task-check">
+                        <div>
+                            <span>空投 (Airdrops) 与硬分叉 (Hard Forks) 记录</span>
+                            <span class="sub-text">如果您免费收到了新的代币，请提供收到该代币的日期和数量。</span>
+                        </div>
+                    </label>
+                    <label class="check-item">
+                        <input type="checkbox" class="task-check">
+                        <div>
+                            <span>去中心化钱包地址 (Web3 Wallets)</span>
+                            <span class="sub-text">如果您使用了 MetaMask、Trust Wallet 或 Ledger 硬件钱包，请提供您的公钥地址，以便我们通过区块链浏览器追踪交互记录。</span>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="checklist-section">
+                    <h3><i class="fas fa-file-invoice"></i> 3. 费用抵扣与亏损证明</h3>
+                    <label class="check-item">
+                        <input type="checkbox" class="task-check">
+                        <div>
+                            <span>税务追踪软件订阅费收据</span>
+                            <span class="sub-text">如果您购买了 Koinly, CryptoTaxCalculator 等税务软件的年度会员，该费用 100% 可抵税。</span>
+                        </div>
+                    </label>
+                    <label class="check-item">
+                        <input type="checkbox" class="task-check">
+                        <div>
+                            <span>丢失或被盗资产的证明 (Lost or Stolen Crypto)</span>
+                            <span class="sub-text">如果您的钱包被黑客盗取或丢失了私钥，请提供警察报警记录 (Police Report) 或其他合理证据，以便我们为您申请将其注销为资本亏损。</span>
+                        </div>
+                    </label>
+                </div>
+
+                <div style="text-align: center; margin-top: 40px;">
+                    <button onclick="window.print()" class="print-btn"><i class="fas fa-print"></i> 打印该清单</button>
+                </div>
+
+                <script>
+                    const checkboxes = document.querySelectorAll('.task-check');
+                    const progressText = document.getElementById('progress-text');
+                    const totalText = document.getElementById('total-text');
+
+                    totalText.textContent = checkboxes.length;
+
+                    function updateProgress() {
+                        const checkedCount = document.querySelectorAll('.task-check:checked').length;
+                        progressText.textContent = checkedCount;
+                        if (checkedCount === checkboxes.length) {
+                            progressText.style.color = "#28a745";
+                        } else {
+                            progressText.style.color = "#96349b";
+                        }
+                    }
+
+                    checkboxes.forEach(box => {
+                        box.addEventListener('change', updateProgress);
+                    });
+                </script>
+
+				<p style="background: #eef4f7; padding: 20px; border-radius: 6px; margin-top: 40px;">
+                    <strong>请注意：</strong> 我们强烈建议您使用第三方的加密货币税务软件（如 Koinly）连接您所有的交易所 API，直接生成年度税务报告。如果您在这方面需要协助，请联系诚明会计师事务所。
+                </p>
+				
+				<a href="/zh/faq-zh/" class="back-link">&larr; 返回所有清单与常见问题</a>
+			</div>
+		</div>
+
+		<footer class="site-footer" style="background: #f5f5f5; border-top: 1px solid #eee; padding: 40px 20px;">
+			<div class="site-info-inner" style="text-align: center;">
+				<a class="privacy-policy-link" href="/zh/privacy-policy-zh/" style="display:block; margin-bottom:10px; color: #686868;">隐私政策</a>	
+				<div class="site-info-text" style="color: #686868; font-size: 13px;">
+					Copyright &copy; 2019 - 2026 Loyal Bright Pty Ltd ATF Loyal Bright Trust t/a Loyal Bright Accountants. <br>
+                    <small>Liability limited by a scheme approved under Professional Standards Legislation.</small>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
