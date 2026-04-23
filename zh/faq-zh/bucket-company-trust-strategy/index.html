@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>利润太高分不完？解析富人专用的“水桶公司 (Bucket Company)” 30% 锁税策略 | 诚明会计师事务所</title>
+	<meta name="description" content="家族信托利润过高？了解如何利用水桶公司 (Bucket Company) 作为企业受益人，将最高 47% 的个人边际税率锁定在 30%，并规避 Division 7A 陷阱。">
+
+    <link rel="canonical" href="https://loyalbright.com.au/zh/faq-zh/bucket-company-trust-strategy/">
+    <link rel="alternate" hreflang="en-AU" href="https://loyalbright.com.au/en/faq/bucket-company-trust-strategy/">
+    <link rel="alternate" hreflang="zh-CN" href="https://loyalbright.com.au/zh/faq-zh/bucket-company-trust-strategy/">
+
+    <link rel="icon" href="/wp-content/uploads/2018/11/cropped-Loyal-Bright-Website-Tag-32x32.png" sizes="32x32">
+    <link rel="icon" href="/wp-content/uploads/2018/11/cropped-Loyal-Bright-Website-Tag-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="/wp-content/uploads/2018/11/cropped-Loyal-Bright-Website-Tag-180x180.png">
+	
+	<link rel="stylesheet" id="ascension-css" href="/wp-content/themes/ascension/style.css?ver=1.1.5" type="text/css" media="all">
+	<link rel="stylesheet" id="ascension-fonts-css" href="https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C700&amp;subset=latin&amp;ver=1.8.7" type="text/css" media="all">
+    <link rel="stylesheet" href="/wp-content/plugins/beaver-builder-lite-version/fonts/fontawesome/5.15.4/css/all.min.css">
+
+	<style type="text/css">
+        /* --- HEADER STYLES --- */
+        .site-title, .site-description { position: absolute; clip: rect(1px, 1px, 1px, 1px); }
+        .site-header { background: #fff; padding: 20px 0; border-bottom: 1px solid #eee; }
+        .nav-container { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; flex-direction: row; justify-content: space-between; align-items: center; }
+        .custom-logo { max-width: 250px; height: auto; display: block; }
+        
+        .main-navigation ul li a, .main-navigation ul li a:visited { text-decoration: none; color: #5d5179 !important; font-weight: 700; font-size: 15px; text-transform: none; transition: color 0.3s; }
+        .main-navigation ul li a:hover, .main-navigation ul li a:focus { color: #96349b !important; }
+        .menu-toggle div { background-color: #96349b !important; } 
+
+        @media (max-width: 768px) {
+            .nav-container { flex-direction: column; justify-content: center; }
+            .custom-logo { margin-bottom: 20px; max-width: 200px; }
+            .main-navigation .menu li { margin: 0; width: 100%; text-align: center; border-bottom: 1px solid #f9f9f9; padding: 12px 0; } 
+            .main-navigation .menu li:last-child { border-bottom: none; padding-bottom: 0; }
+        }
+
+        /* --- PAGE CONTENT STYLES --- */
+        .hero { 
+            background-image: linear-gradient(rgba(3, 38, 59, 0.75), rgba(3, 38, 59, 0.75)), url(/wp-content/uploads/2019/07/cropped-Home-Page-Hero-2400x1160.jpeg);
+            background-size: cover; background-position: center; padding: 80px 20px; text-align: center; color: #fff;
+        }
+        .hero h1 { font-size: 36px; color: #fff; margin-bottom: 10px; font-weight: 700; font-family: "Open Sans", sans-serif;}
+        
+        .site-content { max-width: 900px; margin: 60px auto; padding: 0 20px; background: #fff; }
+        .article-container { padding: 40px; border-radius: 8px; border: 1px solid #eee; box-shadow: 0 5px 25px rgba(0,0,0,0.03); border-top: 4px solid #5d5179; }
+        .article-container h2, .article-container h3 { color: #03263B; margin-top: 40px; margin-bottom: 20px; font-weight: 700; font-family: "Open Sans", sans-serif; }
+        .article-container h2 { font-size: 24px; border-left: 5px solid #96349b; padding-left: 15px;}
+        .article-container h3 { font-size: 20px; }
+        .article-container p, .article-container ul { color: #353535; font-size: 16px; line-height: 1.8; margin-bottom: 20px; font-family: "Open Sans", sans-serif; }
+        .article-container ul { padding-left: 20px; }
+        
+        .warning-box { background: #fff5f5; padding: 25px; border-radius: 6px; border: 1px solid #ff6663; margin-bottom: 30px; margin-top: 30px;}
+        .warning-box h4 { color: #c53030; margin-top: 0; display: flex; align-items: center; font-weight: 800 !important; font-size: 20px; font-family: "Open Sans", sans-serif; margin-bottom: 10px;}
+        .warning-box i { margin-right: 10px; }
+
+        .back-link { display: inline-block; margin-top: 30px; color: #5d5179; font-weight: bold; text-decoration: none; transition: 0.3s; }
+        .back-link:hover { color: #96349b; text-decoration: underline; }
+
+        /* Custom Calculator Styles */
+        .calculator-box { background: #fdfaf6; padding: 30px; border-radius: 8px; border: 1px solid #e8e1d7; margin-bottom: 30px; margin-top: 30px; }
+        .calc-slider { width: 100%; margin-top: 10px; margin-bottom: 20px; accent-color: #5d5179; }
+        .calc-result { background: #fff; padding: 20px; border-radius: 6px; text-align: center; border: 2px solid #5d5179; margin-top: 10px; display: flex; justify-content: space-around; flex-wrap: wrap;}
+        .calc-stat { text-align: center; margin: 10px; width: 45%;}
+        .calc-stat p { margin: 0; font-size: 14px; color: #686868; font-weight: bold; }
+        .calc-stat .val { font-size: 26px; font-weight: bold; margin-top: 5px;}
+	</style>
+    <script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+    <script type="text/javascript" src="/wp-content/themes/primer/assets/js/navigation.min.js?ver=1.8.7"></script>
+</head>
+
+<body class="page layout-one-column-wide">
+	<div id="page" class="hfeed site">
+        
+        <header id="masthead" class="site-header" role="banner">
+			<div class="site-header-wrapper">
+				<div class="site-title-wrapper">
+					<a href="/zh/" class="custom-logo-link" rel="home"><img width="511" height="134" src="/wp-content/uploads/2018/11/cropped-1_Primary_logo_on_transparent_512-1.png" class="custom-logo" alt="诚明会计师事务所"></a>
+                    <h1 class="site-title"><a href="/zh/" rel="home">Loyal Bright Accountants</a></h1>
+				</div>
+				<div class="main-navigation-container">
+                    <div class="menu-toggle" id="menu-toggle" role="button" tabindex="0">
+                        <div></div><div></div><div></div>
+                    </div>
+					<nav id="site-navigation" class="main-navigation">
+                        <div class="menu-primary-menu-container">
+                            <ul id="menu-zh" class="menu">
+                                <li class="menu-item"><a href="/zh/">首页</a></li>
+                                <li class="menu-item"><a href="/zh/about-zh/">关于我们</a></li>
+                                <li class="menu-item"><a href="/zh/services-zh/">服务</a></li>
+                                <li class="menu-item"><a href="/zh/faq-zh/">常见问题</a></li>
+                                <li class="menu-item"><a href="/zh/contact-zh/">联系我们</a></li>
+                                <li class="menu-item"><a href="/en/faq/bucket-company-trust-strategy/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAtFBMVEXAdIWHf6gAKI+NIUCRHz51OWgACXMAAF1HYqIAAE4AAEAAADRJS43kxszj4+veqbDt2d2ntNJyh7pnfbTHz+FbcqvOBwfhjZDlfn/lbm7dZGZQaKexutUwT5hTb6yPMVPkur/xp6W0gpmeqco8WZ1tg7YAACl7irrozdLKiZagutylkK26w9mQnMEAAB1qQnVZereLdp5Ka62biapBXZ8pSZN3jr42VJqVpccZO4gAAA8AAAIF8g6vAAAAmUlEQVR4AR1HU4IFQQysdAbJrO3v5f0Ps3q27c6gXATK4HkXEYpJx5nhOYtMh2AZJJTBQLtocKRES6eq5sVLJLggi5/4PrRjDZFALxfn6/2Jk/BERKZy0ejc/1z0wePn6u6oM70bv6yOH/n2wIFiNpt8ja+a92Dn1aGHw/ap+GYYg6P76dtku1lY+Xb9m5w5UgLhSYBjwByQApiiN1ociSrgAAAAAElFTkSuQmCC" alt="" width="16" height="11" style="vertical-align: middle; margin-right: 5px;">English</a></li>
+                            </ul>
+                        </div>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<section class="hero">
+			<h1>利润太高分不完？解析富人专用的“水桶公司 (Bucket Company)” 30% 锁税策略</h1>
+		</section>
+
+		<div class="site-content">
+			<div class="article-container">
+				<p style="color: #999; font-size: 14px; font-weight: bold; margin-bottom: 30px;">更新日期：2026年4月</p>
+				
+				<p>家族信托 (Family Trust) 是资产保护和灵活分配利润的绝佳工具。然而，当您的生意或投资做得非常成功，信托每年产生数十万甚至上百万澳元的净利润时，信托的局限性就暴露出来了：<strong>家庭成员的低税率空间被迅速填满。</strong></p>
+                <p>在最新的 2025/26 财年税率下，一旦家庭成员的年收入超过 $190,000，多出的每一分钱都要缴纳高达 <strong>47%（含 Medicare）的最高边际税率</strong>。为了防止财富被税局吞噬，高净值家族通常会引入一个顶层架构——<strong>水桶公司 (Bucket Company)</strong>。</p>
+
+				<h2>1. 什么是水桶公司？它是如何锁税的？</h2>
+				<p>水桶公司，在税务上被称为企业受益人 (Corporate Beneficiary)。它本质上是一家由您控制的私人有限公司 (Pty Ltd)，但它不参与任何实际经营，它的唯一目的就是像一个“水桶”一样，用来<strong>承接家族信托溢出的高额利润</strong>。</p>
+				<p><strong>锁税魔法：</strong> 公司的所得税率是固定的！如果利润来自分红或被动投资，税率锁定在 30%；如果利润来自积极的商业运营，税率甚至可低至 25%。通过将原本要交 47% 个税的利润分配给水桶公司，您瞬间就能将税率封顶在 30% 或更低。</p>
+
+                <div class="calculator-box">
+                    <h3 style="margin-top: 0; color: #03263B; font-size: 20px;"><i class="fas fa-filter" style="color: #96349b; margin-right: 8px;"></i> 高净值利润分流计算器</h3>
+                    <p style="font-size: 14px; color: #686868; margin-bottom: 20px;">假设您（单人）今年已经通过工资赚了 $190,000，达到了最高税率门槛。此时，您的信托又额外产生了巨额的投资利润。对比一下：将这笔溢出利润强行分给您个人，还是分给水桶公司？</p>
+                    
+                    <div>
+                        <label for="overflowInput" style="display: block; font-weight: bold; color: #353535;">信托溢出的高额利润 (需分配): $<span id="overflowVal" style="color: #5d5179;">200,000</span></label>
+                        <input type="range" id="overflowInput" class="calc-slider" min="50000" max="1000000" step="50000" value="200000">
+                    </div>
+                    
+                    <div class="calc-result">
+                        <div class="calc-stat">
+                            <p style="color: #c53030;">分给个人 (适用 47% 最高边际税率)</p>
+                            <div class="val" id="personTaxBox" style="color: #c53030;">$<span id="personTaxOut">94,000</span></div>
+                        </div>
+                        <div class="calc-stat" style="border-left: 1px solid #eee;">
+                            <p style="color: #28a745;">分给水桶公司 (锁定 30% 公司税)</p>
+                            <div class="val" id="bucketTaxBox" style="color: #28a745;">$<span id="bucketTaxOut">60,000</span></div>
+                        </div>
+                        <div style="width: 100%; margin-top: 15px; border-top: 1px dashed #ccc; padding-top: 15px;">
+                            <p style="font-size: 16px; color: #03263B; margin: 0; font-weight: bold;">利用水桶公司当年立省税款: <span style="font-size: 26px; color: #96349b;">$<span id="taxSavedOut">34,000</span></span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    const overflowInput = document.getElementById('overflowInput');
+                    const overflowVal = document.getElementById('overflowVal');
+                    
+                    const personTaxOut = document.getElementById('personTaxOut');
+                    const bucketTaxOut = document.getElementById('bucketTaxOut');
+                    const taxSavedOut = document.getElementById('taxSavedOut');
+
+                    function formatMoney(num) {
+                        return num.toLocaleString('en-AU', {maximumFractionDigits: 0});
+                    }
+
+                    function updateBucketCalc() {
+                        const overflowProfit = parseInt(overflowInput.value);
+                        overflowVal.textContent = formatMoney(overflowProfit);
+
+                        // Individual Top Marginal Rate (45% + 2% Medicare)
+                        const personTax = overflowProfit * 0.47;
+                        
+                        // Bucket Company Rate (Assuming Passive 30%)
+                        const bucketTax = overflowProfit * 0.30;
+                        
+                        const savings = personTax - bucketTax;
+
+                        personTaxOut.textContent = formatMoney(personTax);
+                        bucketTaxOut.textContent = formatMoney(bucketTax);
+                        taxSavedOut.textContent = formatMoney(savings);
+                    }
+
+                    overflowInput.addEventListener('input', updateBucketCalc);
+                    updateBucketCalc(); // Initialize
+                </script>
+                <h2>2. 致命的 Division 7A 陷阱：钱不能只停在纸上</h2>
+				<p>很多老板在听说了水桶公司后，仅仅在年终决议上写下“利润分给公司”，但实际上把现金留在了信托里继续投资或自己拿去花了。这在税务上被称为 <strong>未付现有权益 (Unpaid Present Entitlement, UPE)</strong>。</p>
+                <p>ATO 对此深恶痛绝！根据极其严厉的 <strong>Division 7A</strong> 法规，如果信托欠了公司的钱（UPE），这笔钱将被视为“公司对信托的无抵押贷款”，并被视作<strong>未免税股息 (Unfranked Dividend)</strong>，直接按照 47% 重新征收惩罚税！</p>
+
+				<h2>3. 如何合法合规地使用这笔钱？</h2>
+                <p>为了规避 Div 7A 陷阱，您必须采取以下两种合规方式之一：</p>
+                <ul>
+                    <li><strong>真金白银转账：</strong> 在次年公司报税截止日之前，将信托名下的现金实打实地转入水桶公司的银行账户中。水桶公司可以用这笔钱去购买股票、房产，或者给其他公司提供商业贷款，从而实现财富的复利增长。</li>
+                    <li><strong>签署 Div 7A 合规借款协议：</strong> 如果信托实在拿不出这笔现金，信托必须与水桶公司签署一份法定的 7 年期借款协议 (Complying Loan Agreement)。信托必须在未来的 7 年内，每年向公司支付法定的最低本金和利息。</li>
+                </ul>
+
+				<p style="background: #eef4f7; padding: 20px; border-radius: 6px; margin-top: 30px;">
+                    <strong>顶层架构升级提醒：</strong> 水桶公司的设立、股权结构的安排以及年终利润分配决议 (Trust Distribution Resolution) 必须在 <strong>6 月 30 日之前</strong>完成并由会计师记录在案。如果您的信托利润今年预计将突破阈值，请立即联系诚明会计师事务所 (Loyal Bright Accountants) 的高净值咨询团队，我们将为您搭建滴水不漏的财富蓄水池！
+                </p>
+				
+				<a href="/zh/faq-zh/" class="back-link">&larr; 返回所有常见问题</a>
+			</div>
+		</div>
+
+		<footer class="site-footer" style="background: #f5f5f5; border-top: 1px solid #eee; padding: 40px 20px;">
+			<div class="site-info-inner" style="text-align: center;">
+				<a class="privacy-policy-link" href="/zh/privacy-policy-zh/" style="display:block; margin-bottom:10px; color: #686868;">隐私政策</a>	
+				<div class="site-info-text" style="color: #686868; font-size: 13px;">
+					Copyright &copy; 2019 - 2026 Loyal Bright Pty Ltd ATF Loyal Bright Trust t/a Loyal Bright Accountants. <br>
+                    <small>Liability limited by a scheme approved under Professional Standards Legislation.</small>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
